@@ -1,0 +1,208 @@
+body{
+	background-image:url("scratched-582602_960_720.jpg");
+	background-size: cover;
+}
+#nav{
+	width:100vw;
+	height:10vw;
+	//*border:1px solid black;*//
+	position:fixed;
+	margin-top:0vw;
+
+	
+}
+
+#dropdown{
+
+	position:fixed;
+	width:100vw;
+	height:100vh;
+	background-color:grey;
+	display:none;
+	border:1px solid grey;
+	opacity:0.9;
+	z-index:11;
+	margin-top:-0.5vw;
+	margin-left:-0.5vw;
+	overflow-y: scroll;
+}
+
+#drop{
+	width:10vw;
+	height:10vw;
+	margin-left:85vw;
+	margin-top:0vw;
+	position:fixed;
+	z-index:10;
+	cursor:pointer;
+}
+#hidedrop{
+	width:10vw;
+	height:10vw;
+	margin-left:85vw;
+	margin-top:0vw;
+	position:fixed;
+	cursor:pointer;
+}
+h1{
+	font-size:100px;
+	margin-top:-9vw;
+	margin-left:25vw;
+	font-family:'Megrim', cursive;
+	position:absolute;
+
+}
+#IS{
+	font-size:60px;
+	margin-top:0vw;
+	text-align:center;
+	font-family: 'Megrim', cursive;
+
+}
+#II{
+	font-size:50px;
+	margin-top:0vw;
+	margin-left:0vw;
+}
+#pot{
+	width:30vw;
+	height:35vw;`
+	margin-top:0vw;
+	margin-left:15vw;
+	position:absolute;
+}
+#IIdiv{
+	width:30vw;
+	height:35vw;
+	margin-top:0vw;
+	margin-left:55vw;
+	position:absolute;
+}
+#IIp{
+	font-size:30px;
+}
+#AM{
+	font-size:60px;
+	margin-top:0vw;
+	text-align:center;
+	font-family: 'Megrim', cursive;
+}
+#AMI{
+	font-size:30px;
+	text-align:center;
+}
+#dropdowninfo{
+	font-size:80px;
+	margin-top:0vw;
+	text-align:center;
+	font-family: 'Megrim', cursive;
+	cursor:pointer;
+}
+#footer{
+	font-size:40px;
+	margin-top:0vw;
+	text-align:center;
+	font-family: 'Megrim', cursive;
+}
+#hand{
+	width:15vw;
+	height:15vw;
+	margin-left:42vw;
+	border-radius:100%;
+	
+}
+#MI{
+	font-size:60px;
+	margin-top:40vw;
+	text-align:center;
+	font-family: 'Megrim', cursive;
+}
+#empty{
+	text-align:center;
+	font-size:20px;
+}
+#WW{
+	font-size:60px;
+	margin-top:0vw;
+	text-align:center;
+	font-family: 'Megrim', cursive;
+}
+#WWI{
+	font-size:30px;
+	text-align:center;
+	background-color:white;
+	opacity:0.5;
+	
+}
+#C{
+	font-size:60px;
+	margin-top:0vw;
+	text-align:center;
+	font-family: 'Megrim', cursive;
+}
+#CI{
+	font-size:30px;
+	text-align:center;	
+}
+#twitter{
+	width:11vw;
+	height:8vw;
+	margin-top:2vw;
+	margin-left:2vw;
+	position:fixed;
+	cursor:pointer;
+	
+}
+#Facebook{
+	width:8vw;
+	height:8vw;
+	margin-top:2vw;
+	margin-left:20vw;
+	position:absolute;
+}
+#instagram{
+	width:8vw;
+	height:8vw;
+	margin-top:2vw;
+	margin-left:35vw;
+	position:absolute;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
