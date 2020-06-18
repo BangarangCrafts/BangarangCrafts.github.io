@@ -45,13 +45,12 @@ body{
 	position:fixed;
 	cursor:pointer;
 }
-h1{
+#h1{
 	font-size:1000%;
 	margin-top:-10vw;
 	margin-left:5vw;
 	font-family:'Megrim', cursive;
-	text-align:center;
-	position:absolute;
+	text-align:;
 
 }
 #IS{
@@ -70,10 +69,10 @@ h1{
 	font-family: 'Megrim', cursive;
 }
 #pot{
-	width:40vw;
+	width:45vw;
 	height:45vw;`
 	margin-top:0vw;
-	margin-left:30vw;
+	margin-left:27vw;
 
 	position:;
 }
@@ -103,7 +102,7 @@ h1{
 	text-align:center;
 }
 #dropdowninfo{
-	font-size:400%;
+	font-size:300%;
 	margin-top:0vw;
 	text-align:center;
 	font-family: 'Megrim', cursive;
