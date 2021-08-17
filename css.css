@@ -68,6 +68,21 @@ body{
 	position:;
 }
 
+#coming{
+	font-size:300%;
+	margin-top:0vw;
+	margin-left:0vw;
+	text-align:center;
+	font-family: 'Megrim', cursive;
+}
+
+#vid{
+	width:60vw;
+	height:60vw;
+	margin-top:-10vw;;
+	margin-left:19vw;
+}
+
 #II{
 	font-size:300%;
 	margin-top:0vw;
