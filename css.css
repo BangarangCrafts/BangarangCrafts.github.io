@@ -76,6 +76,16 @@ body{
 	font-family: 'Megrim', cursive;
 }
 
+#sticker{
+	margin-top:30vw;
+	margin-left:-12vw;
+	width:12vw;
+	height:12vw;
+	border-radius:100%;
+	position:absolute;
+	z-index:10;
+}
+
 #vid{
 	width:60vw;
 	height:60vw;
