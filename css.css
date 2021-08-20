@@ -2,11 +2,15 @@ body{
 	background-image:url("IMG_20200620_123316.jpg");
 	background-size: cover;
 	width:100vw;
+	margin-top:;
+	margin-left:0vw;
+	margin-right:0vw;
 }
 
 #nav{
 	margin-top:-1vw;
-	margin-left:-1vw;
+	margin-left:0vw;
+	margin-right:0vw;
 	width:100vw;
 	height:10vw;
 	//*border:1px solid black;*//
@@ -68,12 +72,14 @@ body{
 	position:;
 }
 
-#coming{
-	font-size:300%;
-	margin-top:0vw;
-	margin-left:0vw;
-	text-align:center;
-	font-family: 'Megrim', cursive;
+#comstick{
+	margin-top:5vw;
+	margin-left:20vw;
+	width:20vw;
+	height:20vw;
+	border-radius:100%;
+	position:absolute;
+	z-index:10;
 }
 
 #sticker{
@@ -128,6 +134,15 @@ body{
 	position:;
 }
 
+#recpick{
+	width:45vw;
+	height:47vw;`
+	margin-top:0vw;
+	margin-left:27vw;
+	Display:none;
+	position:;
+}
+
 #potdiv{
 	margin-top:15vh;
 	Display:block;
@@ -146,6 +161,12 @@ body{
 	position:;
 }
 
+#recdiv{
+	margin-top:15vh;
+	Display:none;
+	position:;
+}
+
 #hexmouldpick{
 	width:45vw;
 	height:47vw;`
@@ -156,6 +177,21 @@ body{
 }
 
 #hexmouldiv{
+	margin-top:15vh;
+	Display:none;
+	position:;
+}
+
+#recmouldpick{
+	width:45vw;
+	height:47vw;`
+	margin-top:0vw;
+	margin-left:27vw;
+	Display:none;
+	position:;
+}
+
+#recmouldiv{
 	margin-top:15vh;
 	Display:none;
 	position:;
@@ -197,7 +233,7 @@ body{
 
 #AM{
 	font-size:300%;
-	margin-top:35vw;
+	margin-top:10vw;
 	text-align:center;
 	font-family: 'Megrim', cursive;
 	
@@ -250,7 +286,7 @@ body{
 
 #potMI{
 	margin-top:8vw;
-	margin-left:10vw;
+	margin-left:2vw;
 	width:20vw;
 	height:25vw;`
 	position:absolute;
@@ -258,7 +294,7 @@ body{
 
 #hexMI{
 	margin-top:8vw;
-	margin-left:5vw;
+	margin-left:4vw;
 	width:20vw;
 	height:25vw;`
 	position:absolute;
@@ -266,10 +302,18 @@ body{
 
 #roundMI{
 	margin-top:8vw;
-	margin-left:5vw;
+	margin-left:4vw;
 	width:20vw;
-	height:25vw;`
+	height:25vw;
 	position:;
+}
+
+#recMI{
+	margin-top:8vw;
+	margin-left:4vw;
+	width:20vw;
+	height:25vw;
+	position:absolute;
 }
 
 #Printed{
@@ -299,7 +343,7 @@ body{
 
 #hexmould{
 	margin-top:5vw;
-	margin-left:10vw;
+	margin-left:2vw;
 	width:20vw;
 	height:25vw;`
 	position:absolute;
@@ -316,9 +360,17 @@ body{
 
 #roundmould{
 	margin-top:5vw;
-	margin-left:5vw;
+	margin-left:4vw;
 	width:20vw;
 	height:25vw;`
+	position:absolute;
+}
+
+#recmould{
+	margin-top:5vw;
+	margin-left:4vw;
+	width:20vw;
+	height:25vw;
 	position:absolute;
 }
 
@@ -330,7 +382,7 @@ body{
 
 #roundmouldtwo{
 	margin-top:5vw;
-	margin-left:5vw;
+	margin-left:4vw;
 	width:20vw;
 	height:25vw;`
 	position:absolute;
@@ -369,6 +421,7 @@ body{
 
 #WWI{
 	font-size:150%;
+	width:100vw;
 	text-align:center;
 	background-color:white;
 	opacity:0.5;
@@ -406,6 +459,11 @@ body{
 	font-family: 'Megrim', cursive;
 }
 
+#comgaldiv{
+	margin-top:;
+	margin-left:vw;
+}
+
 #twitter{
 	width:11vw;
 	height:8vw;
@@ -429,7 +487,7 @@ body{
 	width:35vw;
 	height:40vw;`
 	margin-top:0vw;
-	margin-left:32vw;
+	margin-left:30vw;
 
 }
 
@@ -568,7 +626,7 @@ body{
 	width:68.2vw;
 	height:35vw;
 	margin-top:0;
-	margin-left:15vw;
+	margin-left:13vw;
 	display:block;
 	transition: 1s ease;
 	z-index:;
