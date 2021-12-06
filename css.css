@@ -1,7 +1,6 @@
 body{
 	background-image:url("IMG_20200620_123316.jpg");
 	background-size: cover;
-	background-attachment: fixed;
 	width:100vw;
 	margin-top:;
 	margin-left:0vw;
@@ -965,7 +964,7 @@ body{
 
 #divaratwo{
 	margin-top:1.5vw;
-	margin-left:20vw;
+	margin-left:25vw;
 	width:7vw;
 	height:3vw;
 	border:1px solid black;
@@ -987,7 +986,7 @@ body{
 
 #Total_div{
 	margin-top:7.5vw;
-	margin-left:20vw;
+	margin-left:25vw;
 	width:7vw;
 	height:3vw;
 	border:1px solid black;
