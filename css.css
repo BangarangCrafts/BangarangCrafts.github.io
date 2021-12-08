@@ -788,7 +788,7 @@ body{
 	margin-top:0;
 	margin-left:0vw;
 	width:49vw;
-	height:80vw;
+	height:90vw;
 	border:1px solid white;
 	border-radius:5%;
 	background-color:white;
@@ -802,7 +802,8 @@ body{
 }
 
 #P-Quan{
-	margin-top:0vw;
+	margin-top:3vw;
+	margin-left:2vw;
 	position:absolute;
 	font-size:6vw;
 }
@@ -814,8 +815,8 @@ body{
 }
 
 #divquan{
-	margin-top:1.5vw;
-	margin-left:10vw;
+	margin-top:4.5vw;
+	margin-left:18vw;
 	width:7vw;
 	height:4.5vw;
 	border:1px solid #a9ebe7;
@@ -825,8 +826,8 @@ body{
 }
 
 #P-value{
-	margin-top:0.5vw;
-	margin-left:20vw;
+	margin-top:3vw;
+	margin-left:28vw;
 	position:absolute;
 	font-size:6vw;
 
@@ -839,8 +840,8 @@ body{
 }
 
 #divalue{
-	margin-top:1.5vw;
-	margin-left:25vw;
+	margin-top:4.5vw;
+	margin-left:38vw;
 	width:7vw;
 	height:4.5vw;
 	border:1px solid #a9ebe7;
@@ -850,8 +851,8 @@ body{
 }
 
 #plus{
-	margin-top:1vw;
-	margin-left:35vw;
+	margin-top:-3vw;
+	margin-left:32vw;
 	width:6vw;
 	height:6vw;
 	position:absolute;
@@ -870,7 +871,7 @@ body{
 }
 
 #minus{
-	margin-top:1vw;
+	margin-top:-3vw;
 	margin-left:42vw;
 	width:6vw;
 	height:6vw;
@@ -933,7 +934,7 @@ body{
 	margin-top:-9.4vw;
 	margin-left:30vw;
 	margin-bottom:2vw;
-	width:12vw;
+	width:15vw;
 	height:7vw;
 	border:1px solid #aac2c5;
 	border-radius:20%;
@@ -1018,10 +1019,10 @@ body{
 /*How to//////////////////////////////////////////////////*/
 
 #main_frame{
-	margin-top:-80.5vw;
-	margin-left:49.4vw;
+	margin-top:-90.5vw;
+	margin-left:49.5vw;
 	width:49vw;
-	height:80vw;
+	height:90vw;
 	border-radius:5%;
 	position:absolute;
 	border:1px solid white;
