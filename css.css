@@ -1,6 +1,8 @@
 body{
 	background-image:url("IMG_20200620_123316.jpg");
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	width:100vw;
 	margin-top:;
 	margin-left:0vw;
@@ -1062,7 +1064,7 @@ body{
 
 #email_P{
 	margin-top:30vw;
-	margin-left:3.5vw;
+	margin-left:3vw;
 	font-size:3.5vw;
 	position:absolute;	
 }
