@@ -786,9 +786,9 @@ body{
 
 #main{
 	margin-top:0;
-	margin-left:4vw;
-	width:40vw;
-	height:60vw;
+	margin-left:0vw;
+	width:49vw;
+	height:80vw;
 	border:1px solid white;
 	border-radius:5%;
 	background-color:white;
@@ -796,56 +796,64 @@ body{
 }
 
 #H-one{
-	font-size:3vw;
+	font-size:5vw;
 	text-align:center;
+	font-family:'Megrim', cursive;
 }
 
 #P-Quan{
+	margin-top:0vw;
 	position:absolute;
-	font-size:2vw;
+	font-size:6vw;
 }
 
 #Pquan{
 	margin-top:0vw;
 	position:absolute;
-	font-size:2.5vw;
+	font-size:4vw;
 }
 
 #divquan{
 	margin-top:1.5vw;
-	margin-left:8vw;
-	width:3vw;
-	height:3vw;
-	border:1px solid black;
+	margin-left:10vw;
+	width:7vw;
+	height:4.5vw;
+	border:1px solid #a9ebe7;
+	border-radius:10%;
+	background-color:#a9ebe7;
 	position:absolute;
 }
 
 #P-value{
+	margin-top:0.5vw;
+	margin-left:20vw;
 	position:absolute;
-	font-size:2vw;
-	margin-left:15vw;
+	font-size:6vw;
+
 }
 
 #Prand{
 	margin-top:0vw;
 	position:absolute;
-	font-size:2.5vw;
+	font-size:4vw;
 }
 
 #divalue{
 	margin-top:1.5vw;
-	margin-left:20vw;
+	margin-left:25vw;
 	width:7vw;
-	height:3vw;
-	border:1px solid black;
+	height:4.5vw;
+	border:1px solid #a9ebe7;
+	border-radius:10%;
+	background-color:#a9ebe7;
 	position:absolute;
 }
 
 #plus{
 	margin-top:1vw;
-	margin-left:29vw;
-	width:4vw;
-	height:4vw;
+	margin-left:35vw;
+	width:6vw;
+	height:6vw;
 	position:absolute;
 	display:block;
 	cursor: pointer;
@@ -863,9 +871,9 @@ body{
 
 #minus{
 	margin-top:1vw;
-	margin-left:35vw;
-	width:4vw;
-	height:4vw;
+	margin-left:42vw;
+	width:6vw;
+	height:6vw;
 	position:absolute;
 	display:none;
 	cursor: pointer;
@@ -883,74 +891,78 @@ body{
 }
 
 #Ship{
-	margin-top:12vw;
+	margin-top:15vw;
 	text-align:center;
-	font-size:2.5vw;
+	font-size:4vw;
+	font-family:'Megrim', cursive;
 }
 
 #pship{
 	margin-top:0vw;
 	text-align:center;
-	font-size:2vw;
+	font-size:3.5vw;
 	display:none;
+	
 }
 
 #pshipC{
 	margin-top:0vw;
 	text-align:center;
-	font-size:2vw;
+	font-size:3.5vw;
 	display:none;
 }
 
 #PickAra{
 	margin-top:0vw;
-	margin-left:10vw;
+	margin-left:6vw;
 	margin-bottom:2vw;
-	width:7vw;
-	height:4vw;
-	border:1px solid black;
+	width:15vw;
+	height:7vw;
+	border:1px solid #aac2c5;
 	border-radius:20%;
 	background-color:#aac2c5;
 	cursor: pointer;
 }
 #pickara-P{
 	margin-top:0.7vw;
-	font-size:2vw;
+	font-size:4vw;
 	margin-left:0.2vw;
 }
 
 #Pickup{
-	margin-top:-6.3vw;
-	margin-left:23vw;
+	margin-top:-9.4vw;
+	margin-left:30vw;
 	margin-bottom:2vw;
-	width:7vw;
-	height:4vw;
-	border:1px solid black;
+	width:12vw;
+	height:7vw;
+	border:1px solid #aac2c5;
 	border-radius:20%;
 	background-color:#aac2c5;
 	cursor: pointer;
 }
 
 #pickup-P{
-	margin-top:0.7vw;
-	margin-left:0.7vw;
-	font-size:2vw;
+	margin-top:0.9vw;
+	margin-left:0vw;
+	font-size:4vw;
 }
 
 
 #Aramex{
-	position:absolute;
-	font-size:2vw;
+	margin-top:0vw;
 	margin-left:0vw;
-	
+	position:absolute;
+	font-size:4vw;	
 }
 
 #divara{
-	margin-top:1.5vw;
-	margin-left:25vw;
+	margin-top:0vw;
+	margin-left:38vw;
 	width:7vw;
-	height:3vw;
-	border:1px solid black;
+	height:4.5vw;
+	border:1px solid #a9ebe7;
+	border-radius:10%;
+	background-color:#a9ebe7;
 	position:absolute;
 	display:none;
 }
@@ -958,55 +970,58 @@ body{
 #prara{
 	margin-top:0vw;
 	position:absolute;
-	font-size:2.5vw;
+	font-size:4vw;
 }
 
 
 #divaratwo{
-	margin-top:1.5vw;
-	margin-left:25vw;
+	margin-top:0vw;
+	margin-left:38vw;
 	width:7vw;
-	height:3vw;
-	border:1px solid black;
+	height:4.5vw;
+	border:1px solid #a9ebe7;
+	border-radius:10%;
+	background-color:#a9ebe7;
 	position:absolute;
-	display:block;
 }
 
 #praratwo{
 	margin-top:0vw;
 	position:absolute;
-	font-size:2.5vw;
+	font-size:4vw;
 }
 
 #Total_P{
 	margin-top:8vw;
+	margin-left:0vw;
 	position:absolute;
-	font-size:2.5vw;
+	font-size:4vw;
 }
 
 #Total_div{
-	margin-top:7.5vw;
-	margin-left:25vw;
+	margin-top:8vw;
+	margin-left:38vw;
 	width:7vw;
-	height:3vw;
-	border:1px solid black;
+	height:4.5vw;
+	border:1px solid #00c22b;
+	border-radius:10%;
+	background-color:#00c22b;
 	position:absolute;
 }
 
 #TotalInP{
 	margin-top:0vw;
 	position:absolute;
-	font-size:2.5vw;
+	font-size:4vw;
 }
 
 /*How to//////////////////////////////////////////////////*/
 
 #main_frame{
-	margin-top:-60vw;
-	margin-left:52vw;
-	width:40vw;
-	height:60vw;
-	border:1px solid black;
+	margin-top:-80.5vw;
+	margin-left:49.4vw;
+	width:49vw;
+	height:80vw;
 	border-radius:5%;
 	position:absolute;
 	border:1px solid white;
@@ -1023,89 +1038,89 @@ body{
 }
 
 #Head_P{
-	margin-top:0vw;
-	margin-left:10vw;
-	font-size:3vw;
+	margin-top:2vw;
+	margin-left:15vw;
 	position:absolute;	
+	font-size:5vw;
+	font-family:'Megrim', cursive;
 }
 
 #Step_one{
-	margin-top:10vw;
+	margin-top:14vw;
 	margin-left:15vw;
-	font-size:3vw;
+	font-size:5vw;
 	position:absolute;	
 }
 
 #one_P{
-	margin-top:15vw;
+	margin-top:20vw;
 	margin-left:4vw;
-	font-size:2vw;
+	font-size:4vw;
 	position:absolute;	
 }
 
 #email_P{
-	margin-top:20vw;
-	margin-left:4vw;
-	font-size:2vw;
+	margin-top:30vw;
+	margin-left:3.5vw;
+	font-size:3.5vw;
 	position:absolute;	
 }
 
 #Email_img{
 	width:5vw;
 	height:5vw;
-	margin-top:18.5vw;
-	margin-left:25vw;
+	margin-top:36vw;
+	margin-left:10vw;
 	position:absolute;	
 }
 
 #Copy_to_clip{
 	width:4.8vw;
 	height:4.8vw;
-	margin-top:18.5vw;
-	margin-left:32vw;
+	margin-top:36vw;
+	margin-left:25vw;
 	position:absolute;	
 	cursor:pointer;
 }
 
 #number_p{
-	margin-top:26vw;
-	margin-left:15vw;
-	font-size:2.5vw;
+	margin-top:42vw;
+	margin-left:11vw;
+	font-size:4vw;
 	position:absolute;
 }
 
 #Copy_to_clip_number{
 	width:4.8vw;
 	height:4.8vw;
-	margin-top:25vw;
-	margin-left:2vw;
+	margin-top:47vw;
+	margin-left:25vw;
 	position:absolute;	
 	cursor:pointer;
 }
 
 #whatsapp_img{
-	width:4.8vw;
-	height:4.8vw;
-	margin-top:25vw;
-	margin-left:8.5vw;
+	width:6vw;
+	height:6vw;
+	margin-top:46.5vw;
+	margin-left:10vw;
 	position:absolute;	
 	cursor:pointer;
 }
 
 #Step_two{
-	margin-top:33vw;
+	margin-top:52vw;
 	margin-left:15vw;
-	font-size:3vw;
+	font-size:5vw;
 	position:absolute;
 }
 
 #Step_two_P{
-	margin-top:38vw;
-	margin-left:3.5vw;
-	font-size:2vw;
+	margin-top:58vw;
+	margin-left:3vw;
+	font-size:3vw;
 	position:absolute;
 }
-
 
 
 
