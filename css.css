@@ -36,6 +36,18 @@ body{
 	overflow-y: scroll;
 }
 
+#whatsapp_pin{
+	
+	margin-top:13vw;
+	margin-left:86.5vw;
+	width:10vw;
+	height:10vw;
+	position:fixed;
+	z-index:10;
+	cursor:pointer;
+	
+}
+
 #drop{
 	width:10vw;
 	height:10vw;
@@ -798,6 +810,7 @@ body{
 }
 
 #H-one{
+
 	font-size:5vw;
 	text-align:center;
 	font-family:'Megrim', cursive;
@@ -811,6 +824,12 @@ body{
 }
 
 #Pquan{
+	margin-top:0vw;
+	position:absolute;
+	font-size:4vw;
+}
+
+#HoneyPquan{
 	margin-top:0vw;
 	position:absolute;
 	font-size:4vw;
@@ -1125,31 +1144,153 @@ body{
 	position:absolute;
 }
 
+/*Under Construction//////////////////////////////////////////////////*/
+
+#maincon{
+	margin-top:0;
+	margin-left:0vw;
+	width:49vw;
+	height:90vw;
+	border:1px solid white;
+	border-radius:5%;
+	background-color:white;
+	opacity:0.7;
+}
+
+#H-one_con{
+	font-size:5vw;
+	text-align:center;
+	font-family:'Megrim', cursive;
+}
+
+#unercon{
+	font-size:5vw;
+	text-align:center;
+	font-family:'Megrim', cursive;
+}
+
+#mainani{
+    width:30vw;
+    height:30vw;
+    margin-top:15vw;
+    margin-left:15vw;
+    
+}
+
+#oneani{
+    width:5vw;
+    height:5vw;
+    margin-top:7vw;
+    margin-left:1vw;
+    position:absolute;
+    animation: move1 2s infinite;
+    z-index:2;
+    transition:all 1s ease;
+    transform:rotate(0deg);
+}
+
+#inoneani{
+    width:2.5vw;
+    height:2.5vw;
+    border:1px solid black;
+    position:absolute;
+    animation: move4 2s infinite;
+    transition:all 1s ease;
+    background-color:black;
+    border-radius:10%;
+}
+
+@keyframes move4 {
+    from{margin-lef: 0vw; }
+    30%{margin-top:0.5vw;  margin-left: -1vw;}    
+    to{margin-top: 0vw;}
+}
+
+#intwoani{
+    width:2.5vw;
+    height:2.5vw;
+    border:1px solid black;
+    margin-left:2.5vw;
+    position:absolute;
+    animation: move5 2s infinite;
+    transition:all 1s ease;
+    background-color:black;    
+    border-radius:10%;
+}
+
+@keyframes move5 {
+    from{margin-lef: 0vw; }
+    30%{margin-bottom: 5vw; margin-left: 3.5vw;}    
+    to{margin-left: 2.5vw; }
+}
+
+#inthreeani{
+    width:2.5vw;
+    height:2.5vw;
+    border:1px solid black;
+    margin-top:2.5vw;
+    margin-left:2.5vw;
+    position:absolute;
+    animation: move6 2s infinite;
+    transition:all 1s ease;
+    background-color:black;    
+    border-radius:10%;
+}
+
+@keyframes move6 {
+    from{margin-lef: 0vw; }
+    30%{margin-top: 5vw; margin-left: 5vw;}    
+    to{margin-left: 2.5vw; }
+}
+
+#infourani{
+    width:2.5vw;
+    height:2.5vw;
+    border:1px solid black;
+    margin-top:2.5vw;
+    position:absolute;
+    background-color:black;   
+    border-radius:10%;
+}
+
+@keyframes move1 {
+    from{margin-lef: 1vw; }
+    0%{transform:rotate(-180deg);}
+    40%{margin-top: -2vw;}
+    to{margin-left: 13vw; }
+}
 
 
+#twoani{
+    width:5vw;
+    height:5vw;
+    margin-top:7vw;
+    margin-left:7vw;
+    position:absolute;
+    animation: move2 2s infinite;
+    background-color:black;
+    border-radius:10%;
+    
+}
 
+@keyframes move2 {
+    from{margin-lef: 7vw; }
+    to{margin-left: 1vw; }
+}
 
+#threeani{
+    width:5vw;
+    height:5vw;
+    margin-top:7vw;
+    margin-left:13vw;
+    position:absolute;
+    animation: move3 2s infinite;
+    background-color:black;    
+    border-radius:10%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@keyframes move3 {
+    from{margin-lef: 13vw; }
+    to{margin-left: 7vw; }
+}
 
