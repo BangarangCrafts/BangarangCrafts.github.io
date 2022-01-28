@@ -109,7 +109,7 @@ body{
 #vid{
 	width:60vw;
 	height:60vw;
-	margin-top:-10vw;;
+	margin-top:-10vw;
 	margin-left:19vw;
 }
 
@@ -247,7 +247,7 @@ body{
 
 #AM{
 	font-size:300%;
-	margin-top:10vw;
+	margin-top:60vw;
 	text-align:center;
 	font-family: 'Megrim', cursive;
 	
@@ -342,6 +342,73 @@ body{
 	margin-left:0vw;
 	font-family:'Megrim', cursive;
 	text-align:center;
+}
+
+#HowToMould{
+	font-size:300%;
+	margin-top:35vw;
+	margin-left:0vw;
+	font-family:'Megrim', cursive;
+	text-align:center;
+}
+
+#youtube{
+	margin-top:0vw;
+	margin-left:2vw;
+	border:1px solid black;
+	border-radius:10%;
+	width:45vw;
+	height:45vw;
+	background-color:white;
+	opacity:0.5;
+	position:absolute;
+	text-decoration:none;
+}
+
+#Downloadpdf{
+	margin-top:0vw;
+	margin-left:50vw;
+	border:1px solid black;
+	border-radius:10%;
+	width:45vw;
+	height:45vw;
+	background-color:white;
+	opacity:0.5;
+	position:absolute;
+	text-decoration:none;
+}
+
+#Download_pdf{
+	text-align:center;
+	font-size:5vw;
+}
+
+#Download_pdf_img{
+	margin-top:-1.5vw;
+	margin-left:12.5vw;
+	width:20vw;
+	height:20vw;
+	position:absolute;
+}
+
+#Watchyou{
+	text-align:center;
+	font-size:5vw;
+}
+
+#youimg{
+	margin-top:0;
+	margin-left:7vw;
+	width:30vw;
+	height:10vw;
+}
+
+#VidHowToo{
+	margin-top:-20vw;
+	margin-left:0.5vw;
+	width:95vw;
+	height:95vw;
+	position:absolute;
 }
 
 #pdfDownloadone{
@@ -561,6 +628,16 @@ body{
 	width:8vw;
 	height:8vw;
 	border-radius:100%;
+	margin-top:vw;
+	margin-left:3vw;
+	position:;
+	cursor:pointer;
+}
+
+#youlogo{
+	width:16vw;
+	height:8vw;
+	border-radius:50%;
 	margin-top:vw;
 	margin-left:3vw;
 	position:;
@@ -1293,4 +1370,3 @@ body{
     from{margin-lef: 13vw; }
     to{margin-left: 7vw; }
 }
-
