@@ -43,6 +43,15 @@ function MoreItems(){
 		icondown.style.display = "block";
 };
 
+function howto(){
+	var elmnt = document.getElementById("HowToMould");
+	var icondown = document.getElementById("drop");
+	elmnt.scrollIntoView();
+	var disdropdown = document.getElementById("dropdown");
+		disdropdown.style.display = "none";
+		icondown.style.display = "block";
+};
+
 function WhereandWhen(){
 	var elmnt = document.getElementById("WW");
 	var icondown = document.getElementById("drop");
@@ -64,6 +73,7 @@ function Contact(){
 /*Stock Info//////////////////////////////////////////////////////////////////////*/
 /*pots//////////////////////////////////////////////////////////////////////*/
 function hexpot(){
+	/*HoneyCombClick()*/
 	var elmnt = document.getElementById("IS");
 	var Pickplus = document.getElementById("pot");
 	var hexpick = document.getElementById("hexpick");
