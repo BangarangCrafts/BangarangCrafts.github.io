@@ -83,12 +83,16 @@ function hexpot(){
 	var hexdiv = document.getElementById("hexdiv");
 	var roundpick = document.getElementById("roundpick")
 	var roundiv = document.getElementById("roundiv")
+	var pollypot = document.getElementById("PollyPick");
+	var pollypotdiv = document.getElementById("Pollydiv");
 	var roundmouldpick = document.getElementById("roundmouldpick")
 	var roundmouldiv = document.getElementById("roundmouldiv")
 	var roundmouldtwopick = document.getElementById("roundmoultwodpick")
 	var roundmoultwodiv = document.getElementById("roundmoultwodiv")
 	var recmoulpick = document.getElementById("recmouldpick")
 	var recmouldiv = document.getElementById("recmouldiv")
+	var pollymoulpick = document.getElementById("PollyMouldpick")
+	var pollymouldiv = document.getElementById("PollyMouldiv")
 	elmnt.scrollIntoView();
 	Pickplus.style.display = "none";
 	hexpick.style.display = "block";
@@ -98,6 +102,8 @@ function hexpot(){
 	roundiv.style.display = "none";
 	recpot.style.display = "none";
 	recdiv.style.display = "none";
+	pollypot.style.display = "none";
+	pollypotdiv.style.display = "none";
 	hexmouldpick.style.display = "none";
 	hexmouldiv.style.display = "none";
 	roundmouldpick.style.display = "none";
@@ -106,6 +112,8 @@ function hexpot(){
 	roundmoultwodiv.style.display = "none";
 	recmouldiv.style.display = "none";
 	recmoulpick.style.display = "none";
+	pollymouldiv.style.display = "none";
+	pollymoulpick.style.display = "none";
 };
 
 function potIS(){
@@ -118,12 +126,16 @@ function potIS(){
 	var hexdiv = document.getElementById("hexdiv");
 	var roundpick = document.getElementById("roundpick")
 	var roundiv = document.getElementById("roundiv")
+	var pollypot = document.getElementById("PollyPick");
+	var pollypotdiv = document.getElementById("Pollydiv");
 	var roundmouldpick = document.getElementById("roundmouldpick")
 	var roundmouldiv = document.getElementById("roundmouldiv")
 	var roundmouldtwopick = document.getElementById("roundmoultwodpick")
 	var roundmoultwodiv = document.getElementById("roundmoultwodiv")
 	var recmoulpick = document.getElementById("recmouldpick")
 	var recmouldiv = document.getElementById("recmouldiv")
+	var pollymoulpick = document.getElementById("PollyMouldpick")
+	var pollymouldiv = document.getElementById("PollyMouldiv")
 	elmnt.scrollIntoView();
 	Pickplus.style.display = "block";
 	hexpick.style.display = "none";
@@ -133,6 +145,8 @@ function potIS(){
 	roundiv.style.display = "none";
 	recpot.style.display = "none";
 	recdiv.style.display = "none";
+	pollypot.style.display = "none";
+	pollypotdiv.style.display = "none";
 	hexmouldpick.style.display = "none";
 	hexmouldiv.style.display = "none";
 	roundmouldpick.style.display = "none";
@@ -141,6 +155,8 @@ function potIS(){
 	roundmoultwodiv.style.display = "none";
 	recmouldiv.style.display = "none";
 	recmoulpick.style.display = "none";
+	pollymouldiv.style.display = "none";
+	pollymoulpick.style.display = "none";
 };
 
 function roundpot(){
@@ -153,12 +169,16 @@ function roundpot(){
 	var hexdiv = document.getElementById("hexdiv");
 	var roundpick = document.getElementById("roundpick")
 	var roundiv = document.getElementById("roundiv")
+	var pollypot = document.getElementById("PollyPick");
+	var pollypotdiv = document.getElementById("Pollydiv");
 	var roundmouldpick = document.getElementById("roundmouldpick")
 	var roundmouldiv = document.getElementById("roundmouldiv")
 	var roundmouldtwopick = document.getElementById("roundmoultwodpick")
 	var roundmoultwodiv = document.getElementById("roundmoultwodiv")
 	var recmoulpick = document.getElementById("recmouldpick")
 	var recmouldiv = document.getElementById("recmouldiv")
+	var pollymoulpick = document.getElementById("PollyMouldpick")
+	var pollymouldiv = document.getElementById("PollyMouldiv")
 	elmnt.scrollIntoView();
 	Pickplus.style.display = "none";
 	hexpick.style.display = "none";
@@ -168,6 +188,8 @@ function roundpot(){
 	roundiv.style.display = "block";
 	recpot.style.display = "none";
 	recdiv.style.display = "none";
+	pollypot.style.display = "none";
+	pollypotdiv.style.display = "none";
 	hexmouldpick.style.display = "none";
 	hexmouldiv.style.display = "none";
 	roundmouldpick.style.display = "none";
@@ -176,6 +198,8 @@ function roundpot(){
 	roundmoultwodiv.style.display = "none";
 	recmouldiv.style.display = "none";
 	recmoulpick.style.display = "none";
+	pollymouldiv.style.display = "none";
+	pollymoulpick.style.display = "none";
 };
 
 function recpot(){
@@ -188,12 +212,16 @@ function recpot(){
 	var hexdiv = document.getElementById("hexdiv");
 	var roundpick = document.getElementById("roundpick")
 	var roundiv = document.getElementById("roundiv")
+	var pollypot = document.getElementById("PollyPick");
+	var pollypotdiv = document.getElementById("Pollydiv");
 	var roundmouldpick = document.getElementById("roundmouldpick")
 	var roundmouldiv = document.getElementById("roundmouldiv")
 	var roundmouldtwopick = document.getElementById("roundmoultwodpick")
 	var roundmoultwodiv = document.getElementById("roundmoultwodiv")
 	var recmoulpick = document.getElementById("recmouldpick")
 	var recmouldiv = document.getElementById("recmouldiv")
+	var pollymoulpick = document.getElementById("PollyMouldpick")
+	var pollymouldiv = document.getElementById("PollyMouldiv")
 	elmnt.scrollIntoView();
 	Pickplus.style.display = "none";
 	hexpick.style.display = "none";
@@ -203,6 +231,8 @@ function recpot(){
 	roundiv.style.display = "none";
 	recpot.style.display = "block";
 	recdiv.style.display = "block";
+	pollypot.style.display = "none";
+	pollypotdiv.style.display = "none";
 	hexmouldpick.style.display = "none";
 	hexmouldiv.style.display = "none";
 	roundmouldpick.style.display = "none";
@@ -211,7 +241,51 @@ function recpot(){
 	roundmoultwodiv.style.display = "none";
 	recmouldiv.style.display = "none";
 	recmoulpick.style.display = "none";
-	
+	pollymouldiv.style.display = "none";
+	pollymoulpick.style.display = "none";
+};
+
+function Pollypot(){
+	var elmnt = document.getElementById("IS");
+	var Pickplus = document.getElementById("pot");
+	var hexpick = document.getElementById("hexpick");
+	var recpot = document.getElementById("recpick");
+	var recpotdiv = document.getElementById("recdiv");
+	var PotDiv = document.getElementById("potdiv");
+	var hexdiv = document.getElementById("hexdiv");
+	var roundpick = document.getElementById("roundpick")
+	var roundiv = document.getElementById("roundiv")
+	var pollypot = document.getElementById("PollyPick");
+	var pollypotdiv = document.getElementById("Pollydiv");
+	var roundmouldpick = document.getElementById("roundmouldpick")
+	var roundmouldiv = document.getElementById("roundmouldiv")
+	var roundmouldtwopick = document.getElementById("roundmoultwodpick")
+	var roundmoultwodiv = document.getElementById("roundmoultwodiv")
+	var recmoulpick = document.getElementById("recmouldpick")
+	var recmouldiv = document.getElementById("recmouldiv")
+	var pollymoulpick = document.getElementById("PollyMouldpick")
+	var pollymouldiv = document.getElementById("PollyMouldiv")
+	elmnt.scrollIntoView();
+	Pickplus.style.display = "none";
+	hexpick.style.display = "none";
+	PotDiv.style.display = "none";
+	hexdiv.style.display = "none";
+	roundpick.style.display = "none";
+	roundiv.style.display = "none";
+	recpot.style.display = "none";
+	recdiv.style.display = "none";
+	pollypot.style.display = "block";
+	pollypotdiv.style.display = "block";
+	hexmouldpick.style.display = "none";
+	hexmouldiv.style.display = "none";
+	roundmouldpick.style.display = "none";
+	roundmouldiv.style.display = "none";
+	roundmouldtwopick.style.display = "none";
+	roundmoultwodiv.style.display = "none";
+	recmouldiv.style.display = "none";
+	recmoulpick.style.display = "none";
+	pollymouldiv.style.display = "none";
+	pollymoulpick.style.display = "none";
 };
 
 /*Stock Info//////////////////////////////////////////////////////////////////////*/
@@ -227,6 +301,8 @@ function hexmould(){
 	var hexdiv = document.getElementById("hexdiv");
 	var roundpick = document.getElementById("roundpick")
 	var roundiv = document.getElementById("roundiv")
+	var pollypot = document.getElementById("PollyPick");
+	var pollypotdiv = document.getElementById("Pollydiv");
 	var hexmouldpick = document.getElementById("hexmouldpick")
 	var hexmouldiv = document.getElementById("hexmouldiv")
 	var roundmouldpick = document.getElementById("roundmouldpick")
@@ -235,6 +311,8 @@ function hexmould(){
 	var roundmoultwodiv = document.getElementById("roundmoultwodiv")
 	var recmoulpick = document.getElementById("recmouldpick")
 	var recmouldiv = document.getElementById("recmouldiv")
+	var pollymoulpick = document.getElementById("PollyMouldpick")
+	var pollymouldiv = document.getElementById("PollyMouldiv")
 	elmnt.scrollIntoView();
 	Pickplus.style.display = "none";
 	hexpick.style.display = "none";
@@ -244,6 +322,8 @@ function hexmould(){
 	roundiv.style.display = "none";
 	recpot.style.display = "none";
 	recdiv.style.display = "none";
+	pollypot.style.display = "none";
+	pollypotdiv.style.display = "none";
 	hexmouldpick.style.display = "block";
 	hexmouldiv.style.display = "block";
 	roundmouldpick.style.display = "none";
@@ -252,6 +332,8 @@ function hexmould(){
 	roundmoultwodiv.style.display = "none";
 	recmouldiv.style.display = "none";
 	recmoulpick.style.display = "none";
+	pollymouldiv.style.display = "none";
+	pollymoulpick.style.display = "none";
 };
 
 function roundmould(){
@@ -264,6 +346,8 @@ function roundmould(){
 	var hexdiv = document.getElementById("hexdiv");
 	var roundpick = document.getElementById("roundpick")
 	var roundiv = document.getElementById("roundiv")
+	var pollypot = document.getElementById("PollyPick");
+	var pollypotdiv = document.getElementById("Pollydiv");
 	var hexmouldpick = document.getElementById("hexmouldpick")
 	var hexmouldiv = document.getElementById("hexmouldiv")
 	var roundmouldpick = document.getElementById("roundmouldpick")
@@ -272,6 +356,8 @@ function roundmould(){
 	var roundmoultwodiv = document.getElementById("roundmoultwodiv")
 	var recmoulpick = document.getElementById("recmouldpick")
 	var recmouldiv = document.getElementById("recmouldiv")
+	var pollymoulpick = document.getElementById("PollyMouldpick")
+	var pollymouldiv = document.getElementById("PollyMouldiv")
 	elmnt.scrollIntoView();
 	Pickplus.style.display = "none";
 	hexpick.style.display = "none";
@@ -281,6 +367,8 @@ function roundmould(){
 	roundiv.style.display = "none";
 	recpot.style.display = "none";
 	recdiv.style.display = "none";
+	pollypot.style.display = "none";
+	pollypotdiv.style.display = "none";
 	hexmouldpick.style.display = "none";
 	hexmouldiv.style.display = "none";
 	roundmouldpick.style.display = "block";
@@ -289,7 +377,8 @@ function roundmould(){
 	roundmoultwodiv.style.display = "none";
 	recmouldiv.style.display = "none";
 	recmoulpick.style.display = "none";
-	
+	pollymouldiv.style.display = "none";
+	pollymoulpick.style.display = "none";
 };
 
 function roundmouldtwo(){
@@ -302,6 +391,8 @@ function roundmouldtwo(){
 	var hexdiv = document.getElementById("hexdiv");
 	var roundpick = document.getElementById("roundpick")
 	var roundiv = document.getElementById("roundiv")
+	var pollypot = document.getElementById("PollyPick");
+	var pollypotdiv = document.getElementById("Pollydiv");
 	var hexmouldpick = document.getElementById("hexmouldpick")
 	var hexmouldiv = document.getElementById("hexmouldiv")
 	var roundmouldpick = document.getElementById("roundmouldpick")
@@ -310,6 +401,8 @@ function roundmouldtwo(){
 	var roundmoultwodiv = document.getElementById("roundmoultwodiv")
 	var recmoulpick = document.getElementById("recmouldpick")
 	var recmouldiv = document.getElementById("recmouldiv")
+	var pollymoulpick = document.getElementById("PollyMouldpick")
+	var pollymouldiv = document.getElementById("PollyMouldiv")
 	elmnt.scrollIntoView();
 	Pickplus.style.display = "none";
 	hexpick.style.display = "none";
@@ -319,6 +412,8 @@ function roundmouldtwo(){
 	roundiv.style.display = "none";
 	recpot.style.display = "none";
 	recdiv.style.display = "none";
+	pollypot.style.display = "none";
+	pollypotdiv.style.display = "none";
 	hexmouldpick.style.display = "none";
 	hexmouldiv.style.display = "none";
 	roundmouldpick.style.display = "none";
@@ -327,7 +422,8 @@ function roundmouldtwo(){
 	roundmoultwodiv.style.display = "block";
 	recmouldiv.style.display = "none";
 	recmoulpick.style.display = "none";
-	
+	pollymouldiv.style.display = "none";
+	pollymoulpick.style.display = "none";
 };
 
 function recmould(){
@@ -340,6 +436,8 @@ function recmould(){
 	var hexdiv = document.getElementById("hexdiv");
 	var roundpick = document.getElementById("roundpick")
 	var roundiv = document.getElementById("roundiv")
+	var pollypot = document.getElementById("PollyPick");
+	var pollypotdiv = document.getElementById("Pollydiv");
 	var hexmouldpick = document.getElementById("hexmouldpick")
 	var hexmouldiv = document.getElementById("hexmouldiv")
 	var roundmouldpick = document.getElementById("roundmouldpick")
@@ -348,6 +446,8 @@ function recmould(){
 	var roundmoultwodiv = document.getElementById("roundmoultwodiv")
 	var recmoulpick = document.getElementById("recmouldpick")
 	var recmouldiv = document.getElementById("recmouldiv")
+	var pollymoulpick = document.getElementById("PollyMouldpick")
+	var pollymouldiv = document.getElementById("PollyMouldiv")
 	elmnt.scrollIntoView();
 	Pickplus.style.display = "none";
 	hexpick.style.display = "none";
@@ -357,6 +457,8 @@ function recmould(){
 	roundiv.style.display = "none";
 	recpot.style.display = "none";
 	recdiv.style.display = "none";
+	pollypot.style.display = "none";
+	pollypotdiv.style.display = "none";
 	hexmouldpick.style.display = "none";
 	hexmouldiv.style.display = "none";
 	roundmouldpick.style.display = "none";
@@ -365,5 +467,53 @@ function recmould(){
 	roundmoultwodiv.style.display = "none";
 	recmouldiv.style.display = "block";
 	recmoulpick.style.display = "block";
+	pollymouldiv.style.display = "none";
+	pollymoulpick.style.display = "none";
+	
+};
+
+function Pollymould(){
+	var elmnt = document.getElementById("IS");
+	var Pickplus = document.getElementById("pot");
+	var hexpick = document.getElementById("hexpick");
+	var recpot = document.getElementById("recpick");
+	var recpotdiv = document.getElementById("recdiv");
+	var PotDiv = document.getElementById("potdiv");
+	var hexdiv = document.getElementById("hexdiv");
+	var roundpick = document.getElementById("roundpick")
+	var roundiv = document.getElementById("roundiv")
+	var pollypot = document.getElementById("PollyPick");
+	var pollypotdiv = document.getElementById("Pollydiv");
+	var hexmouldpick = document.getElementById("hexmouldpick")
+	var hexmouldiv = document.getElementById("hexmouldiv")
+	var roundmouldpick = document.getElementById("roundmouldpick")
+	var roundmouldiv = document.getElementById("roundmouldiv")
+	var roundmouldtwopick = document.getElementById("roundmoultwodpick")
+	var roundmoultwodiv = document.getElementById("roundmoultwodiv")
+	var recmoulpick = document.getElementById("recmouldpick")
+	var recmouldiv = document.getElementById("recmouldiv")
+	var pollymoulpick = document.getElementById("PollyMouldpick")
+	var pollymouldiv = document.getElementById("PollyMouldiv")
+	elmnt.scrollIntoView();
+	Pickplus.style.display = "none";
+	hexpick.style.display = "none";
+	PotDiv.style.display = "none";
+	hexdiv.style.display = "none";
+	roundpick.style.display = "none";
+	roundiv.style.display = "none";
+	recpot.style.display = "none";
+	recdiv.style.display = "none";
+	pollypot.style.display = "none";
+	pollypotdiv.style.display = "none";
+	hexmouldpick.style.display = "none";
+	hexmouldiv.style.display = "none";
+	roundmouldpick.style.display = "none";
+	roundmouldiv.style.display = "none";
+	roundmouldtwopick.style.display = "none";
+	roundmoultwodiv.style.display = "none";
+	recmouldiv.style.display = "none";
+	recmoulpick.style.display = "none";
+	pollymouldiv.style.display = "block";
+	pollymoulpick.style.display = "block";
 	
 };
