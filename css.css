@@ -315,9 +315,9 @@ body{
 }
 
 #CCI{
-	position:absolute;
 	margin-top:-10vw;
-
+	position:absolute;
+	width:99vw;
 }
 
 #MI{
@@ -347,10 +347,10 @@ body{
 
 #roundMI{
 	margin-top:8vw;
-	margin-left:4vw;
+	margin-left:28vw;
 	width:20vw;
 	height:25vw;
-	position:;
+	position:absolute;
 }
 
 #recMI{
@@ -362,17 +362,17 @@ body{
 }
 
 #PollyMI{
-	margin-top:5vw;
-	margin-left:2vw;
+	margin-top:38vw;
+	margin-left:-45vw;
 	width:20vw;
 	height:25vw;
 	position:absolute;
 }
 
 #Printed{
-	margin-top:0vw;
+	margin-top:-8vw;
+	width:99vw;
 	position:absolute;
-	margin-top:-8vh;
 }
 
 #printP{
@@ -495,8 +495,8 @@ body{
 }
 
 #pollymould{
-	margin-top:5vw;
-	margin-left:2vw;
+	margin-top:35vw;
+	margin-left:-69.5vw;
 	width:20vw;
 	height:25vw;
 	position:absolute;
