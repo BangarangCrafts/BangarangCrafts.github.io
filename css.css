@@ -170,30 +170,41 @@ body{
 	margin-top:15vh;
 	Display:block;
 	position:;
+	text-align:center;
+	background-color:white;
+	opacity:0.7;
 }
 
 #hexdiv{
 	margin-top:15vh;
 	Display:none;
 	position:;
+	background-color:white;
+	opacity:0.7;
 }
 
 #roundiv{
 	margin-top:15vh;
 	Display:none;
 	position:;
+	background-color:white;
+	opacity:0.7;
 }
 
 #recdiv{
 	margin-top:15vh;
 	Display:none;
 	position:;
+	background-color:white;
+	opacity:0.7;
 }
 
 #Pollydiv{
 	margin-top:15vh;
 	Display:none;
 	position:;
+	background-color:white;
+	opacity:0.7;
 }
 
 #hexmouldpick{
@@ -209,6 +220,8 @@ body{
 	margin-top:15vh;
 	Display:none;
 	position:;
+	background-color:white;
+	opacity:0.7;
 }
 
 #recmouldpick{
@@ -224,6 +237,8 @@ body{
 	margin-top:15vh;
 	Display:none;
 	position:;
+	background-color:white;
+	opacity:0.7;
 }
 
 #PollyMouldpick{
@@ -239,6 +254,8 @@ body{
 	margin-top:15vh;
 	Display:none;
 	position:;
+	background-color:white;
+	opacity:0.7;
 }
 
 
@@ -272,8 +289,65 @@ body{
 	font-size:150%;
 	margin-left:;
 	text-align:center;
-	background-color:white;
-	opacity:0.5;
+}
+
+#Q_BUT_A{
+text-decoration:none;
+}
+
+#quote_button_W{
+	margin-top:0vw;
+	margin-left:28vw;
+	width:41vw;
+	height:10vw;
+	border:3px solid black;
+	border-radius:20%;
+	background-color:#25D366;
+	font-size:6vw;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	text-decoration:none;
+	text-decoration:none;
+}
+
+#quote_button_E{
+	margin-top:2.5vw;
+	margin-left:28vw;
+	width:41vw;
+	height:10vw;
+	border:3px solid black;
+	border-radius:20%;
+	font-size:3.2vw;	
+	background-color:#25cdd3;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#quote_button_C{
+	margin-top:2.5vw;
+	margin-left:28vw;
+	width:41vw;
+	height:10vw;
+	border:3px solid black;
+	border-radius:20%;
+	font-size:3.2vw;
+	text-align:center;
+	background-color:;	
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	cursor:pointer;
+}
+
+#W_Button_P{
+	margin-top:1.5vw;
+	text-align:center;
+
+}
+
+#E_Button_P{
+	margin-top:3vw;
+	text-align:center;
+}
+
+#Button_P{
+	text-align:center;
 }
 
 #AM{
@@ -394,12 +468,12 @@ body{
 #youtube{
 	margin-top:0vw;
 	margin-left:2vw;
-	border:1px solid black;
+	border:3px solid black;
 	border-radius:10%;
 	width:45vw;
 	height:45vw;
 	background-color:white;
-	opacity:0.5;
+	opacity:0.6;
 	position:absolute;
 	text-decoration:none;
 }
@@ -407,12 +481,12 @@ body{
 #Downloadpdf{
 	margin-top:0vw;
 	margin-left:50vw;
-	border:1px solid black;
+	border:3px solid black;
 	border-radius:10%;
 	width:45vw;
 	height:45vw;
 	background-color:white;
-	opacity:0.5;
+	opacity:0.6;
 	position:absolute;
 	text-decoration:none;
 }
@@ -506,6 +580,9 @@ body{
 	margin-top:15vh;
 	Display:none;
 	position:;
+	background-color:white;
+	opacity:0.7;
+	
 }
 
 #roundmouldtwo{
@@ -529,6 +606,8 @@ body{
 	margin-top:15vh;
 	Display:none;
 	position:;
+	background-color:white;
+	opacity:0.7;
 }
 
 #aboutdiv{
