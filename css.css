@@ -344,6 +344,8 @@ text-decoration:none;
 #E_Button_P{
 	margin-top:3vw;
 	text-align:center;
+	overflow:hidden;
+	text-overflow:clip;
 }
 
 #Button_P{
