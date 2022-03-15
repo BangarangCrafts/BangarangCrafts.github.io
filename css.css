@@ -19,8 +19,6 @@ body{
 	position:fixed;	
 }
 
-
-
 #dropdown{
 
 	position:fixed;
@@ -107,10 +105,10 @@ body{
 }
 
 #vid{
-	width:60vw;
+	width:96vw;
 	height:60vw;
-	margin-top:-10vw;
-	margin-left:19vw;
+	margin-top:0vw;
+	margin-left:0vw;
 }
 
 #II{
@@ -951,6 +949,8 @@ text-decoration:none;
 	z-index:0;
 }
 
+/*Carousel2///////////////////////////////////////////////////*/
+
 #controle{
 	width:35vw;
 	height:4vw;
@@ -999,3 +999,259 @@ text-decoration:none;
 	cursor:pointer;
 	display:none;
 }
+
+#Carouseltwo{
+	/*border:1px solid #607d8b;*/
+	width:68.2vw;
+	height:35vw;
+	margin-top:0;
+	margin-left:15vw;
+	display:block;
+	transition: 1s ease;
+	z-index:;
+}
+
+#exit{
+	height:3vw;
+	width:3vw;
+	margin-left:64vw;
+	/*border:1px solid black;*/
+	cursor:pointer;
+	border-radius:100%;
+	position:absolute;
+	z-index:4;
+}
+
+#x1{
+	width:0.5vw;
+	height:2.5vw;
+	margin-left:1.6vw;
+	margin-top:-0.1vw;
+	background-color:black;
+	transform:rotate(45deg);
+	position:absolute;
+	z-index:4;
+}
+
+#x2{
+	width:0.5vw;
+	height:2.5vw;
+	margin-left:1.6vw;
+	background-color:black;
+	transform:rotate(-45deg);
+	position:absolute;
+	z-index:4;
+}
+
+#javascript{
+	border:1px solid black;
+	width:48vw;
+	height:33vw;
+	position:absolute;
+	transition: 1s ease;
+	margin-top:0vw;
+	margin-left:10vw;
+	z-index:3;
+
+}
+
+#jquery{
+	border:1px solid black;
+	width:26vw;
+	height:18vw;
+	position:absolute;
+	transition: 1s ease;
+	margin-top:7vw;
+	margin-left:39vw;
+	z-index:2;
+}
+
+#php{
+	border:1px solid black;
+	width:16vw;
+	height:12vw;
+	position:absolute;
+	transition: 1s ease;
+	margin-top:10vw;
+	margin-left:52vw;
+	z-index:1;
+}
+
+#sql{
+	border:1px solid black;
+	width:16vw;
+	height:12vw;
+	position:absolute;
+	transition: 1s ease;
+	margin-top:10vw;
+	margin-left:52vw;
+	z-index:0;
+}
+
+#controle{
+	width:35vw;
+	height:4vw;
+	margin-top:29vw;
+	margin-left:18vw;
+	position:absolute;
+	/*background-color:#607d8b;*/
+	border-radius:20%;
+	z-index:3;
+}
+
+#left{
+	font-size:300%;
+	position:absolute;
+	margin-left:4vw;
+	margin-top:-1.2vw;
+	cursor:pointer;
+	display:block;
+
+}
+
+#right{
+	font-size:300%;
+	position:absolute;
+	margin-left:26vw;
+	margin-top:-1.2vw;
+	cursor:pointer;
+	display:block;	
+}
+#leftGrey{
+	font-size:300%;
+	color:grey;
+	position:absolute;
+	margin-left:4vw;
+	margin-top:-1.2vw;
+	cursor:pointer;
+	display:none;
+}
+
+#rightGrey{
+	font-size:300%;
+	color:grey;
+	position:absolute;
+	margin-left:26vw;
+	margin-top:-1.2vw;
+	cursor:pointer;
+	display:none;
+}
+
+/*Carouseltwo//////////////////////////////////////////////*/
+
+#pickone{
+	border:1px solid black;
+	width:16vw;
+	height:12vw;
+	position:absolute;
+	transition: 1s ease;
+	margin-top:10vw;
+	margin-left:0vw;
+	z-index:1;
+	
+}
+
+#picktwo{
+	border:1px solid black;
+	width:26vw;
+	height:18vw;
+	position:absolute;
+	transition: 1s ease;
+	margin-top:7vw;
+	margin-left:3vw;
+	z-index:2;
+}
+
+#Pickthree{
+	border:1px solid black;
+	width:48vw;
+	height:33vw;
+	position:absolute;
+	transition: 1s ease;
+	margin-top:0vw;
+	margin-left:10vw;
+	z-index:3;
+}
+
+#Pickfour{
+	border:1px solid black;
+	width:26vw;
+	height:18vw;
+	position:absolute;
+	transition: 1s ease;
+	margin-top:7vw;
+	margin-left:39vw;
+	z-index:2;
+}
+
+#pickfive{
+	border:1px solid black;
+	width:16vw;
+	height:12vw;
+	position:absolute;
+	transition: 1s ease;
+	margin-top:10vw;
+	margin-left:52vw;
+	z-index:1;
+}
+
+#picksix{
+	border:1px solid black;
+	width:16vw;
+	height:12vw;
+	position:absolute;
+	transition: 1s ease;
+	margin-top:10vw;
+	margin-left:52vw;
+	z-index:0;
+}
+
+#controletwo{
+	width:35vw;
+	height:4vw;
+	margin-top:29vw;
+	margin-left:18vw;
+	position:absolute;
+	/*background-color:#607d8b;*/
+	border-radius:20%;
+	z-index:3;
+}
+
+#leftCT{
+	font-size:300%;
+	position:absolute;
+	margin-left:4vw;
+	margin-top:-1.2vw;
+	cursor:pointer;
+	display:block;
+}
+
+#rightCT{
+	font-size:300%;
+	position:absolute;
+	margin-left:26vw;
+	margin-top:-1.2vw;
+	cursor:pointer;
+	display:block;	
+}
+
+#leftCTGrey{
+	font-size:300%;
+	color:grey;
+	position:absolute;
+	margin-left:4vw;
+	margin-top:-1.2vw;
+	cursor:pointer;
+	display:none;
+}
+
+#rightCTGrey{
+	font-size:300%;
+	color:grey;
+	position:absolute;
+	margin-left:26vw;
+	margin-top:-1.2vw;
+	cursor:pointer;
+	display:none;
+}
+
