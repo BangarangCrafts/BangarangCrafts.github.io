@@ -652,6 +652,46 @@ text-decoration:none;
 	text-align:center;	
 }
 
+#Call_BP{
+	width:10vw;
+	height:10vw;
+	border-radius:100%;
+	margin-top:0vw;
+	margin-left:8vw;
+	position:absolute;
+	cursor:pointer;	
+}
+
+#whatsapp_BP{
+	width:10vw;
+	height:10vw;
+	border-radius:100%;
+	margin-top:0vw;
+	margin-left:30vw;
+	position:absolute;
+	cursor:pointer;	
+}
+
+#email_BP{
+	width:10vw;
+	height:10vw;
+	border-radius:100%;
+	margin-top:0vw;
+	margin-left:52vw;
+	position:absolute;
+	cursor:pointer;	
+}
+
+#Copy_BP{
+	width:10vw;
+	height:10vw;
+	border-radius:50%;
+	margin-top:0vw;
+	margin-left:74vw;
+	position:absolute;
+	cursor:pointer;	
+}
+
 #CIone{
 	font-size:150%;
 	text-align:center;
@@ -691,11 +731,10 @@ text-decoration:none;
 }
 
 #Mpick1{
+	margin-top:16vw;
+	margin-left:33vw;
 	width:35vw;
 	height:40vw;`
-	margin-top:0vw;
-	margin-left:33vw;
-
 }
 
 #Mpick2{
