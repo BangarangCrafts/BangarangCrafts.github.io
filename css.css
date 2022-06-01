@@ -34,6 +34,7 @@ body{
 	overflow-y: scroll;
 }
 
+
 #whatsapp_pin{
 	
 	margin-top:13vw;
@@ -162,12 +163,16 @@ body{
 	width:45vw;
 	height:47vw;`
 	position:;
-}#oddpick{	margin-top:0vw;
+}
+
+#oddpick{
+	margin-top:0vw;
 	margin-left:27vw;
 	Display:none;
 	width:45vw;
 	height:47vw;`
-	position:;}
+	position:;
+}
 
 #potdiv{
 	margin-top:15vh;
@@ -208,11 +213,15 @@ body{
 	position:;
 	background-color:white;
 	opacity:0.7;
-}#Odddiv{	margin-top:15vh;
+}
+
+#Odddiv{
+	margin-top:15vh;
 	Display:none;
 	position:;
 	background-color:white;
-	opacity:0.7;}
+	opacity:0.7;
+}
 
 #hexmouldpick{
 	width:45vw;
@@ -264,16 +273,23 @@ body{
 	background-color:white;
 	opacity:0.7;
 }
-#OddMouldpick{	width:45vw;
+
+#OddMouldpick{
+	width:45vw;
 	height:47vw;`
 	margin-top:0vw;
 	margin-left:27vw;
 	Display:none;
-	position:;}#OddMouldiv{	margin-top:15vh;
+	position:;
+}
+
+#OddMouldiv{
+	margin-top:15vh;
 	Display:none;
 	position:;
 	background-color:white;
-	opacity:0.7;}
+	opacity:0.7;
+}
 
 #next{
 	font-size:600%;
@@ -460,11 +476,15 @@ text-decoration:none;
 	height:25vw;
 	position:absolute;
 }
-#OddMI{	margin-top:38vw;
+
+#OddMI{
+	margin-top:38vw;
 	margin-left:-20vw;
 	width:20vw;
 	height:25vw;
-	position:absolute;}
+	position:absolute;
+}
+
 #Printed{
 	margin-top:-8vw;
 	width:99vw;
@@ -596,11 +616,15 @@ text-decoration:none;
 	width:20vw;
 	height:25vw;
 	position:absolute;
-}#oddmould{	margin-top:35vw;
+}
+
+#oddmould{
+	margin-top:35vw;
 	margin-left:-45vw;
 	width:20vw;
 	height:25vw;
-	position:absolute;}
+	position:absolute;
+}
 
 #roundmouldiv{
 	margin-top:15vh;
@@ -706,13 +730,17 @@ text-decoration:none;
 	margin-left:52vw;
 	position:absolute;
 	cursor:pointer;	
-}#Copy_BP{	width:10vw;
+}
+
+#Copy_BP{
+	width:10vw;
 	height:10vw;
 	border-radius:50%;
 	margin-top:0vw;
 	margin-left:74vw;
 	position:absolute;
-	cursor:pointer;	}
+	cursor:pointer;	
+}
 
 #CIone{
 	font-size:150%;
@@ -756,7 +784,8 @@ text-decoration:none;
 	margin-top:16vw;
 	margin-left:32vw;
 	width:35vw;
-	height:40vw;	border-radius:10%;`
+	height:40vw;
+	border-radius:10%;`
 }
 
 #Mpick2{
