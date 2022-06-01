@@ -34,7 +34,6 @@ body{
 	overflow-y: scroll;
 }
 
-
 #whatsapp_pin{
 	
 	margin-top:13vw;
@@ -885,19 +884,21 @@ text-decoration:none;
 
 #luno{
 	margin-top:-47vw;
+	margin-left:-5vw;
 }
 
 #yocop{
 	margin-top:0vw;
-	font-size:130%;
 	margin-left:1vw;
-	text-align:;
+	font-size:130%;
+	color:black;
+	text-align:center;
 	background-color:;
 	opacity:0.8;
 }
 #yocopic{
 	margin-top:3vw;
-	margin-left:1vw;
+	margin-left:5vw;
 	width:35vw;
 	height:20vw;`
 	Display:;
@@ -905,11 +906,17 @@ text-decoration:none;
 }
 #lunop{
 	margin-top:0vw;
+	margin-left:51vw;
 	font-size:130%;
-	margin-left:58vw;
-	text-align:;
+	color:black;
+	text-align:center;
 	background-color:;
 	opacity:0.8;
+;
+}
+
+#a{
+	text-decoration-line:none;
 }
 
 #lunopic{
