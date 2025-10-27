@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangarang Crafts - Handcrafted Quality Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Bangarang Crafts</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#products" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+				<li class="nav-item">
+                    <a href="#home" class="nav-link">Crafters Guild</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+			<img src="BangarangCrafts Logo.png" alt="Bangarang Crafts Logo" class="hero-logo">
+            <p class="hero-subtitle">Handcrafted Quality & Unique Creations</p>
+            <p class="hero-description">At our store, you have options. You can buy products directly at the listed supplier price — quick and easy — or choose to negotiate with us for a custom deal that fits your budget. We believe in fair pricing and open communication, so you always get the best value possible.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">View Products</a>
+                <a href="#services" class="btn btn-primary">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <p class="section-subtitle">Handcrafted with passion and attention to detail</p>
+			
+			<!-- Add this filter section -->
+			<div class="filter-container">
+			<button class="filter-btn active" data-filter="all">All Products</button>
+			<button class="filter-btn" data-filter="tufted">Tufted</button>
+			<button class="filter-btn" data-filter="BPrint">Block Printed</button>
+			<button class="filter-btn" data-filter="CCrafts">Cement Crafts</button>
+			<button class="filter-btn" data-filter="3dPrint">3d-Printed</button>
+			</div>
+            
+            <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card" onclick="openProductModal('product1')" data-category="tufted">
+                <div class="product-image">
+                    <img src="hand-tufted-lightsaber-keyboard-armrest-pad-in-use-Mustafar.png" alt="Hand-Tufted Lightsabre Keyboard Armrest" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Hand-Tufted Lightsabre Keyboard Armrest</h3>
+                    <p class="product-description">Upgrade your desk setup with this hand-tufted red Sith lightsaber armrest pad, the perfect Star Wars-themed ergonomic accessory for fans, gamers, and remote workers alike.</p>
+                    <div class="product-price">R 350.00</div>
+                    <button class="btn btn-outline">View Details</button>
+                </div>
+            </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" onclick="openProductModal('product2')" data-category="tufted">
+                    <div class="product-image">
+                        <img src="naruto_akatsuki_cloud_rug.png" alt="Handcrafted Product 2" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Handmade Tufted Naruto Cloud Akatsuki Rug</h3>
+                        <p class="product-description">Introducing the Naruto Cloud Rug by Bangarang Crafts: a hand-tufted homage to the iconic imagery of Naruto.</p>
+                        <div class="product-price">R 1250.00</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->		
+                	<div class="product-card" onclick="openProductModal('product3')" data-category="tufted">
+                    <div class="product-image">
+                        <img src="DarthVader_Tufted_Rug.png" alt="Handcrafted Product 3" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Handmade Tufted Darth Vader Rug</h3>
+                        <p class="product-description">Step into the Star Wars universe with this striking handmade Darth Vader rug. With its bold design and cinematic vibes, this piece is a must-have for any true fan of the Empire. Tufted by hand with care and precision, it’s not just a rug – it’s a tribute to one of the most iconic villains of all time.</p>
+                        <div class="product-price">R 1250.00</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" onclick="openProductModal('product4')" data-category="tufted">
+                    <div class="product-image">
+                        <img src="StarWars_StormTrooper_TuftedRug.png" alt="Handcrafted Product 4" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Handmade Tufted Stormtrooper Rug</h3>
+                        <p class="product-description">Transform your space with this bold and unique tufted rug featuring the iconic Stormtrooper helmet. Handmade with love and precision, this piece brings character and fandom flair to any room — perfect for your gaming corner, bedroom, home theater, or collector’s display.</p>
+                        <div class="product-price">R 1250.00</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				<!-- Product 5 -->
+                <div class="product-card" onclick="openProductModal('product5')" data-category="BPrint">
+                    <div class="product-image">
+                        <img src="gray-xenomorph-alien-tshirt-handcarved-print-full.png" alt="Handcrafted Product 5" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Xenomorph Alien T-Shirt – Hand-Carved Stamp Print</h3>
+                        <p class="product-description">featuring a hand-carved stamp print of the iconic alien from the Alien franchise. Printed on a soft, high-quality cotton tee</p>
+                        <div class="product-price">R 250</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				<!-- Product 6 -->
+                <div class="product-card" onclick="openProductModal('product6')" data-category="BPrint">
+                    <div class="product-image">
+                        <img src="Blanka-Street-Fighter-T-Shirt-Red-Block-Printed-Retro-Gamer-Tee-Large-edited.png" alt="Handcrafted Product 6" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Blanka Street Fighter T-Shirt - Block Printed Retro Gamer Tee</h3>
+                        <p class="product-description">This bold tee features a striking linocut-style design of Blanka in his iconic crouched pose. Block printed for a crisp, bold, and timeless look.</p>
+                        <div class="product-price">R 250</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				<!-- Product 7 -->
+                <div class="product-card" onclick="openProductModal('product7')" data-category="BPrint">
+                    <div class="product-image">
+                        <img src="blue-hand-printed-totoro-inspired-block-print-tshirt-002.png" alt="Handcrafted Product 6" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Hand-Printed Totoro-Inspired T-Shirt – Block Print Fan Art Tee</h3>
+                        <p class="product-description">This Totoro-inspired t-shirt is hand printed using block printing techniques, giving each piece a unique artisan touch.</p>
+                        <div class="product-price">R 250</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				<!-- Product 8 -->
+                <div class="product-card" onclick="openProductModal('product8')" data-category="BPrint">
+                    <div class="product-image">
+                        <img src="light-red-hand-printed-skull-block-print-tshirt-002.png" alt="Handcrafted Product 6" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title"> Hand-Printed Skull T-Shirt – Block Print Gothic Streetwear</h3>
+                        <p class="product-description">This skull t-shirt is hand printed using traditional block printing techniques, making every piece unique.</p>
+                        <div class="product-price">R 250</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				<!-- Product 9 -->
+                <div class="product-card" onclick="openProductModal('product9')" data-category="CCrafts">
+                    <div class="product-image">
+                        <img src="groot.jpg" alt="Handcrafted Product 6" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Groot Planter Pot – Small Concrete Plant Pot</h3>
+                        <p class="product-description">Rustic Mini Planter, meticulously crafted to seamlessly complement both indoor and outdoor spaces. Each planter is individually cast and thoroughly inspected to maintain our commitment to superior quality.</p>
+                        <div class="product-price">R 150</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				<!-- Product 10 -->
+                <div class="product-card" onclick="openProductModal('product10')" data-category="CCrafts">
+                    <div class="product-image">
+                        <img src="Skull.jpg" alt="Handcrafted Product 6" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Mini Skull Cement Planter Pot</h3>
+                        <p class="product-description">Rustic Mini Planter, meticulously crafted to seamlessly complement both indoor and outdoor spaces. Each planter is individually cast and thoroughly inspected to maintain our commitment to superior quality.</p>
+                        <div class="product-price">R 100</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				<!-- Product 11 -->
+                <div class="product-card" onclick="openProductModal('product11')" data-category="CCrafts">
+                    <div class="product-image">
+                        <img src="Mini_Bulbasaur_Cement_Planter_Handmade_Pokémon_Succulent_Pot_1.png" alt="Handcrafted Product 6" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Mini Bulbasaur Cement Planter – Pokémon Succulent Pot</h3>
+                        <p class="product-description">Rustic Mini Planter, meticulously crafted to seamlessly complement both indoor and outdoor spaces. Each planter is individually cast and thoroughly inspected to maintain our commitment to superior quality.</p>
+                        <div class="product-price">R 100</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				<!-- Product 12 -->
+                <div class="product-card" onclick="openProductModal('product12')" data-category="CCrafts">
+                    <div class="product-image">
+                        <img src="skull_cement_ashtray_01.png" alt="Handcrafted Product 6" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Skull Cement Ashtray</h3>
+                        <p class="product-description">Elevate your space with our stunning Skull Cement Ashtray, meticulously crafted with a rustic charm that seamlessly blends indoor and outdoor aesthetics.</p>
+                        <div class="product-price">R 60</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Professional crafting services tailored to your needs</p>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon"><img src="NFC.png" alt="services-1"></div>
+                    <h3 class="service-title">Custom NFC Business Card</h3>
+                    <p class="service-description">
+                        Transform your networking game with our cutting-edge Custom NFC Business Cards. These sleek, tech-savvy cards allow you to share your contact details, social media profiles, websites, and more instantly!
+                    </p>
+                    <ul class="service-features">
+                        <li>Instant Sharing – Exchange contact details and links with just a tap.</li>
+                        <li>Smart & Sleek – Modern design meets next-gen technology.</li>
+                        <li>Eco-Friendly – Go paperless and reduce waste.</li>
+                        <li>Fully Customizable – Tailor your card to match your brand and style.</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon"><img src="3d.png" alt="services-2"></div>
+                    <h3 class="service-title">3D Printing</h3>
+                    <p class="service-description">
+                        Turn your ideas into reality with our Custom 3D Printing Services! Using eco-friendly PLA (Polylactic Acid), we create durable, high-quality, and precision-crafted 3D prints perfect for prototypes, creative projects, or functional parts.
+                    </p>
+                    <ul class="service-features">
+                        <li>Precision Printing – High-quality, detailed results for any project.</li>
+                        <li>Eco-Friendly Materials – Made with sustainable PLA filament.</li>
+                        <li>Versatile Applications – Ideal for prototypes, art, and functional parts.</li>
+                        <li>Bring Ideas to Life – Turn your concepts into tangible creations.</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon"><img src="Tufting.png" alt="services-3"></div>
+                    <h3 class="service-title">Custom Tufting</h3>
+                    <p class="service-description">
+                        Bring your creative visions to life with our handcrafted tufted creations! Using high-quality yarns and expert techniques, we design vibrant, textured, and durable tufted pieces—perfect for custom rugs, wall hangings, home décor, or unique gifts. Whether you want a personalized design, a bold statement piece, or a cozy addition to your space, our tufting services deliver artistry and craftsmanship in every stitch.
+                    </p>
+                    <ul class="service-features">
+                        <li>Handcrafted Artistry – Each piece made with care, skill, and creativity.</li>
+                        <li>Premium Quality – Durable, vibrant designs using high-grade yarns.</li>
+                        <li>Custom Made for You – From rugs to wall art, tailored to your vision.</li>
+                        <li>Texture That Tells a Story – Add warmth, personality, and style to any space.</li>
+                    </ul>
+                </div>
+				
+				<!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon"><img src="The-Crafters-Guild.png" alt="services-4"></div>
+                    <h3 class="service-title">The Crafters Guild</h3>
+                    <p class="service-description">
+                        Are you a talented crafter or artisan ready to take your business online but overwhelmed by the time, resources, or know-how it requires? Join our Shared Online Marketplace, a professionally managed platform where your creations can shine without the hassle of running your own online store.
+                    </p>
+                    <ul class="service-features">
+                        <li>Handcrafted Artistry – Each piece made with care, skill, and creativity.</li>
+                        <li>Premium Quality – Durable, vibrant designs using high-grade yarns.</li>
+                        <li>Custom Made for You – From rugs to wall art, tailored to your vision.</li>
+                        <li>Texture That Tells a Story – Add warmth, personality, and style to any space.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Bangarang Crafts</h2>
+                    <p class="about-description">
+                        Bangarang Crafts began in 2019, but our story isn't one of a typical launch. Like many around the world, we found ourselves facing the unexpected quiet and isolation of the COVID-19 pandemic. In that stillness, something beautiful was born.
+
+						What started as a way to pass the time a few stitches here, a new design there quickly grew into a passionate obsession. "Bangarang" (a word for a loud, chaotic noise) became our anthem for the vibrant, joyful creativity that cut through the silence. We discovered that even in a world that had paused, the need to create, to make something with our own hands, was more important than ever.
+
+						Our crafts are more than just products; they are artifacts of resilience. Each piece is thoughtfully designed and meticulously handmade, carrying with it the spirit of finding light in the dark. We learned that connection wasn't lost it was reimagined, and we're thrilled to now connect with you through the things we make.
+
+						Thank you for visiting our corner of the internet and for supporting a dream that started when the world stood still.
+                    </p>
+                    <p class="about-description">
+                        With years of experience and a commitment to traditional techniques, we combine artistry with 
+                        practicality to deliver exceptional crafts that stand the test of time.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <span class="feature-icon"><img src="Icon_Point_1.png" alt="about_icon1"></span>
+                            <span>Born from Resilience – Created during the stillness of the pandemic, each piece celebrates creativity, hope, and the human need to make.</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon"><img src="Icon_Point_2.png" alt="about_icon2"></span>
+                            <span>Handcrafted with Heart – Every item is thoughtfully designed and made by hand, carrying the spirit of joy and authenticity.</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon"><img src="Icon_Point_3.png" alt="about_icon3"></span>
+                            <span>Art with Meaning – More than just crafts, each creation is a symbol of connection, light, and the beauty found in chaos.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="Christo.png" alt="About Bangarang Crafts" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have a question or custom order? We'd love to hear from you!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span>info@bangarangcrafts.co.za</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <span>+27 765202303</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>South Africa</span>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bangarang Crafts</h3>
+                    <p>Creating beautiful handcrafted products with passion and precision.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Pinterest</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bangarang Crafts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+	
+<!-- Product Modal -->
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeProductModal()">&times;</span>
+        <div class="modal-body">
+            <div class="modal-image">
+                <div class="carousel-container">
+                    <div id="carousel" class="carousel">
+                        <!-- Carousel items will be inserted here by JavaScript -->
+                    </div>
+                    <button class="carousel-btn carousel-prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="carousel-btn carousel-next" onclick="nextSlide()">&#10095;</button>
+                    <div id="carouselDots" class="carousel-dots">
+                        <!-- Dots will be inserted here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-info">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <div class="modal-price" id="modalPrice"></div>
+                <div class="modal-features">
+                    <h4>Product Features:</h4>
+                    <ul id="modalFeatures"></ul>
+                </div>
+				<h2>Let's Talk Business</h2>
+                <button class="btn btn-primary" onclick="closeProductModal()">Email</button>
+				<button class="btn btn-primary" onclick="closeProductModal()">Whatsapp</button>
+				<p>At our store, you have options. You can buy products directly at the listed supplier price — quick and easy — or choose to negotiate with us for a custom deal that fits your budget. We believe in fair pricing and open communication, so you always get the best value possible.</p>
+				<h4>listed suppliers</h4>
+				<button class="btn btn-primary" onclick="closeProductModal()">Hearthforge.co.za</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
