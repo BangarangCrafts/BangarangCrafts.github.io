@@ -452,7 +452,7 @@ section {
 
 .modal-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 250px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
@@ -1099,5 +1099,111 @@ section {
 @media (min-width: 769px) and (max-width: 1024px) {
     .services-grid {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+/* Sticky Filter Container */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 80px; /* Position below navbar */
+    z-index: 100;
+    background: var(--background-light);
+    padding: 1rem 0;
+    margin-top: -1rem; /* Compensate for extra padding */
+    transition: all 0.3s ease;
+}
+
+/* Add some shadow when scrolled */
+.filter-container.scrolled {
+    background: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+/* Mobile-specific sticky filters */
+@media (max-width: 768px) {
+    .filter-container {
+        top: 70px; /* Adjust for mobile navbar height */
+        padding: 0.8rem 0;
+        gap: 0.5rem;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        margin-bottom: 1.5rem;
+        scrollbar-width: none; /* Hide scrollbar for Firefox */
+        -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+    }
+    
+    .filter-container::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Chrome/Safari */
+    }
+    
+    .filter-container.scrolled {
+        padding: 0.8rem 0;
+    }
+    
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+}
+
+/* Adjust products section to account for sticky filters */
+.products {
+    background: var(--background-light);
+    position: relative;
+}
+
+/* Ensure smooth transition when filters become sticky */
+.container {
+    position: relative;
+}
+
+/* Add to your existing CSS in style.css */
+
+/* Smooth transitions for product filtering */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    transition: opacity 0.3s ease;
+}
+
+.product-card {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+/* Smooth hiding/showing of product cards */
+.product-card.hidden {
+    display: none;
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+/* Filter button loading state */
+.filter-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+/* Mobile-specific updates */
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        transition: opacity 0.2s ease;
     }
 }
