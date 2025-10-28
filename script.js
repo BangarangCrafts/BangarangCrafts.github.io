@@ -224,6 +224,77 @@ const products = {
 			
         ]
     },
+	'product13': {
+        images: [
+            'Twist003.png',
+			'Twist002.png',
+			'Twist004.png',
+			
+        ],
+        title: 'Twisted Concrete Planter',
+        description: 'Bring contemporary style to your home or office with our handcrafted geometric concrete planters. Each planter is cast with care using durable, high-quality concrete, giving it a smooth, industrial finish that complements any modern decor.',
+        price: 'R 80.00',
+        features: [
+            'Height: 8cm',
+            'Width: 10cm',
+            'Length: 10cm',
+			
+        ]
+    },
+	'product14': {
+        images: [
+            'Round+Tray004.png',
+			'Round+Tray002.png',
+			'Round+Tray003.png',
+			'Round+Tray005.png',
+			
+        ],
+        title: 'Round+Tray Concrete Planter',
+        description: 'Bring contemporary style to your home or office with our handcrafted geometric concrete planters. Each planter is cast with care using durable, high-quality concrete, giving it a smooth, industrial finish that complements any modern decor.',
+        price: 'R 60.00',
+        features: [
+            'Height: 7cm',
+            'Width: 10cm',
+            'Length: 10cm',
+			
+        ]
+    },
+	'product15': {
+        images: [
+            'x3Hex003.png',
+			'x3Hex004.png',
+			'x3Hex005.png',
+			
+			
+        ],
+        title: 'X3 Hex Concrete Planters',
+        description: 'Bring contemporary style to your home or office with our handcrafted geometric concrete planters. Each planter is cast with care using durable, high-quality concrete, giving it a smooth, industrial finish that complements any modern decor.',
+        price: 'R 100.00',
+        features: [
+            'Height: 5cm',
+            'Width: 11cm',
+            'Length: 11cm',
+			
+        ]
+    },
+	'product16': {
+        images: [
+            'x4Honey002.png',
+			'x4Honey005.png',
+			
+			
+			
+        ],
+        title: 'X4 Honeycomb Concrete Planters',
+        description: 'Bring contemporary style to your home or office with our handcrafted geometric concrete planters. Each planter is cast with care using durable, high-quality concrete, giving it a smooth, industrial finish that complements any modern decor.',
+        price: 'R 100.00',
+        features: [
+            'Height: 5cm',
+            'Width: 10cm',
+            'Length: 10cm',
+			
+        ]
+    },
 };
 
 // Product Modal with Carousel functionality
@@ -491,10 +562,11 @@ document.querySelectorAll('img').forEach(img => {
     img.style.transition = 'opacity 0.3s ease';
 });
 
-// Product Filter Functionality
+/// Updated Product Filter Functionality with Scroll to Top
 function initProductFilters() {
     const filterBtns = document.querySelectorAll('.filter-btn');
     const productCards = document.querySelectorAll('.product-card');
+    const productsSection = document.querySelector('#products');
     
     console.log('Filter buttons found:', filterBtns.length);
     console.log('Product cards found:', productCards.length);
@@ -525,9 +597,88 @@ function initProductFilters() {
                     }
                 }
             });
+            
+            // Scroll to top of products section with smooth animation
+            setTimeout(() => {
+                if (productsSection) {
+                    const productsTop = productsSection.offsetTop - 100; // Offset for sticky filters and navbar
+                    window.scrollTo({
+                        top: productsTop,
+                        behavior: 'smooth'
+                    });
+                    console.log('Scrolling to products section');
+                }
+            }, 300); // Small delay to allow filter animation to complete
         });
     });
 }
+
+
+// Sticky Filter Enhancement
+function initStickyFilters() {
+    const filterContainer = document.querySelector('.filter-container');
+    const productsSection = document.querySelector('.products');
+    
+    if (!filterContainer || !productsSection) return;
+    
+    // Calculate when filters should become sticky
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    filterContainer.classList.add('scrolled');
+                } else {
+                    filterContainer.classList.remove('scrolled');
+                }
+            });
+        },
+        { 
+            rootMargin: '-80px 0px 0px 0px', // Adjust based on your navbar height
+            threshold: 0
+        }
+    );
+    
+    // Observe the products section
+    observer.observe(productsSection);
+    
+    // Alternative simple scroll approach
+    window.addEventListener('scroll', () => {
+        const productsTop = productsSection.getBoundingClientRect().top;
+        if (productsTop < 80) { // When products section reaches top
+            filterContainer.classList.add('scrolled');
+        } else {
+            filterContainer.classList.remove('scrolled');
+        }
+    });
+}
+
+// Update your DOMContentLoaded event listener
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM fully loaded, initializing...');
+    
+    // Update copyright year
+    const yearElement = document.querySelector('.footer-bottom p');
+    if (yearElement) {
+        const currentYear = new Date().getFullYear();
+        yearElement.innerHTML = yearElement.innerHTML.replace('2024', currentYear);
+    }
+    
+    // Preload critical images first
+    preloadCriticalImages();
+    
+    // Initialize product filters
+    initProductFilters();
+    
+    // Initialize sticky filters
+    initStickyFilters();
+    
+    // Initialize image loader
+    setTimeout(() => {
+        ImageLoader.init();
+    }, 100);
+    
+    console.log('Bangarang Crafts website loaded successfully!');
+});
 
 // Initialize everything when DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
