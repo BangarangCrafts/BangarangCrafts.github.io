@@ -240,8 +240,85 @@ section {
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    gap: 1.5rem;
     margin-top: 3rem;
+}
+
+/* Mobile-specific product grid */
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+        gap: 1rem;
+    }
+    
+    .product-card {
+        margin-bottom: 0; /* Remove extra margin since we have gap */
+    }
+    
+    .product-info {
+        padding: 1rem;
+    }
+    
+    .product-title {
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+    
+    .product-description {
+        font-size: 0.8rem;
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* Limit to 3 lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    
+    .product-price {
+        font-size: 1.1rem;
+    }
+    
+    .btn-outline {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+    
+    .product-image {
+        height: 180px; /* Slightly smaller images on very small screens */
+    }
+    
+    .product-info {
+        padding: 0.8rem;
+    }
+    
+    .product-title {
+        font-size: 0.9rem;
+    }
+}
+
+/* Ensure filters work well on mobile */
+@media (max-width: 768px) {
+    .filter-container {
+        gap: 0.5rem;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
 }
 
 .product-card {
@@ -936,4 +1013,91 @@ section {
 
 .product-card.hidden {
     display: none;
+}
+
+/* Services Section Updates for Mobile */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* Mobile-specific services grid - 2 columns */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+        margin-bottom: 0;
+    }
+    
+    .service-title {
+        font-size: 1.1rem;
+        line-height: 1.3;
+        margin-bottom: 0.8rem;
+    }
+    
+    .service-description {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+    }
+    
+    .service-features {
+        font-size: 0.8rem;
+    }
+    
+    .service-features li {
+        padding: 0.3rem 0;
+        padding-left: 1.2rem;
+        line-height: 1.3;
+    }
+    
+    .service-icon img {
+        max-width: 50px; /* Smaller icons on mobile */
+        height: auto;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+    
+    .service-card {
+        padding: 1rem;
+    }
+    
+    .service-title {
+        font-size: 1rem;
+    }
+    
+    .service-description {
+        font-size: 0.8rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* Limit description to 4 lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    
+    .service-features {
+        display: none; /* Hide features on very small screens to save space */
+    }
+    
+    .service-icon img {
+        max-width: 40px;
+    }
+}
+
+/* Medium screens - keep single column for tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
 }
