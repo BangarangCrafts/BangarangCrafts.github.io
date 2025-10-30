@@ -753,10 +753,14 @@ if (contactForm) {
             return;
         }
         
-        // Create mailto link
-        const subject = `Message from ${name} - Bangarang Crafts Contact Form`;
-        const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
-        const mailtoLink = `mailto:christo.bangarang@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        // Create mailto link with proper formatting
+		const subject = `Message from ${name} - Bangarang Crafts Contact Form`;
+		const body = `Name: ${name}
+		Email: ${email}
+
+		Message:
+		${message}`;
+		const mailtoLink = `mailto:christo.bangarang@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         
         // Simulate form submission
         const submitBtn = contactForm.querySelector('button[type="submit"]');
