@@ -85,7 +85,7 @@ const products = {
         features: [
             'Thickness: 2.5cm',
             'Width: 73cm',
-            'Hight: 80cm'
+            'Length: 80cm'
         ]
     },
     'product4': {
@@ -99,7 +99,7 @@ const products = {
         features: [
             'Thickness: 2.5cm',
             'Width: 74cm',
-            'Hight: 78cm'
+            'Length: 78cm'
         ]
     },
     'product5': {
@@ -165,6 +165,8 @@ const products = {
 	'product9': {
         images: [
             'groot.jpg',
+			'Groot02.png',
+			'Groot03.png',
 			
         ],
         title: 'Groot Planter Pot – Small Concrete Plant Pot',
@@ -180,6 +182,8 @@ const products = {
 	'product10': {
         images: [
             'Skull.jpg',
+			'Skull01.png',
+			'Skull02.png',
 			
         ],
         title: 'Mini Skull Cement Planter Pot',
@@ -196,6 +200,7 @@ const products = {
         images: [
             'Mini_Bulbasaur_Cement_Planter_Handmade_Pokémon_Succulent_Pot_1.png',
 			'Mini_Bulbasaur_Cement_Planter_Handmade_Pokémon_Succulent_Pot_2.png',
+			'bbs003.png',
 			
         ],
         title: 'Mini Bulbasaur Cement Planter – Pokémon Succulent Pot',
@@ -212,6 +217,7 @@ const products = {
         images: [
             'skull_cement_ashtray_01.png',
 			'skull_cement_ashtray_02.png',
+			'skull_cement_ashtray_03.png',
 			
         ],
         title: 'Skull Cement Ashtray',
@@ -281,6 +287,7 @@ const products = {
         images: [
             'x4Honey002.png',
 			'x4Honey005.png',
+			'x4Honey006.png',
 			
 			
 			
@@ -295,6 +302,243 @@ const products = {
 			
         ]
     },
+	'product17': {
+        images: [
+            'DartVader.jpg',
+			'DarthVader_Back.jpg',
+			'DartVader02.png',
+			'DartVader03.png',
+			
+			
+        ],
+        title: 'Mini Darth Vader Planter',
+        description: 'Introducing our exquisite Mini Planter, featuring a meticulously designed 3D-printed shell that adds a modern twist to any space, indoors or out. Each planter is cast individually and undergoes rigorous quality checks to ensure flawless craftsmanship and consistent excellence.',
+        price: 'R 250.00',
+        features: [
+            'Height: 7cm',
+            'Width: 10.8cm',
+            'Length: 11.44cm',
+			
+        ]
+    },
+	'product19': {
+        images: [
+            'CloneTrooper 01.png',
+			'CloneTrooper 02.png',
+			'CloneTrooper 03.png',
+			
+			
+			
+        ],
+        title: 'Mini Clone Trooper Planter',
+        description: 'Introducing our exquisite Mini Planter, featuring a meticulously designed 3D-printed shell that adds a modern twist to any space, indoors or out. Each planter is cast individually and undergoes rigorous quality checks to ensure flawless craftsmanship and consistent excellence.',
+        price: 'R 250.00',
+        features: [
+            'Height: 7cm',
+            'Width: 11cm',
+            'Length: 11cm',
+			
+        ]
+    },
+	'product20': {
+        images: [
+            'Yoda001.png',
+			'Yoda002.png',
+			'Yoda003.png',
+			'Yoda004.png',
+			
+			
+			
+        ],
+        title: 'Mini Yoda Planter Pot',
+        description: 'Introducing our exquisite Mini Planter, featuring a meticulously designed 3D-printed shell that adds a modern twist to any space, indoors or out. Each planter is cast individually and undergoes rigorous quality checks to ensure flawless craftsmanship and consistent excellence.',
+        price: 'R 250.00',
+        features: [
+            'Height: 7cm',
+            'Width: 11cm',
+            'Length: 11cm',
+			
+        ]
+    },
+	'product21': {
+        images: [
+            'upscaled-skull-planter-pot-black-3d-print-concrete.png',
+			'upscaled-skull-planter-pot-green-3d-print-concrete.png',
+			'upscaled-skull-planter-pot-white-3d-print-concrete.png',
+			'upscaled-skull-planter-pot-green-white-3d-print-concrete.png',
+			
+			
+			
+        ],
+        title: 'Large Skull Planter Pot',
+        description: 'Add a striking statement piece to your space with this handcrafted Upsized Skull Planter Pot. The outer shell is 3D printed for precise detailing, then filled with solid concrete for weight, durability, and a unique textured finish. Available in black, white, or green, this planter blends gothic charm with modern craftsmanship. Perfect for indoor plants, succulents, or as a bold decorative accent for your desk, shelf, or garden. Handmade, sturdy, and designed to stand out in any setting.',
+        price: 'R 350.00',
+        features: [
+            'Height:130mm',
+            'Width:140mm',
+            'Length:160mm',
+			
+        ]
+    },
+	'product22': {
+        images: [
+            'BS001-removebg-preview.png',
+			'BS002-removebg-preview.png',
+			'BS003-removebg-preview.png',
+			
+			
+			
+			
+        ],
+        title: 'Large Bulbasaur Planter Pot',
+        description: 'Introducing our Upsized Bulbasaur Planter, a delightful fusion of nature and nostalgia. Featuring a meticulously 3D-printed design, this larger-than-life planter brings the beloved Pokémon to your home or garden. Each planter is individually cast and undergoes thorough quality checks to ensure exceptional craftsmanship and durability.Handcrafted with care by Bangarang Crafts, this Bulbasaur planter isn’t just a functional vessel for your plants—it’s a whimsical work of art. Perfect for adding charm to any space, this statement piece combines fun and functionality in a way that will make your decor truly unique.',
+        price: 'R 350.00',
+        features: [
+            'Height: 140mm',
+            'Width: 150mm',
+            'Length: 170mm',
+			
+        ]
+    },
+	'product18': {
+        images: [
+            'hex-cement-display-tile-display.png',
+			'frida-kahlo-classic-hex-cement-display-tile.png',
+			'frida-kahlo-red-hair-hex-cement-display-tile.png',
+			'frida-kahlo-teal-hair-hex-cement-display-tile.png',
+			'naruto-akatsuki-cloud-hex-cement-display-tile.png',
+			'pokemon-charizard-hex-cement-display-tile.png',
+			'pokemon-gengar-hex-cement-display-tile.png',
+			'skull-hex-cement-display-tile-gothic-desk-decor.png',
+			'star-wars-x-wing-hex-cement-display-tile.png',
+			'teenage-mutant-ninja-turtle-donatello-hex-cement-tile.png',
+			'teenage-mutant-ninja-turtle-leo-hex-cement-tile.png',
+			'totoro-hex-cement-display-tile-desk-decor.png',
+			'hex-cement-display-tile-back.png',
+			
+        ],
+        title: 'Hex Cement Display Tiles',
+        description: 'Show off your favourite fandoms with these handcrafted hexagonal cement display tiles, each featuring a 3D printed design embedded directly into the tile for lasting detail and texture. Choose from iconic characters and symbols like Totoro, Star Wars X-Wing, Naruto’s Akatsuki cloud, Pokémon, Teenage Mutant Ninja Turtles, and Frida Kahlo. Each tile includes a small stand, making it perfect for desks, shelves, and collector displays. Durable, unique, and made for fans who love to combine art with everyday life.',
+        price: 'R 150.00',
+        features: [
+            'Height:145mm',
+            'Width: 20mm',
+            'Length: 117.50mm',
+			
+        ]
+    },
+	'product23': {
+        images: [
+            'oversized-3d-printed-d20-dice-unique-giant-gaming-accessory-for-d-d-rpgs-collectors-multi-colored.png',
+			'oversized-3d-printed-d20-dice-unique-giant-gaming-accessory-for-d-d-rpgs-collectors-black.png',
+			
+        ],
+        title: 'Oversized 3D-Printed D20 Dice',
+        description: 'Stand out at your next game night with this custom oversized 3D-printed D20 dice a must-have for tabletop gamers, Dungeons & Dragons (D&D) enthusiasts, and collectors! Handcrafted with precision, this giant D20 dice combines striking design with perfect balance for a satisfying roll every time.  ',
+        price: 'R 60.00',
+        features: [
+            'Height: 55.65mm',
+            'Width: 59.50mm',
+            'Length: 68.66mm',
+			
+        ]
+    },
+	'product24': {
+        images: [
+            'Hex Pot Mould001.jpg',
+			'Hex Pot Mould003.png',
+			
+        ],
+        title: 'Hex Pot Mould (STL Files)',
+        description: 'This mould allows you to create modern, faceted concrete planters with a sleek, geometric look, perfect for adding a touch of industrial style to any space. Ideal for both DIY enthusiasts and small business owners, this mould design is durable and reusable, ensuring consistent, high-quality results every time.',
+        price: 'R 250.00',
+        features: [
+            'Height: 58.60mm',
+            'Width: 122mm',
+            'Length: 130mm',
+			
+        ]
+    },
+	'product25': {
+        images: [
+            'HCD001.jpg',
+			'HCD002.png',
+			
+        ],
+        title: 'Honeycomb Mould (STL Files)',
+        description: 'This mould allows you to create modern, faceted concrete planters with a sleek, geometric look—perfect for adding a touch of industrial style to any space. The honeycomb-inspired design also enables stackable displays, giving you versatile styling options.',
+        price: 'R 250.00',
+        features: [
+            'Height: 60mm',
+            'Width: 106mm',
+            'Length: 120mm',
+			
+        ]
+    },
+	'product26': {
+        images: [
+            '001.jpg',
+			
+        ],
+        title: 'Bonsai Mould (STL Files)',
+        description: 'This mould allows you to create modern, faceted concrete planters with a sleek, geometric look, perfect for adding a touch of industrial style to any space. Ideal for both DIY enthusiasts and small business owners, this mould design is durable and reusable, ensuring consistent, high-quality results every time.',
+        price: 'R 250.00',
+        features: [
+            'Height: 60mm',
+            'Width: 106mm',
+            'Length: 120mm',
+			
+        ]
+    },
+	'product27': {
+        images: [
+            'Hand-Tufted-One-Piece-Rug-Straw-Hat-Pirates-Carpet-Anime-Luffy-Floor-Mat.png',
+			'Hand-Tufted-One-Piece-Rug-Straw-Hat-Pirates-Carpet-Anime-Luffy-Floor-Mat-Back.png',
+			
+        ],
+        title: 'Handmade Tufted Straw Hat Jolly Roger Rug',
+        description: 'Elevate your space with this premium hand-tufted rug, featuring the iconic Straw Hat Pirates Jolly Roger. This soft, durable one-piece carpet is the perfect tribute to Monkey D. Luffy and his crew, making it a must-have for any One Piece fans room, game room, or anime den.',
+        price: 'R 1250.00',
+        features: [
+            'Thickness: 2.5cm',
+            'Width: 80cm',
+            'Length: 100cm',
+			
+        ]
+    },
+	'product28': {
+        images: [
+            'Hand-Tufted-Gengar-Rug-Pokemon-Plush-Carpet-Ghost-Type-Fan-Art.png',
+			'Hand-Tufted-Gengar-Rug-Pokemon-Plush-Carpet-Ghost-Type-Fan-Art-Back.png',
+			
+        ],
+        title: 'Handmade Tufted Gengar Roger Rug',
+        description: 'Add a touch of playful spookiness to your space with this premium hand-tufted Gengar rug. Featuring fan-art of the iconic Ghost-type Pokemon, this incredibly soft and plush carpet is the perfect way to show your love for Pokemon. A must-have for any trainers bedroom, gaming room, or living space.',
+        price: 'R 1250.00',
+        features: [
+            'Thickness: 2.5cm',
+            'Width: 73cm',
+            'Length: 80cm',
+			
+        ]
+    },
+	'product29': {
+        images: [
+            'TMNT-Leonardo-Rug-Retro-90s-Turtle-Squad-Floor-Art-Handmade-Decor.png',
+			'TMNT-Leonardo-Rug-Retro-90s-Turtle-Squad-Floor-Art-Handmade-Decor_Back.png',
+			
+        ],
+        title: 'Handmade Tufted TMNT Leo Rug',
+        description: 'Cowabunga, dude! Bring turtle power directly into your space with this absolutely radical TMNT hand-tufted rug that celebrates the heroes in a half shell who have been kicking shell and taking names since the 1980s. Transform any room into the ultimate turtle lair with these iconic designs that capture the essence of New Yorks greatest reptilian defenders.',
+        price: 'R 1250.00',
+        features: [
+            'Thickness: 2.5cm',
+            'Width: 70cm',
+            'Length: 100cm',
+			
+        ]
+    },
+	
 };
 
 // Product Modal with Carousel functionality
@@ -402,6 +646,49 @@ function updateCarousel() {
     }
 }
 
+// Close modal and scroll to contact section
+function closeModalAndScrollToContact() {
+    closeProductModal();
+    
+    // Small delay to ensure modal is closed before scrolling
+    setTimeout(() => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }, 100);
+}
+
+// Open WhatsApp with product inquiry message
+function openWhatsApp() {
+    const productTitle = document.getElementById('modalTitle').textContent;
+    const message = `Hi, I'm interested in the product: ${productTitle}. Could you please provide more information and pricing?`;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/27765202303?text=${encodedMessage}`;
+    
+    // Close modal first
+    closeProductModal();
+    
+    // Small delay to ensure modal closes before opening new window
+    setTimeout(() => {
+        window.open(whatsappUrl, '_blank');
+    }, 100);
+}
+
+// Open Hearthforge website
+function openHearthforgeWebsite() {
+    // Close modal first
+    closeProductModal();
+    
+    // Small delay to ensure modal closes before opening new window
+    setTimeout(() => {
+        window.open('https://hearthforge.co.za/collections/bangarang-crafts', '_blank');
+    }, 100);
+}
+
 // Close modal when clicking outside content
 const productModal = document.getElementById('productModal');
 if (productModal) {
@@ -466,6 +753,11 @@ if (contactForm) {
             return;
         }
         
+        // Create mailto link
+        const subject = `Message from ${name} - Bangarang Crafts Contact Form`;
+        const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+        const mailtoLink = `mailto:christo.bangarang@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        
         // Simulate form submission
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
@@ -473,13 +765,14 @@ if (contactForm) {
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
         
-        // Simulate API call
+        // Open email client with pre-filled data
         setTimeout(() => {
-            showNotification('Thank you for your message! We will get back to you soon.', 'success');
+            window.location.href = mailtoLink;
+            showNotification('Thank you for your message! Please send the email that opened in your email client.', 'success');
             contactForm.reset();
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
-        }, 2000);
+        }, 1000);
     });
 }
 
