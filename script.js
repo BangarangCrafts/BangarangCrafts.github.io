@@ -567,12 +567,29 @@ function openProductModal(productId) {
         // Show modal
         modal.classList.add('show');
         document.body.style.overflow = 'hidden';
+        
+        // Reset scroll position to top
+        const modalContent = modal.querySelector('.modal-content');
+        if (modalContent) {
+            modalContent.scrollTop = 0;
+        }
+        
+        // Also reset carousel to first image
+        currentSlide = 0;
+        updateCarousel();
     }
 }
 
 function closeProductModal() {
     const modal = document.getElementById('productModal');
     if (modal) {
+        // Reset scroll position when closing too
+        const modalContent = modal.querySelector('.modal-content');
+        const modalInfo = modal.querySelector('.modal-info');
+        
+        if (modalContent) modalContent.scrollTop = 0;
+        if (modalInfo) modalInfo.scrollTop = 0;
+        
         modal.classList.remove('show');
         document.body.style.overflow = 'auto';
     }
