@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+	
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -25,8 +26,8 @@
                     <a href="#services" class="nav-link">Services</a>
                 </li>
 				<li class="nav-item">
-                    <a href="#home" class="nav-link">Crafters Guild</a>
-                </li>
+					<a href="#shipping" class="nav-link">Shipping</a>
+				</li>
                 <li class="nav-item">
                     <a href="#about" class="nav-link">About</a>
                 </li>
@@ -68,9 +69,14 @@
 			<button class="filter-btn" data-filter="BPrint">Block Printed</button>
 			<button class="filter-btn" data-filter="CCrafts">Cement Crafts</button>
 			<button class="filter-btn" data-filter="3dPrint">3d-Printed</button>
+			<button class="filter-btn" data-filter="Digi">Digital</button>
+			
 			</div>
             
             <div class="products-grid">
+			
+			<!-- Tufted ---------------------------------------------------------------------------------->
+			
             <!-- Product 1 -->
             <div class="product-card" onclick="openProductModal('product1')" data-category="tufted">
                 <div class="product-image">
@@ -123,6 +129,47 @@
                     </div>
                 </div>
 				
+				<!-- Product 27 -->
+                <div class="product-card" onclick="openProductModal('product27')" data-category="tufted">
+                    <div class="product-image">
+                        <img src="Hand-Tufted-One-Piece-Rug-Straw-Hat-Pirates-Carpet-Anime-Luffy-Floor-Mat.png" alt="Handcrafted Product 27" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Handmade Tufted Straw Hat Jolly Roger Rug</h3>
+                        <p class="product-description">Elevate your space with this premium hand-tufted rug, featuring the iconic Straw Hat Pirates Jolly Roger. This soft, durable one-piece carpet is the perfect tribute to Monkey D. Luffy and his crew, making it a must-have for any One Piece fan's room, game room, or anime den.</p>
+                        <div class="product-price">R 1250.00</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				<!-- Product 28 -->
+                <div class="product-card" onclick="openProductModal('product28')" data-category="tufted">
+                    <div class="product-image">
+                        <img src="Hand-Tufted-Gengar-Rug-Pokemon-Plush-Carpet-Ghost-Type-Fan-Art.png" alt="Handcrafted Product 28" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Handmade Tufted Gengar Roger Rug</h3>
+                        <p class="product-description">Add a touch of playful spookiness to your space with this premium hand-tufted Gengar rug. Featuring fan-art of the iconic Ghost-type Pokemon, this incredibly soft and plush carpet is the perfect way to show your love for Pokemon. A must-have for any trainer's bedroom, gaming room, or living space.</p>
+                        <div class="product-price">R 1250.00</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				<!-- Product 29 -->
+                <div class="product-card" onclick="openProductModal('product29')" data-category="tufted">
+                    <div class="product-image">
+                        <img src="TMNT-Leonardo-Rug-Retro-90s-Turtle-Squad-Floor-Art-Handmade-Decor.png" alt="Handcrafted Product 29" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Handmade Tufted TMNT Leo Rug</h3>
+                        <p class="product-description">Cowabunga, dude! Bring turtle power directly into your space with this absolutely radical TMNT hand-tufted rug that celebrates the heroes in a half shell who have been kicking shell and taking names since the 1980s.</p>
+                        <div class="product-price">R 1250.00</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				<!-- Block Printed ----------------------------------------------------------------------->
+				
 				<!-- Product 5 -->
                 <div class="product-card" onclick="openProductModal('product5')" data-category="BPrint">
                     <div class="product-image">
@@ -131,7 +178,7 @@
                     <div class="product-info">
                         <h3 class="product-title">Xenomorph Alien T-Shirt – Hand-Carved Stamp Print</h3>
                         <p class="product-description">featuring a hand-carved stamp print of the iconic alien from the Alien franchise. Printed on a soft, high-quality cotton tee</p>
-                        <div class="product-price">R 250</div>
+                        <div class="product-price">R 250.00</div>
                         <button class="btn btn-outline">View Details</button>
                     </div>
                 </div>
@@ -144,7 +191,7 @@
                     <div class="product-info">
                         <h3 class="product-title">Blanka Street Fighter T-Shirt - Block Printed Retro Gamer Tee</h3>
                         <p class="product-description">This bold tee features a striking linocut-style design of Blanka in his iconic crouched pose. Block printed for a crisp, bold, and timeless look.</p>
-                        <div class="product-price">R 250</div>
+                        <div class="product-price">R 250.00</div>
                         <button class="btn btn-outline">View Details</button>
                     </div>
                 </div>
@@ -157,7 +204,7 @@
                     <div class="product-info">
                         <h3 class="product-title">Hand-Printed Totoro-Inspired T-Shirt – Block Print Fan Art Tee</h3>
                         <p class="product-description">This Totoro-inspired t-shirt is hand printed using block printing techniques, giving each piece a unique artisan touch.</p>
-                        <div class="product-price">R 250</div>
+                        <div class="product-price">R 250.00</div>
                         <button class="btn btn-outline">View Details</button>
                     </div>
                 </div>
@@ -170,20 +217,22 @@
                     <div class="product-info">
                         <h3 class="product-title"> Hand-Printed Skull T-Shirt – Block Print Gothic Streetwear</h3>
                         <p class="product-description">This skull t-shirt is hand printed using traditional block printing techniques, making every piece unique.</p>
-                        <div class="product-price">R 250</div>
+                        <div class="product-price">R 250.00</div>
                         <button class="btn btn-outline">View Details</button>
                     </div>
                 </div>
 				
+				<!-- Cement Crafts ----------------------------------------------------------------------->
+				
 				<!-- Product 9 -->
                 <div class="product-card" onclick="openProductModal('product9')" data-category="CCrafts">
                     <div class="product-image">
-                        <img src="groot.jpg" alt="Handcrafted Product 6" class="product-img" loading="lazy">
+                        <img src="Groot02.png" alt="Handcrafted Product 6" class="product-img" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Groot Planter Pot – Small Concrete Plant Pot</h3>
                         <p class="product-description">Rustic Mini Planter, meticulously crafted to seamlessly complement both indoor and outdoor spaces. Each planter is individually cast and thoroughly inspected to maintain our commitment to superior quality.</p>
-                        <div class="product-price">R 150</div>
+                        <div class="product-price">R 150.00</div>
                         <button class="btn btn-outline">View Details</button>
                     </div>
                 </div>
@@ -191,12 +240,12 @@
 				<!-- Product 10 -->
                 <div class="product-card" onclick="openProductModal('product10')" data-category="CCrafts">
                     <div class="product-image">
-                        <img src="Skull.jpg" alt="Handcrafted Product 6" class="product-img" loading="lazy">
+                        <img src="Skull01.png" alt="Handcrafted Product 6" class="product-img" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Mini Skull Cement Planter Pot</h3>
                         <p class="product-description">Rustic Mini Planter, meticulously crafted to seamlessly complement both indoor and outdoor spaces. Each planter is individually cast and thoroughly inspected to maintain our commitment to superior quality.</p>
-                        <div class="product-price">R 100</div>
+                        <div class="product-price">R 100.00</div>
                         <button class="btn btn-outline">View Details</button>
                     </div>
                 </div>
@@ -204,12 +253,12 @@
 				<!-- Product 11 -->
                 <div class="product-card" onclick="openProductModal('product11')" data-category="CCrafts">
                     <div class="product-image">
-                        <img src="Mini_Bulbasaur_Cement_Planter_Handmade_Pokémon_Succulent_Pot_1.png" alt="Handcrafted Product 6" class="product-img" loading="lazy">
+                        <img src="bbs003.png" alt="Handcrafted Product 6" class="product-img" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Mini Bulbasaur Cement Planter – Pokémon Succulent Pot</h3>
                         <p class="product-description">Rustic Mini Planter, meticulously crafted to seamlessly complement both indoor and outdoor spaces. Each planter is individually cast and thoroughly inspected to maintain our commitment to superior quality.</p>
-                        <div class="product-price">R 100</div>
+                        <div class="product-price">R 100.00</div>
                         <button class="btn btn-outline">View Details</button>
                     </div>
                 </div>
@@ -222,7 +271,7 @@
                     <div class="product-info">
                         <h3 class="product-title">Skull Cement Ashtray</h3>
                         <p class="product-description">Elevate your space with our stunning Skull Cement Ashtray, meticulously crafted with a rustic charm that seamlessly blends indoor and outdoor aesthetics.</p>
-                        <div class="product-price">R 60</div>
+                        <div class="product-price">R 60.00</div>
                         <button class="btn btn-outline">View Details</button>
                     </div>
                 </div>
@@ -230,12 +279,12 @@
 				<!-- Product 13 -->
                 <div class="product-card" onclick="openProductModal('product13')" data-category="CCrafts">
                     <div class="product-image">
-                        <img src="Twist004.png" alt="Handcrafted Product 13" class="product-img" loading="lazy">
+                        <img src="Twist003.png" alt="Handcrafted Product 13" class="product-img" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Twisted Concrete Planter</h3>
                         <p class="product-description">Bring contemporary style to your home or office with our handcrafted geometric concrete planters. Each planter is cast with care using durable, high-quality concrete, giving it a smooth, industrial finish that complements any modern decor.</p>
-                        <div class="product-price">R 80</div>
+                        <div class="product-price">R 80.00</div>
                         <button class="btn btn-outline">View Details</button>
                     </div>
                 </div>
@@ -243,12 +292,12 @@
 				<!-- Product 14 -->
                 <div class="product-card" onclick="openProductModal('product14')" data-category="CCrafts">
                     <div class="product-image">
-                        <img src="Round+Tray005.png" alt="Handcrafted Product 14" class="product-img" loading="lazy">
+                        <img src="Round+Tray004.png" alt="Handcrafted Product 14" class="product-img" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Round+Tray Concrete Planter</h3>
                         <p class="product-description">Bring contemporary style to your home or office with our handcrafted geometric concrete planters. Each planter is cast with care using durable, high-quality concrete, giving it a smooth, industrial finish that complements any modern decor.</p>
-                        <div class="product-price">R 60</div>
+                        <div class="product-price">R 60.00</div>
                         <button class="btn btn-outline">View Details</button>
                     </div>
                 </div>
@@ -256,12 +305,12 @@
 				<!-- Product 15 -->
                 <div class="product-card" onclick="openProductModal('product15')" data-category="CCrafts">
                     <div class="product-image">
-                        <img src="x3Hex005.png" alt="Handcrafted Product 15" class="product-img" loading="lazy">
+                        <img src="x3Hex004.png" alt="Handcrafted Product 15" class="product-img" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">X3 Hex Concrete Planters</h3>
                         <p class="product-description">Bring contemporary style to your home or office with our handcrafted geometric concrete planters. Each planter is cast with care using durable, high-quality concrete, giving it a smooth, industrial finish that complements any modern decor.</p>
-                        <div class="product-price">R 100</div>
+                        <div class="product-price">R 100.00</div>
                         <button class="btn btn-outline">View Details</button>
                     </div>
                 </div>
@@ -274,10 +323,147 @@
                     <div class="product-info">
                         <h3 class="product-title">X4 Honeycomb Concrete Planters</h3>
                         <p class="product-description">Bring contemporary style to your home or office with our handcrafted geometric concrete planters. Each planter is cast with care using durable, high-quality concrete, giving it a smooth, industrial finish that complements any modern decor.</p>
-                        <div class="product-price">R 100</div>
+                        <div class="product-price">R 100.00</div>
                         <button class="btn btn-outline">View Details</button>
                     </div>
                 </div>
+				
+				<!-- 3d-Printed ----------------------------------------------------------------------->
+				
+				<!-- Product 17 -->
+                <div class="product-card" onclick="openProductModal('product17')" data-category="CCrafts 3dPrint">
+                    <div class="product-image">
+                        <img src="DartVader02.png" alt="Handcrafted Product 17" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Mini Darth Vader Planter</h3>
+                        <p class="product-description">Introducing our exquisite Mini Planter, featuring a meticulously designed 3D-printed shell that adds a modern twist to any space, indoors or out.</p>
+                        <div class="product-price">R 250.00</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				<!-- Product 19 -->
+                <div class="product-card" onclick="openProductModal('product19')" data-category="CCrafts 3dPrint">
+                    <div class="product-image">
+                        <img src="CloneTrooper 03.png" alt="Handcrafted Product 19" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Mini Clone Trooper Planter</h3>
+                        <p class="product-description">ntroducing our exquisite Mini Planter, featuring a meticulously designed 3D-printed shell that adds a modern twist to any space, indoors or out..</p>
+                        <div class="product-price">R 250.00</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				<!-- Product 20 -->
+                <div class="product-card" onclick="openProductModal('product20')" data-category="CCrafts 3dPrint">
+                    <div class="product-image">
+                        <img src="Yoda003.png" alt="Handcrafted Product 20" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Mini Yoda Planter Pot</h3>
+                        <p class="product-description">ntroducing our exquisite Mini Planter, featuring a meticulously designed 3D-printed shell that adds a modern twist to any space, indoors or out..</p>
+                        <div class="product-price">R 250.00</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				<!-- Product 21 -->
+                <div class="product-card" onclick="openProductModal('product21')" data-category="CCrafts 3dPrint">
+                    <div class="product-image">
+                        <img src="upscaled-skull-planter-pot-green-white-3d-print-concrete.png" alt="Handcrafted Product 21" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Large Skull Planter Pot</h3>
+                        <p class="product-description">Add a striking statement piece to your space with this handcrafted Upsized Skull Planter Pot. The outer shell is 3D printed for precise detailing, then filled with solid concrete for weight, durability, and a unique textured finish</p>
+                        <div class="product-price">R 350.00</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				<!-- Product 22 -->
+                <div class="product-card" onclick="openProductModal('product22')" data-category="CCrafts 3dPrint">
+                    <div class="product-image">
+                        <img src="BS001-removebg-preview.png" alt="Handcrafted Product 22" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Large Bulbasaur Planter Pot</h3>
+                        <p class="product-description">Introducing our Upsized Bulbasaur Planter, a delightful fusion of nature and nostalgia. Featuring a meticulously 3D-printed design, this larger-than-life planter brings the beloved Pokémon to your home or garden.</p>
+                        <div class="product-price">R 350.00</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				<!-- Product 18 -->
+                <div class="product-card" onclick="openProductModal('product18')" data-category="CCrafts 3dPrint">
+                    <div class="product-image">
+                        <img src="hex-cement-display-tile-display.png" alt="Handcrafted Product 18" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Hex Cement Display Tiles</h3>
+                        <p class="product-description">Show off your favourite fandoms with these handcrafted hexagonal cement display tiles, each featuring a 3D printed design embedded directly into the tile for lasting detail and texture.</p>
+                        <div class="product-price">R 150.00</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				<!-- Product 23 -->
+                <div class="product-card" onclick="openProductModal('product23')" data-category="3dPrint">
+                    <div class="product-image">
+                        <img src="oversized-3d-printed-d20-dice-unique-giant-gaming-accessory-for-d-d-rpgs-collectors-multi-colored.png" alt="Handcrafted Product 23" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Oversized 3D-Printed D20 Dice</h3>
+                        <p class="product-description">Oversized 3D-Printed D20 Dice – Unique Giant Gaming Accessory for D&D, RPGs & Collectors</p>
+                        <div class="product-price">R 60.00</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				<!-- Digital ----------------------------------------------------------------------->
+				
+				<!-- Product 24 -->
+                <div class="product-card" onclick="openProductModal('product24')" data-category="Digi">
+                    <div class="product-image">
+                        <img src="Hex Pot Mould001.jpg" alt="Handcrafted Product 24" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Hex Pot Mould (STL Files)</h3>
+                        <p class="product-description">This mould allows you to create modern, faceted concrete planters with a sleek, geometric look, perfect for adding a touch of industrial style to any space.</p>
+                        <div class="product-price">R 250.00</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				<!-- Product 25 -->
+                <div class="product-card" onclick="openProductModal('product25')" data-category="Digi">
+                    <div class="product-image">
+                        <img src="HCD001.jpg" alt="Handcrafted Product 25" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Honeycomb Mould (STL Files)</h3>
+                        <p class="product-description">This mould allows you to create modern, faceted concrete planters with a sleek, geometric look, perfect for adding a touch of industrial style to any space.</p>
+                        <div class="product-price">R 250.00</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				<!-- Product 26 -->
+                <div class="product-card" onclick="openProductModal('product26')" data-category="Digi">
+                    <div class="product-image">
+                        <img src="001.jpg" alt="Handcrafted Product 26" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Bonsai Mould (STL Files)</h3>
+                        <p class="product-description">This mould allows you to create modern, faceted concrete planters with a sleek, geometric look, perfect for adding a touch of industrial style to any space.</p>
+                        <div class="product-price">R 250.00</div>
+                        <button class="btn btn-outline">View Details</button>
+                    </div>
+                </div>
+				
+				
+				
             </div>
         </div>
     </section>
@@ -334,23 +520,39 @@
                     </ul>
                 </div>
 				
-				<!-- Service 4 -->
-                <div class="service-card">
-                    <div class="service-icon"><img src="The-Crafters-Guild.png" alt="services-4" loading="lazy"></div>
-                    <h3 class="service-title">The Crafters Guild</h3>
-                    <p class="service-description">
-                        Are you a talented crafter or artisan ready to take your business online but overwhelmed by the time, resources, or know-how it requires? Join our Shared Online Marketplace, a professionally managed platform where your creations can shine without the hassle of running your own online store.
-                    </p>
-                    <ul class="service-features">
-                        <li>Handcrafted Artistry – Each piece made with care, skill, and creativity.</li>
-                        <li>Premium Quality – Durable, vibrant designs using high-grade yarns.</li>
-                        <li>Custom Made for You – From rugs to wall art, tailored to your vision.</li>
-                        <li>Texture That Tells a Story – Add warmth, personality, and style to any space.</li>
-                    </ul>
-                </div>
             </div>
         </div>
     </section>
+	
+	<!-- Add this after Services section -->
+	<section id="shipping" class="shipping-info">
+		<div class="container">
+			<h2 class="section-title">Shipping & Delivery</h2>
+			<div class="shipping-content">
+				<div class="shipping-details">
+					<h3>Shipping Information</h3>
+					<ul>
+						<li>🚚 <strong>Free shipping</strong> on orders over R500</li>
+						<li>📦 Standard shipping: R99 (3-5 business days)</li>
+						<li>⚡ Express shipping: R149 (1-2 business days)</li>
+						<li>📍 We ship nationwide across South Africa</li>
+						<li>📞 Tracking number provided for all orders</li>
+					</ul>
+				</div>
+				<div class="shipping-faq">
+					<h3>Delivery FAQ</h3>
+					<div class="faq-item">
+						<h4>How long does processing take?</h4>
+						<p>Most handmade items take 2-3 business days to prepare before shipping.</p>
+					</div>
+					<div class="faq-item">
+						<h4>Do you offer international shipping?</h4>
+						<p>Currently we only ship within South Africa.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
     <!-- About Section -->
     <section id="about" class="about">
@@ -367,10 +569,7 @@
 
 						Thank you for visiting our corner of the internet and for supporting a dream that started when the world stood still.
                     </p>
-                    <p class="about-description">
-                        With years of experience and a commitment to traditional techniques, we combine artistry with 
-                        practicality to deliver exceptional crafts that stand the test of time.
-                    </p>
+             
                     <div class="about-features">
                         <div class="feature">
                             <span class="feature-icon"><img src="Icon_Point_1.png" alt="about_icon1" loading="lazy"></span>
@@ -403,9 +602,9 @@
                 <div class="contact-info">
                     <h3>Contact Information</h3>
                     <div class="contact-item">
-                        <span class="contact-icon">📧</span>
-                        <span>info@bangarangcrafts.co.za</span>
-                    </div>
+						<span class="contact-icon">📧</span>
+						<span>christo.bangarang@gmail.com</span>
+					</div>
                     <div class="contact-item">
                         <span class="contact-icon">📱</span>
                         <span>+27 765202303</span>
@@ -414,6 +613,10 @@
                         <span class="contact-icon">📍</span>
                         <span>South Africa</span>
                     </div>
+					<div class="contact-item">
+						<span class="contact-icon">🚚</span>
+						<span>Free shipping on orders over R500</span>
+					</div>
                 </div>
                 
                 <form class="contact-form">
@@ -446,20 +649,26 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#products">Products</a></li>
                         <li><a href="#services">Services</a></li>
+						<li><a href="#shipping">Shipping</a></li>
                         <li><a href="#about">About</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Connect With Us</h4>
                     <div class="social-links">
-                        <a href="#">Facebook</a>
-                        <a href="#">Instagram</a>
-                        <a href="#">Pinterest</a>
+                        <a href="https://www.facebook.com/BangArangCrafts">Facebook</a>
+                        <a href="https://www.instagram.com/bangarang_crafts">Instagram</a>
                     </div>
                 </div>
+				<div class="footer-section">
+					<h4>Shipping Info</h4>
+					<p>Free shipping on orders over R500</p>
+					<p>Nationwide delivery</p>
+					<a href="#shipping">View full shipping details</a>
+				</div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Bangarang Crafts. All rights reserved.</p>
+                <p>&copy; 2019 Bangarang Crafts. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -491,12 +700,16 @@
                     <h4>Product Features:</h4>
                     <ul id="modalFeatures"></ul>
                 </div>
+				
 				<h2>Let's Talk Business</h2>
-                <button class="btn btn-primary" onclick="closeProductModal()">Email</button>
-				<button class="btn btn-primary" onclick="closeProductModal()">Whatsapp</button>
+                <button class="btn btn-primary" onclick="closeModalAndScrollToContact()">Email</button>
+				<button class="btn btn-primary" onclick="openWhatsApp()">Whatsapp</button>
 				<p>At our store, you have options. You can buy products directly at the listed supplier price — quick and easy — or choose to negotiate with us for a custom deal that fits your budget. We believe in fair pricing and open communication, so you always get the best value possible.</p>
+				<p>📦 <strong>Free shipping</strong> on orders over R500</p>
+				<p>📍 Ships nationwide across South Africa</p>
 				<h4>listed suppliers</h4>
-				<button class="btn btn-primary" onclick="closeProductModal()">Hearthforge.co.za</button>
+				<button class="btn btn-primary" onclick="openHearthforgeWebsite()">Hearthforge.co.za</button>
+
             </div>
         </div>
     </div>
