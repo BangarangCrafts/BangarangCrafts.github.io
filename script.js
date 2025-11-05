@@ -45,11 +45,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const products = {
     'product1': {
         images: [
-            'hand-tufted-lightsaber-keyboard-armrest-pad-in-use-Mustafar.png',
-            'hand-tufted-lightsaber-armrest-red-sith.png',
-            'hand-tufted-lightsaber-armrest-blue-jedi.png',
-            'hand-tufted-lightsaber-armrest-red-sith-back.png',
-            'hand-tufted-lightsaber-armrest-blue-jedi-back.png'
+            'hand-tufted-lightsaber-keyboard-armrest-pad-in-use-Mustafar.webp',
+            'hand-tufted-lightsaber-armrest-red-sith.webp',
+            'hand-tufted-lightsaber-armrest-blue-jedi.webp',
+            'hand-tufted-lightsaber-armrest-red-sith-back.webp',
+            'hand-tufted-lightsaber-armrest-blue-jedi-back.webp'
         ],
         title: 'Hand-Tufted Lightsabre Keyboard Armrest',
         description: 'Upgrade your desk setup with this hand-tufted red Sith lightsaber armrest, the perfect Star Wars-themed ergonomic accessory for fans, gamers, and remote workers alike. Crafted using high-quality materials, the durable design offers wrist support during long typing sessions. Ideal for use with keyboards, laptops, and workstations.',
@@ -62,8 +62,8 @@ const products = {
     },
     'product2': {
         images: [
-            'naruto_akatsuki_cloud_rug.png',
-			'naruto_akatsuki_cloud_rug_back.png'
+            'naruto_akatsuki_cloud_rug.webp',
+			'naruto_akatsuki_cloud_rug_back.webp'
         ],
         title: 'Handmade Tufted Naruto Cloud Akatsuki Rug',
         description: 'Introducing the Naruto Cloud Rug by Bangarang Crafts: a hand-tufted homage to the iconic imagery of Naruto. Soft, durable, and whimsically designed, it brings the serene essence of floating clouds into your home. Elevate any space with this unique blend of fandom and comfort, perfect for any Naruto enthusiast or lover of artisanal decor.',
@@ -76,8 +76,8 @@ const products = {
     },
     'product3': {
         images: [
-            'DarthVader_Tufted_Rug.png',
-			'DarthVader_Tufted_Rug_Back.png'
+            'DarthVader_Tufted_Rug.webp',
+			'DarthVader_Tufted_Rug_Back.webp'
         ],
         title: 'Handmade Tufted Darth Vader Rug',
         description: 'Step into the Star Wars universe with this striking handmade Darth Vader rug. With its bold design and cinematic vibes, this piece is a must-have for any true fan of the Empire.',
@@ -90,8 +90,8 @@ const products = {
     },
     'product4': {
         images: [
-            'StarWars_StormTrooper_TuftedRug.png',
-			'StarWars_StormTrooper_TuftedRug_Back.png'
+            'StarWars_StormTrooper_TuftedRug.webp',
+			'StarWars_StormTrooper_TuftedRug_Back.webp'
         ],
         title: 'Handmade Tufted Stormtrooper Rug',
         description: 'Transform your space with this bold and unique tufted rug featuring the iconic Stormtrooper helmet.Handmade with love and precision, this piece brings character and fandom flair to any room, perfect for your gaming corner, bedroom, home theater, or collector’s display.',
@@ -104,8 +104,8 @@ const products = {
     },
     'product5': {
         images: [
-            'gray-xenomorph-alien-tshirt-handcarved-print-full.png',
-			'gray-xenomorph-alien-tshirt-handcarved-print.png'
+            'gray-xenomorph-alien-tshirt-handcarved-print-full.webp',
+			'gray-xenomorph-alien-tshirt-handcarved-print.webp'
         ],
         title: 'Xenomorph Alien T-Shirt – Hand-Carved Stamp Print',
         description: 'Featuring a hand-carved stamp print of the iconic alien from the Alien franchise. Printed on a soft, high-quality cotton tee, this design brings raw detail and underground style to your wardrobe. Each print is inspired by traditional block printing, giving every shirt a unique, gritty look that fans of H.R. Giger and classic sci-fi horror will love.',
@@ -119,8 +119,8 @@ const products = {
     },
 	'product6': {
         images: [
-            'Blanka-Street-Fighter-T-Shirt-Red-Block-Printed-Retro-Gamer-Tee-Large-edited.png',
-			'blanka-street-fighter-tshirt-red-retro-gamer-tee-1.png'
+            'Blanka-Street-Fighter-T-Shirt-Red-Block-Printed-Retro-Gamer-Tee-Large-edited.webp',
+			'blanka-street-fighter-tshirt-red-retro-gamer-tee-1.webp'
         ],
         title: 'Blanka Street Fighter T-Shirt – Block Printed Retro Gamer Tee',
         description: 'This bold tee features a striking linocut-style design of Blanka in his iconic crouched pose—block printed for a crisp, bold, and timeless look. Each shirt is carefully printed using traditional block printing methods, giving it a unique texture and feel that stands out from mass-produced prints. Its the perfect wearable for fans of classic arcade action, handmade quality, and bold graphic style.',
@@ -134,8 +134,8 @@ const products = {
     },
 	'product7': {
         images: [
-            'blue-hand-printed-totoro-inspired-block-print-tshirt-002.png',
-			'blue-hand-printed-totoro-inspired-block-print-tshirt-001.png'
+            'blue-hand-printed-totoro-inspired-block-print-tshirt-002.webp',
+			'blue-hand-printed-totoro-inspired-block-print-tshirt-001.webp'
         ],
         title: 'Hand-Printed Totoro-Inspired T-Shirt – Block Print Fan Art Tee',
         description: 'This Totoro-inspired t-shirt is hand printed using block printing techniques, giving each piece a unique artisan touch. Featuring the beloved forest spirit with an umbrella alongside a young girl, this fan art shirt captures the charm of My Neighbor Totoro. Made from soft, breathable cotton fabric, this unisex tee blends comfort with handmade creativity. Perfect for Studio Ghibli fans, anime lovers, and anyone who enjoys whimsical graphic tees.',
@@ -149,8 +149,8 @@ const products = {
     },
 	'product8': {
         images: [
-            'light-red-hand-printed-skull-block-print-tshirt-002.png',
-			'light-red-hand-printed-skull-block-print-tshirt-001.png'
+            'light-red-hand-printed-skull-block-print-tshirt-002.webp',
+			'light-red-hand-printed-skull-block-print-tshirt-001.webp'
         ],
         title: 'Hand-Printed Skull T-Shirt – Block Print Gothic Streetwear',
         description: 'This skull t-shirt is hand printed using traditional block printing techniques, making every piece unique. The bold black skull design adds an edgy gothic streetwear vibe, perfect for fans of alternative fashion, festivals, and casual everyday style. Crafted with care on soft, breathable fabric, this unisex graphic tee combines comfort with handmade artistry. A one-of-a-kind skull shirt for those who love originality in their wardrobe.',
@@ -164,9 +164,9 @@ const products = {
     },
 	'product9': {
         images: [
-            'groot.jpg',
-			'Groot02.png',
-			'Groot03.png',
+            'groot.webp',
+			'Groot02.webp',
+			'Groot03.webp',
 			
         ],
         title: 'Groot Planter Pot – Small Concrete Plant Pot',
@@ -181,9 +181,9 @@ const products = {
     },
 	'product10': {
         images: [
-            'Skull.jpg',
-			'Skull01.png',
-			'Skull02.png',
+            'Skull.webp',
+			'Skull01.webp',
+			'Skull02.webp',
 			
         ],
         title: 'Mini Skull Cement Planter Pot',
@@ -198,9 +198,9 @@ const products = {
     },
 	'product11': {
         images: [
-            'Mini_Bulbasaur_Cement_Planter_Handmade_Pokémon_Succulent_Pot_1.png',
-			'Mini_Bulbasaur_Cement_Planter_Handmade_Pokémon_Succulent_Pot_2.png',
-			'bbs003.png',
+            'Mini_Bulbasaur_Cement_Planter_Handmade_Pokémon_Succulent_Pot_1.webp',
+			'Mini_Bulbasaur_Cement_Planter_Handmade_Pokémon_Succulent_Pot_2.webp',
+			'bbs003.webp',
 			
         ],
         title: 'Mini Bulbasaur Cement Planter – Pokémon Succulent Pot',
@@ -215,9 +215,9 @@ const products = {
     },
 	'product12': {
         images: [
-            'skull_cement_ashtray_01.png',
-			'skull_cement_ashtray_02.png',
-			'skull_cement_ashtray_03.png',
+            'skull_cement_ashtray_01.webp',
+			'skull_cement_ashtray_02.webp',
+			'skull_cement_ashtray_03.webp',
 			
         ],
         title: 'Skull Cement Ashtray',
@@ -232,9 +232,9 @@ const products = {
     },
 	'product13': {
         images: [
-            'Twist003.png',
-			'Twist002.png',
-			'Twist004.png',
+            'Twist003.webp',
+			'Twist002.webp',
+			'Twist004.webp',
 			
         ],
         title: 'Twisted Concrete Planter',
@@ -249,10 +249,10 @@ const products = {
     },
 	'product14': {
         images: [
-            'Round+Tray004.png',
-			'Round+Tray002.png',
-			'Round+Tray003.png',
-			'Round+Tray005.png',
+            'Round+Tray004.webp',
+			'Round+Tray002.webp',
+			'Round+Tray003.webp',
+			'Round+Tray005.webp',
 			
         ],
         title: 'Round+Tray Concrete Planter',
@@ -267,9 +267,9 @@ const products = {
     },
 	'product15': {
         images: [
-            'x3Hex003.png',
-			'x3Hex004.png',
-			'x3Hex005.png',
+            'x3Hex003.webp',
+			'x3Hex004.webp',
+			'x3Hex005.webp',
 			
 			
         ],
@@ -285,9 +285,9 @@ const products = {
     },
 	'product16': {
         images: [
-            'x4Honey002.png',
-			'x4Honey005.png',
-			'x4Honey006.png',
+            'x4Honey002.webp',
+			'x4Honey005.webp',
+			'x4Honey006.webp',
 			
 			
 			
@@ -304,10 +304,10 @@ const products = {
     },
 	'product17': {
         images: [
-            'DartVader.jpg',
-			'DarthVader_Back.jpg',
-			'DartVader02.png',
-			'DartVader03.png',
+            'DartVader.webp',
+			'DarthVader_Back.webp',
+			'DartVader02.webp',
+			'DartVader03.webp',
 			
 			
         ],
@@ -323,9 +323,9 @@ const products = {
     },
 	'product19': {
         images: [
-            'CloneTrooper 01.png',
-			'CloneTrooper 02.png',
-			'CloneTrooper 03.png',
+            'CloneTrooper 01.webp',
+			'CloneTrooper 02.webp',
+			'CloneTrooper 03.webp',
 			
 			
 			
@@ -342,10 +342,10 @@ const products = {
     },
 	'product20': {
         images: [
-            'Yoda001.png',
-			'Yoda002.png',
-			'Yoda003.png',
-			'Yoda004.png',
+            'Yoda001.webp',
+			'Yoda002.webp',
+			'Yoda003.webp',
+			'Yoda004.webp',
 			
 			
 			
@@ -362,10 +362,10 @@ const products = {
     },
 	'product21': {
         images: [
-            'upscaled-skull-planter-pot-black-3d-print-concrete.png',
-			'upscaled-skull-planter-pot-green-3d-print-concrete.png',
-			'upscaled-skull-planter-pot-white-3d-print-concrete.png',
-			'upscaled-skull-planter-pot-green-white-3d-print-concrete.png',
+            'upscaled-skull-planter-pot-black-3d-print-concrete.webp',
+			'upscaled-skull-planter-pot-green-3d-print-concrete.webp',
+			'upscaled-skull-planter-pot-white-3d-print-concrete.webp',
+			'upscaled-skull-planter-pot-green-white-3d-print-concrete.webp',
 			
 			
 			
@@ -382,9 +382,9 @@ const products = {
     },
 	'product22': {
         images: [
-            'BS001-removebg-preview.png',
-			'BS002-removebg-preview.png',
-			'BS003-removebg-preview.png',
+            'BS001-removebg-preview.webp',
+			'BS002-removebg-preview.webp',
+			'BS003-removebg-preview.webp',
 			
 			
 			
@@ -402,19 +402,19 @@ const products = {
     },
 	'product18': {
         images: [
-            'hex-cement-display-tile-display.png',
-			'frida-kahlo-classic-hex-cement-display-tile.png',
-			'frida-kahlo-red-hair-hex-cement-display-tile.png',
-			'frida-kahlo-teal-hair-hex-cement-display-tile.png',
-			'naruto-akatsuki-cloud-hex-cement-display-tile.png',
-			'pokemon-charizard-hex-cement-display-tile.png',
-			'pokemon-gengar-hex-cement-display-tile.png',
-			'skull-hex-cement-display-tile-gothic-desk-decor.png',
-			'star-wars-x-wing-hex-cement-display-tile.png',
-			'teenage-mutant-ninja-turtle-donatello-hex-cement-tile.png',
-			'teenage-mutant-ninja-turtle-leo-hex-cement-tile.png',
-			'totoro-hex-cement-display-tile-desk-decor.png',
-			'hex-cement-display-tile-back.png',
+            'hex-cement-display-tile-display.webp',
+			'frida-kahlo-classic-hex-cement-display-tile.webp',
+			'frida-kahlo-red-hair-hex-cement-display-tile.webp',
+			'frida-kahlo-teal-hair-hex-cement-display-tile.webp',
+			'naruto-akatsuki-cloud-hex-cement-display-tile.webp',
+			'pokemon-charizard-hex-cement-display-tile.webp',
+			'pokemon-gengar-hex-cement-display-tile.webp',
+			'skull-hex-cement-display-tile-gothic-desk-decor.webp',
+			'star-wars-x-wing-hex-cement-display-tile.webp',
+			'teenage-mutant-ninja-turtle-donatello-hex-cement-tile.webp',
+			'teenage-mutant-ninja-turtle-leo-hex-cement-tile.webp',
+			'totoro-hex-cement-display-tile-desk-decor.webp',
+			'hex-cement-display-tile-back.webp',
 			
         ],
         title: 'Hex Cement Display Tiles',
@@ -429,8 +429,8 @@ const products = {
     },
 	'product23': {
         images: [
-            'oversized-3d-printed-d20-dice-unique-giant-gaming-accessory-for-d-d-rpgs-collectors-multi-colored.png',
-			'oversized-3d-printed-d20-dice-unique-giant-gaming-accessory-for-d-d-rpgs-collectors-black.png',
+            'oversized-3d-printed-d20-dice-unique-giant-gaming-accessory-for-d-d-rpgs-collectors-multi-colored.webp',
+			'oversized-3d-printed-d20-dice-unique-giant-gaming-accessory-for-d-d-rpgs-collectors-black.webp',
 			
         ],
         title: 'Oversized 3D-Printed D20 Dice',
@@ -445,8 +445,8 @@ const products = {
     },
 	'product24': {
         images: [
-            'Hex Pot Mould001.jpg',
-			'Hex Pot Mould003.png',
+            'Hex Pot Mould001.webp',
+			'Hex Pot Mould003.webp',
 			
         ],
         title: 'Hex Pot Mould (STL Files)',
@@ -461,8 +461,8 @@ const products = {
     },
 	'product25': {
         images: [
-            'HCD001.jpg',
-			'HCD002.png',
+            'HCD001.webp',
+			'HCD002.webp',
 			
         ],
         title: 'Honeycomb Mould (STL Files)',
@@ -477,7 +477,7 @@ const products = {
     },
 	'product26': {
         images: [
-            '001.jpg',
+            '001.webp',
 			
         ],
         title: 'Bonsai Mould (STL Files)',
@@ -492,8 +492,8 @@ const products = {
     },
 	'product27': {
         images: [
-            'Hand-Tufted-One-Piece-Rug-Straw-Hat-Pirates-Carpet-Anime-Luffy-Floor-Mat.png',
-			'Hand-Tufted-One-Piece-Rug-Straw-Hat-Pirates-Carpet-Anime-Luffy-Floor-Mat-Back.png',
+            'Hand-Tufted-One-Piece-Rug-Straw-Hat-Pirates-Carpet-Anime-Luffy-Floor-Mat.webp',
+			'Hand-Tufted-One-Piece-Rug-Straw-Hat-Pirates-Carpet-Anime-Luffy-Floor-Mat-Back.webp',
 			
         ],
         title: 'Handmade Tufted Straw Hat Jolly Roger Rug',
@@ -508,8 +508,8 @@ const products = {
     },
 	'product28': {
         images: [
-            'Hand-Tufted-Gengar-Rug-Pokemon-Plush-Carpet-Ghost-Type-Fan-Art.png',
-			'Hand-Tufted-Gengar-Rug-Pokemon-Plush-Carpet-Ghost-Type-Fan-Art-Back.png',
+            'Hand-Tufted-Gengar-Rug-Pokemon-Plush-Carpet-Ghost-Type-Fan-Art.webp',
+			'Hand-Tufted-Gengar-Rug-Pokemon-Plush-Carpet-Ghost-Type-Fan-Art-Back.webp',
 			
         ],
         title: 'Handmade Tufted Gengar Roger Rug',
@@ -524,8 +524,8 @@ const products = {
     },
 	'product29': {
         images: [
-            'TMNT-Leonardo-Rug-Retro-90s-Turtle-Squad-Floor-Art-Handmade-Decor.png',
-			'TMNT-Leonardo-Rug-Retro-90s-Turtle-Squad-Floor-Art-Handmade-Decor_Back.png',
+            'TMNT-Leonardo-Rug-Retro-90s-Turtle-Squad-Floor-Art-Handmade-Decor.webp',
+			'TMNT-Leonardo-Rug-Retro-90s-Turtle-Squad-Floor-Art-Handmade-Decor_Back.webp',
 			
         ],
         title: 'Handmade Tufted TMNT Leo Rug',
