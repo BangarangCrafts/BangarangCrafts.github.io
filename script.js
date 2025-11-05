@@ -538,6 +538,21 @@ const products = {
 			
         ]
     },
+	'product30': {
+        images: [
+            'hellcat_logo_02.webp',
+			'hellcat_logo.webp'
+        ],
+        title: 'Hand-Printed Hellcat T-Shirt – Block Print Gothic Streetwear',
+        description: 'This Hellcat T-Shirt is hand printed using traditional block printing techniques, making every piece unique. The bold black Hellcat design adds an edgy gothic streetwear vibe, perfect for fans of alternative fashion, festivals, and casual everyday style. Crafted with care on soft, breathable fabric, this unisex graphic tee combines comfort with handmade artistry. A one-of-a-kind Hellcat shirt for those who love originality in their wardrobe.',
+        price: 'R 250.00',
+        features: [
+            'Hand-printed with an original carved design',
+            'Soft and breathable cotton fabric',
+            'Unisex fit – perfect for everyday wear or geeky conventions',
+			'custom color available'
+        ]
+    },
 	
 };
 
@@ -1018,4 +1033,3 @@ if (document.readyState === 'loading') {
     // DOMContentLoaded has already fired
     setTimeout(initProductFilters, 100);
 }
-
