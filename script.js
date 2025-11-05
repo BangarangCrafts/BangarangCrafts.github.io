@@ -512,7 +512,7 @@ const products = {
 			'Hand-Tufted-Gengar-Rug-Pokemon-Plush-Carpet-Ghost-Type-Fan-Art-Back.webp',
 			
         ],
-        title: 'Handmade Tufted Gengar Roger Rug',
+        title: 'Handmade Tufted Gengar Rug',
         description: 'Add a touch of playful spookiness to your space with this premium hand-tufted Gengar rug. Featuring fan-art of the iconic Ghost-type Pokemon, this incredibly soft and plush carpet is the perfect way to show your love for Pokemon. A must-have for any trainers bedroom, gaming room, or living space.',
         price: 'R 1250.00',
         features: [
@@ -1018,3 +1018,4 @@ if (document.readyState === 'loading') {
     // DOMContentLoaded has already fired
     setTimeout(initProductFilters, 100);
 }
+
