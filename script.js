@@ -553,6 +553,20 @@ const products = {
 			'custom color available'
         ]
     },
+	'product31': {
+        images: [
+            'Kuromi_Hand_Tufted_Rug_01.webp',
+			'Kuromi_Hand_Tufted_Rug_02.webp'
+        ],
+        title: 'Kuromi Hand-Tufted Rug',
+        description: 'Add a touch of cheeky gothic charm to your decor with this premium hand-tufted Kuromi rug. Featuring fan art of the beloved Sanrio character, this ultra-soft and plush piece brings both cuteness and attitude to any room. Perfect for fans of bold, playful aesthetics, a must-have addition to your bedroom, gaming area, or cozy creative corner.',
+        price: 'R 1250.00',
+        features: [
+            'Thickness: 2.5cm',
+            'Width: 70cm',
+            'Length: 100cm',
+        ]
+    },
 	
 };
 
