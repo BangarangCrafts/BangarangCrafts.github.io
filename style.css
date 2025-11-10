@@ -1534,3 +1534,64 @@ section {
     font-size: 0.9rem;
     font-weight: 500;
 }
+
+/* Expandable Service Cards */
+.service-card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.service-card .service-description,
+.service-card .service-features {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Desktop: Expand on hover */
+@media (min-width: 769px) {
+    .service-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .service-card:hover .service-description,
+    .service-card:hover .service-features {
+        max-height: 500px;
+        opacity: 1;
+    }
+}
+
+/* Mobile: Expand on click */
+@media (max-width: 768px) {
+    .service-card.expanded {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+    
+    .service-card.expanded .service-description,
+    .service-card.expanded .service-features {
+        max-height: 500px;
+        opacity: 1;
+        margin-bottom: 1rem;
+    }
+    
+    /* Show a visual indicator that cards are clickable */
+    .service-card::after {
+        content: 'Tap to expand';
+        display: block;
+        font-size: 0.8rem;
+        color: var(--primary-color);
+        text-align: center;
+        margin-top: 1rem;
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+    }
+    
+    .service-card.expanded::after {
+        content: 'Tap to close';
+    }
+}
