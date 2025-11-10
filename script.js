@@ -995,68 +995,6 @@ function initStickyFilters() {
     });
 }
 
-// Expandable Service Cards functionality
-function toggleServiceCard(card) {
-    // Close all other expanded cards
-    document.querySelectorAll('.service-card.expanded').forEach(otherCard => {
-        if (otherCard !== card) {
-            otherCard.classList.remove('expanded');
-            const btn = otherCard.querySelector('.read-more-btn');
-            if (btn) {
-                btn.innerHTML = 'Read More <span class="icon">▼</span>';
-            }
-        }
-    });
-    
-    // Toggle current card
-    card.classList.toggle('expanded');
-    const btn = card.querySelector('.read-more-btn');
-    if (btn) {
-        if (card.classList.contains('expanded')) {
-            btn.innerHTML = 'Read Less <span class="icon">▼</span>';
-        } else {
-            btn.innerHTML = 'Read More <span class="icon">▼</span>';
-        }
-    }
-}
-
-// Optional: Auto-expand on hover (comment out if you only want click)
-function initServiceCardHover() {
-    const serviceCards = document.querySelectorAll('.service-card');
-    
-    serviceCards.forEach(card => {
-        // Uncomment below if you want hover functionality instead of/in addition to click
-        
-        card.addEventListener('mouseenter', () => {
-            if (!card.classList.contains('expanded')) {
-                toggleServiceCard(card);
-            }
-        });
-        
-        card.addEventListener('mouseleave', () => {
-            if (card.classList.contains('expanded')) {
-                // Optional: auto-collapse on mouse leave
-                // toggleServiceCard(card);
-            }
-        });
-        
-    });
-}
-
-// Initialize service cards when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    initServiceCardHover();
-    
-    // Add click event to read more buttons (alternative to card click)
-    document.querySelectorAll('.read-more-btn').forEach(btn => {
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation(); // Prevent triggering card click
-            const card = this.closest('.service-card');
-            toggleServiceCard(card);
-        });
-    });
-});
-
 // Update your DOMContentLoaded event listener
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM fully loaded, initializing...');
