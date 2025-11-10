@@ -956,39 +956,6 @@ function initProductFilters() {
     });
 }
 
-// Expandable Service Cards Functionality
-function initServiceCards() {
-    const serviceCards = document.querySelectorAll('.service-card');
-    
-    serviceCards.forEach(card => {
-        // Mobile: Toggle expand on click
-        card.addEventListener('click', function() {
-            if (window.innerWidth <= 768) {
-                // Close other expanded cards
-                serviceCards.forEach(otherCard => {
-                    if (otherCard !== this && otherCard.classList.contains('expanded')) {
-                        otherCard.classList.remove('expanded');
-                    }
-                });
-                
-                // Toggle current card
-                this.classList.toggle('expanded');
-            }
-        });
-        
-        // Desktop: Reset expanded state when resizing from mobile to desktop
-        window.addEventListener('resize', function() {
-            if (window.innerWidth > 768) {
-                card.classList.remove('expanded');
-            }
-        });
-    });
-}
-
-// Initialize service cards when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    initServiceCards();
-});
 
 // Sticky Filter Enhancement
 function initStickyFilters() {
