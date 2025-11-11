@@ -570,6 +570,46 @@ const products = {
 	
 };
 
+// Service data for modals
+const services = {
+    'service1': {
+        image: 'NFC.webp',
+        title: 'Custom NFC Business Card',
+        description: 'Transform your networking game with our cutting-edge Custom NFC Business Cards. These sleek, tech-savvy cards allow you to share your contact details, social media profiles, websites, and more instantly! Perfect for professionals, entrepreneurs, and creatives who want to make a memorable impression.',
+        features: [
+            'Instant Sharing – Exchange contact details and links with just a tap',
+            'Smart & Sleek – Modern design meets next-gen technology',
+            'Eco-Friendly – Go paperless and reduce waste',
+            'Fully Customizable – Tailor your card to match your brand and style',
+            'Quick Setup – Easy to program and start using immediately'
+        ]
+    },
+    'service2': {
+        image: '3d.webp',
+        title: '3D Printing',
+        description: 'Turn your ideas into reality with our Custom 3D Printing Services! Using eco-friendly PLA (Polylactic Acid), we create durable, high-quality, and precision-crafted 3D prints perfect for prototypes, creative projects, or functional parts. Whether you need a single prototype or a small batch, we deliver exceptional results.',
+        features: [
+            'Precision Printing – High-quality, detailed results for any project',
+            'Eco-Friendly Materials – Made with sustainable PLA filament',
+            'Versatile Applications – Ideal for prototypes, art, and functional parts',
+            'Bring Ideas to Life – Turn your concepts into tangible creations',
+            'Fast Turnaround – Quick production without compromising quality'
+        ]
+    },
+    'service3': {
+        image: 'Tufting.webp',
+        title: 'Custom Tufting',
+        description: 'Bring your creative visions to life with our handcrafted tufted creations! Using high-quality yarns and expert techniques, we design vibrant, textured, and durable tufted pieces—perfect for custom rugs, wall hangings, home décor, or unique gifts. Whether you want a personalized design, a bold statement piece, or a cozy addition to your space, our tufting services deliver artistry and craftsmanship in every stitch.',
+        features: [
+            'Handcrafted Artistry – Each piece made with care, skill, and creativity',
+            'Premium Quality – Durable, vibrant designs using high-grade yarns',
+            'Custom Made for You – From rugs to wall art, tailored to your vision',
+            'Texture That Tells a Story – Add warmth, personality, and style to any space',
+            'Unique Designs – No two pieces are exactly alike'
+        ]
+    }
+};
+
 // Product Modal with Carousel functionality
 function openProductModal(productId) {
     const modal = document.getElementById('productModal');
@@ -608,6 +648,79 @@ function openProductModal(productId) {
         updateCarousel();
     }
 }
+
+// Service Modal Functions
+function openServiceModal(serviceId) {
+    const modal = document.getElementById('serviceModal');
+    const service = services[serviceId];
+    
+    if (service && modal) {
+        // Update service info
+        document.getElementById('serviceModalTitle').textContent = service.title;
+        document.getElementById('serviceModalDescription').textContent = service.description;
+        document.getElementById('serviceModalImage').src = service.image;
+        document.getElementById('serviceModalImage').alt = service.title;
+        
+        // Update features list
+        const featuresList = document.getElementById('serviceModalFeatures');
+        featuresList.innerHTML = '';
+        service.features.forEach(feature => {
+            const li = document.createElement('li');
+            li.textContent = feature;
+            featuresList.appendChild(li);
+        });
+        
+        // Show modal
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden';
+        
+        // Reset scroll position
+        const modalContent = modal.querySelector('.modal-content');
+        if (modalContent) {
+            modalContent.scrollTop = 0;
+        }
+    }
+}
+
+function closeServiceModal() {
+    const modal = document.getElementById('serviceModal');
+    if (modal) {
+        modal.classList.remove('show');
+        document.body.style.overflow = 'auto';
+    }
+}
+
+function closeServiceModalAndScrollToContact() {
+    closeServiceModal();
+    
+    // Small delay to ensure modal is closed before scrolling
+    setTimeout(() => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }, 100);
+}
+
+// Close service modal when clicking outside content
+const serviceModal = document.getElementById('serviceModal');
+if (serviceModal) {
+    serviceModal.addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeServiceModal();
+        }
+    });
+}
+
+// Close service modal with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeServiceModal();
+    }
+});
 
 function closeProductModal() {
     const modal = document.getElementById('productModal');
