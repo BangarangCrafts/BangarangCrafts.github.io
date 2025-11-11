@@ -512,49 +512,49 @@
             
             <div class="services-grid">
                 <!-- Service 1 -->
-                <div class="service-card">
-                    <div class="service-icon"><img src="NFC.webp" alt="services-1" loading="lazy"></div>
-                    <h3 class="service-title">Custom NFC Business Card</h3>
-                    <p class="service-description">
-                        Transform your networking game with our cutting-edge Custom NFC Business Cards. These sleek, tech-savvy cards allow you to share your contact details, social media profiles, websites, and more instantly!
-                    </p>
-                    <ul class="service-features">
-                        <li>Instant Sharing – Exchange contact details and links with just a tap.</li>
-                        <li>Smart & Sleek – Modern design meets next-gen technology.</li>
-                        <li>Eco-Friendly – Go paperless and reduce waste.</li>
-                        <li>Fully Customizable – Tailor your card to match your brand and style.</li>
-                    </ul>
-                </div>
+<div class="service-card" onclick="openServiceModal('service1')">
+    <div class="service-icon"><img src="NFC.webp" alt="services-1" loading="lazy"></div>
+    <h3 class="service-title">Custom NFC Business Card</h3>
+    <p class="service-description">
+        Transform your networking game with our cutting-edge Custom NFC Business Cards. These sleek, tech-savvy cards allow you to share your contact details, social media profiles, websites, and more instantly!
+    </p>
+    <ul class="service-features">
+        <li>Instant Sharing – Exchange contact details and links with just a tap.</li>
+        <li>Smart & Sleek – Modern design meets next-gen technology.</li>
+        <li>Eco-Friendly – Go paperless and reduce waste.</li>
+        <li>Fully Customizable – Tailor your card to match your brand and style.</li>
+    </ul>
+</div>
 
-                <!-- Service 2 -->
-                <div class="service-card">
-                    <div class="service-icon"><img src="3d.webp" alt="services-2" loading="lazy"></div>
-                    <h3 class="service-title">3D Printing</h3>
-                    <p class="service-description">
-                        Turn your ideas into reality with our Custom 3D Printing Services! Using eco-friendly PLA (Polylactic Acid), we create durable, high-quality, and precision-crafted 3D prints perfect for prototypes, creative projects, or functional parts.
-                    </p>
-                    <ul class="service-features">
-                        <li>Precision Printing – High-quality, detailed results for any project.</li>
-                        <li>Eco-Friendly Materials – Made with sustainable PLA filament.</li>
-                        <li>Versatile Applications – Ideal for prototypes, art, and functional parts.</li>
-                        <li>Bring Ideas to Life – Turn your concepts into tangible creations.</li>
-                    </ul>
-                </div>
+<!-- Service 2 -->
+<div class="service-card" onclick="openServiceModal('service2')">
+    <div class="service-icon"><img src="3d.webp" alt="services-2" loading="lazy"></div>
+    <h3 class="service-title">3D Printing</h3>
+    <p class="service-description">
+        Turn your ideas into reality with our Custom 3D Printing Services! Using eco-friendly PLA (Polylactic Acid), we create durable, high-quality, and precision-crafted 3D prints perfect for prototypes, creative projects, or functional parts.
+    </p>
+    <ul class="service-features">
+        <li>Precision Printing – High-quality, detailed results for any project.</li>
+        <li>Eco-Friendly Materials – Made with sustainable PLA filament.</li>
+        <li>Versatile Applications – Ideal for prototypes, art, and functional parts.</li>
+        <li>Bring Ideas to Life – Turn your concepts into tangible creations.</li>
+    </ul>
+</div>
 
-                <!-- Service 3 -->
-                <div class="service-card">
-                    <div class="service-icon"><img src="Tufting.webp" alt="services-3" loading="lazy"></div>
-                    <h3 class="service-title">Custom Tufting</h3>
-                    <p class="service-description">
-                        Bring your creative visions to life with our handcrafted tufted creations! Using high-quality yarns and expert techniques, we design vibrant, textured, and durable tufted pieces—perfect for custom rugs, wall hangings, home décor, or unique gifts. Whether you want a personalized design, a bold statement piece, or a cozy addition to your space, our tufting services deliver artistry and craftsmanship in every stitch.
-                    </p>
-                    <ul class="service-features">
-                        <li>Handcrafted Artistry – Each piece made with care, skill, and creativity.</li>
-                        <li>Premium Quality – Durable, vibrant designs using high-grade yarns.</li>
-                        <li>Custom Made for You – From rugs to wall art, tailored to your vision.</li>
-                        <li>Texture That Tells a Story – Add warmth, personality, and style to any space.</li>
-                    </ul>
-                </div>
+<!-- Service 3 -->
+<div class="service-card" onclick="openServiceModal('service3')">
+    <div class="service-icon"><img src="Tufting.webp" alt="services-3" loading="lazy"></div>
+    <h3 class="service-title">Custom Tufting</h3>
+    <p class="service-description">
+        Bring your creative visions to life with our handcrafted tufted creations! Using high-quality yarns and expert techniques, we design vibrant, textured, and durable tufted pieces—perfect for custom rugs, wall hangings, home décor, or unique gifts.
+    </p>
+    <ul class="service-features">
+        <li>Handcrafted Artistry – Each piece made with care, skill, and creativity.</li>
+        <li>Premium Quality – Durable, vibrant designs using high-grade yarns.</li>
+        <li>Custom Made for You – From rugs to wall art, tailored to your vision.</li>
+        <li>Texture That Tells a Story – Add warmth, personality, and style to any space.</li>
+    </ul>
+</div>
 				
             </div>
         </div>
@@ -749,5 +749,27 @@
         </div>
     </div>
 </div>
+
+<!-- Service Modal -->
+<div id="serviceModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeServiceModal()">&times;</span>
+        <div class="modal-body">
+            <div class="modal-image">
+                <img id="serviceModalImage" src="" alt="Service Image" class="carousel-img">
+            </div>
+            <div class="modal-info">
+                <h2 id="serviceModalTitle"></h2>
+                <p id="serviceModalDescription"></p>
+                <div class="modal-features">
+                    <h4>Service Features:</h4>
+                    <ul id="serviceModalFeatures"></ul>
+                </div>
+                <button class="btn btn-primary" onclick="closeServiceModalAndScrollToContact()">Get Quote</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
