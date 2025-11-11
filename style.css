@@ -1534,3 +1534,32 @@ section {
     font-size: 0.9rem;
     font-weight: 500;
 }
+
+/* Service Modal Specific Styles */
+.service-modal .modal-image {
+    background: var(--background-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 15px 0 0 15px;
+}
+
+.service-modal .modal-image img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Mobile responsive for service modal */
+@media (max-width: 768px) {
+    .service-modal .modal-image {
+        border-radius: 15px 15px 0 0;
+        padding: 1.5rem;
+    }
+    
+    .service-modal .modal-image img {
+        max-width: 150px;
+    }
+}
