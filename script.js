@@ -570,6 +570,200 @@ const products = {
 	
 };
 
+// Projects data with customizable buttons
+const projects = {
+    'project1': {
+        images: [
+            'LL001.webp',
+            'LL002.webp',
+            'LL003.webp',	
+			'LL004.webp',
+			'LL005.webp',
+			'LL006.webp',
+        ],
+        title: 'Word Practice App',
+        description: 'This little project started as a simple idea:What if I could practise new words without getting lost in clutter or ads? So I built a lightweight vocabulary tool that lets you create your own word lists, test yourself quickly, and track how you improve over time. It’s clean, simple, and focused—perfect for learners who just want to practise words and actually remember them. The app is still a work in progress, and I’m adding new features as I go, but it’s already fully usable and great for daily practice. Download it, try it out, and feel free to send feedback if you have ideas for improvements!',
+        features: [
+			'Windows Aplication',
+            'Create & Manage Your Own Word Lists',
+            'Smart Practice Mode',
+            'Automatic Progress Tracking',
+            'User Profiles',
+            'Built-In Database System',
+			'Compact & Beginner-Friendly'
+			
+			
+        ],
+        button: {
+            type: 'download', // 'url', 'download', or 'contact'
+            text: 'Free Download',
+            link: 'Word_Practice.exe',
+            download: 'Word_Practice.exe'
+        }
+    },
+    'project2': {
+        images: [
+            'KD001.webp',
+            'KD002.webp',
+			'KD003.webp'
+        ],
+        title: 'Knight vs Dragon',
+        description: 'This game began as a fun experiment: “What if I could create a whole adventure using just one custom 3D-printed dice? And so Knight vs Dragon was born a quick, table-friendly battle between bravery and fire, where every roll shapes the story. The rules are simple, the pace is fast, and the charm comes from that chunky little 3D-printed dice that decides your fate. Will your knight strike true… or will the dragon roast you on the spot? The game is still a work in progress, and I’m refining the balance and adding new ideas as I go. But it’s already fully playable, fun, and perfect for a coffee-table clash of hero vs monster. Download it, print the dice, and enjoy the fight!',
+        features: [
+            'Custom 3D-Printed Dice Gameplay',
+            'Quick to Learn, Fast to Play',
+            'Print-and-Play Friendly',
+            'Replayable Mini-Battle',
+            'Small Game, Big Character',
+			'Actively Being Updated'
+        ],
+        button: {
+            type: 'download',
+            text: 'Free Download',
+            link: 'KNIGHT vs DRAGON.zip',
+            download: 'KNIGHT vs DRAGON.zip'
+        }
+    },
+    'project3': {
+        images: [
+            'project3-image1.webp',
+            'project3-image2.webp',
+            'project3-image3.webp',
+            'project3-image4.webp'
+        ],
+        title: 'Event Display Setup',
+        description: 'Complete convention booth setup featuring custom displays, interactive elements, and branded merchandise. This project highlights our expertise in creating engaging event experiences that attract and retain visitor attention.',
+        features: [
+            'Custom interactive displays',
+            'Branded merchandise and giveaways',
+            'Booth layout and design',
+            'Interactive NFC technology integration',
+            'Visitor engagement solutions'
+        ],
+        button: {
+            type: 'contact',
+            text: 'Get Quote for Your Event',
+            link: null,
+            download: null
+        }
+    }
+};
+
+// Project Modal Functions
+function openProjectModal(projectId) {
+    const modal = document.getElementById('projectModal');
+    const project = projects[projectId];
+    
+    if (project && modal) {
+        console.log('Opening project modal:', projectId);
+        
+        // Update project info
+        document.getElementById('projectModalTitle').textContent = project.title;
+        document.getElementById('projectModalDescription').textContent = project.description;
+        
+        // Update features list
+        const featuresList = document.getElementById('projectModalFeatures');
+        featuresList.innerHTML = '';
+        project.features.forEach(feature => {
+            const li = document.createElement('li');
+            li.textContent = feature;
+            featuresList.appendChild(li);
+        });
+        
+        // Build project carousel (not the product one)
+        buildProjectCarousel(project.images, project.title);
+        
+        // Update button based on type
+        const buttonContainer = document.getElementById('projectButtonContainer');
+        buttonContainer.innerHTML = '';
+        
+        const button = document.createElement('button');
+        button.className = 'btn btn-primary';
+        button.textContent = project.button.text;
+        
+        switch (project.button.type) {
+            case 'url':
+                button.onclick = function() {
+                    window.open(project.button.link, '_blank');
+                };
+                break;
+                
+            case 'download':
+                button.onclick = function() {
+                    const link = document.createElement('a');
+                    link.href = project.button.link;
+                    link.download = project.button.download || 'download';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                };
+                break;
+                
+            case 'contact':
+                button.onclick = function() {
+                    closeProjectModal();
+                    setTimeout(() => {
+                        const contactSection = document.getElementById('contact');
+                        if (contactSection) {
+                            contactSection.scrollIntoView({ 
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    }, 100);
+                };
+                break;
+        }
+        
+        buttonContainer.appendChild(button);
+        
+        // Show modal
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden';
+        
+        // Reset scroll position
+        const modalContent = modal.querySelector('.modal-content');
+        if (modalContent) {
+            modalContent.scrollTop = 0;
+        }
+        
+        console.log('Project modal opened successfully');
+    } else {
+        console.error('Project not found or modal missing:', projectId);
+    }
+}
+
+function closeProjectModal() {
+    const modal = document.getElementById('projectModal');
+    if (modal) {
+        const modalContent = modal.querySelector('.modal-content');
+        const modalInfo = modal.querySelector('.modal-info');
+        
+        if (modalContent) modalContent.scrollTop = 0;
+        if (modalInfo) modalInfo.scrollTop = 0;
+        
+        modal.classList.remove('show');
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// Close project modal when clicking outside content
+const projectModal = document.getElementById('projectModal');
+if (projectModal) {
+    projectModal.addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeProjectModal();
+        }
+    });
+}
+
+// Close project modal with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeProjectModal();
+    }
+});
+
 // Service data for modals
 const services = {
     'service1': {
@@ -609,6 +803,73 @@ const services = {
         ]
     }
 };
+
+// Project Carousel functionality
+let currentProjectSlide = 0;
+
+function buildProjectCarousel(images, title) {
+    const carousel = document.getElementById('projectCarousel');
+    const dotsContainer = document.getElementById('projectCarouselDots');
+    
+    if (!carousel || !dotsContainer) return;
+    
+    // Clear previous content
+    carousel.innerHTML = '';
+    dotsContainer.innerHTML = '';
+    
+    // Create carousel items
+    images.forEach((image, index) => {
+        const carouselItem = document.createElement('div');
+        carouselItem.className = `carousel-item ${index === 0 ? 'active' : ''}`;
+        carouselItem.innerHTML = `
+            <img src="${image}" alt="${title} - Image ${index + 1}" class="carousel-img">
+        `;
+        carousel.appendChild(carouselItem);
+        
+        // Create dot indicator
+        const dot = document.createElement('span');
+        dot.className = `carousel-dot ${index === 0 ? 'active' : ''}`;
+        dot.setAttribute('data-index', index);
+        dot.addEventListener('click', () => goToProjectSlide(index));
+        dotsContainer.appendChild(dot);
+    });
+    
+    // Reset to first slide
+    currentProjectSlide = 0;
+    updateProjectCarousel();
+}
+
+function nextProjectSlide() {
+    const items = document.querySelectorAll('#projectCarousel .carousel-item');
+    currentProjectSlide = (currentProjectSlide + 1) % items.length;
+    updateProjectCarousel();
+}
+
+function prevProjectSlide() {
+    const items = document.querySelectorAll('#projectCarousel .carousel-item');
+    currentProjectSlide = (currentProjectSlide - 1 + items.length) % items.length;
+    updateProjectCarousel();
+}
+
+function goToProjectSlide(index) {
+    currentProjectSlide = index;
+    updateProjectCarousel();
+}
+
+function updateProjectCarousel() {
+    const items = document.querySelectorAll('#projectCarousel .carousel-item');
+    const dots = document.querySelectorAll('#projectCarouselDots .carousel-dot');
+    
+    // Hide all items
+    items.forEach(item => item.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    // Show current item
+    if (items[currentProjectSlide]) {
+        items[currentProjectSlide].classList.add('active');
+        dots[currentProjectSlide].classList.add('active');
+    }
+}
 
 // Product Modal with Carousel functionality
 function openProductModal(productId) {
