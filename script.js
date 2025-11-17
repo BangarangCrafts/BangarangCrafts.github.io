@@ -478,8 +478,7 @@ const products = {
 	'product26': {
         images: [
             '001.webp',
-			
-        ],
+       ],
         title: 'Bonsai Mould (STL Files)',
         description: 'This mould allows you to create modern, faceted concrete planters with a sleek, geometric look, perfect for adding a touch of industrial style to any space. Ideal for both DIY enthusiasts and small business owners, this mould design is durable and reusable, ensuring consistent, high-quality results every time.',
         price: 'R 250.00',
@@ -648,6 +647,63 @@ const projects = {
         }
     }
 };
+
+// Helper function to add product structured data for SEO
+function addProductStructuredData(product) {
+    // Remove existing product structured data if any
+    const existingSchema = document.getElementById('product-structured-data');
+    if (existingSchema) {
+        existingSchema.remove();
+    }
+    
+    const schemaScript = document.createElement('script');
+    schemaScript.type = 'application/ld+json';
+    schemaScript.id = 'product-structured-data';
+    schemaScript.textContent = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": product.title,
+        "description": product.description,
+        "image": product.images[0],
+        "offers": {
+            "@type": "Offer",
+            "price": product.price.replace('R ', ''),
+            "priceCurrency": "ZAR",
+            "availability": "https://schema.org/InStock",
+            "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": {
+                    "@type": "MonetaryAmount",
+                    "value": "0",
+                    "currency": "ZAR"
+                },
+                "shippingDestination": {
+                    "@type": "DefinedRegion",
+                    "addressCountry": "ZA"
+                },
+                "deliveryTime": {
+                    "@type": "ShippingDeliveryTime",
+                    "handlingTime": {
+                        "@type": "QuantitativeValue",
+                        "minValue": "2",
+                        "maxValue": "3"
+                    },
+                    "transitTime": {
+                        "@type": "QuantitativeValue",
+                        "minValue": "3",
+                        "maxValue": "5"
+                    }
+                }
+            }
+        },
+        "brand": {
+            "@type": "Brand",
+            "name": "Bangarang Crafts"
+        }
+    });
+    
+    document.head.appendChild(schemaScript);
+}
 
 // Project Modal Functions
 function openProjectModal(projectId) {
@@ -907,6 +963,9 @@ function openProductModal(productId) {
         // Also reset carousel to first image
         currentSlide = 0;
         updateCarousel();
+        
+        // Update product structured data for SEO
+        addProductStructuredData(product);
     }
 }
 
