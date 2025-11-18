@@ -566,6 +566,40 @@ const products = {
             'Length: 100cm',
         ]
     },
+	'product32': {
+        images: [
+            'Gengar_Shadow_Flame_Tealight_Holder_Ghost_Pokémon_Silhouette_Candle_Display.webp',
+			'Gengar_Shadow_Flame_Tealight_Holder_Ghost_Pokémon_Silhouette_Candle_Display_02.webp'
+        ],
+        title: 'Gengar Shadow Tealight Holder',
+        description: 'Add a spooky touch to your décor with the Gengar Shadow Flame Tealight Holder, a 3D-printed candle display inspired by the iconic Ghost-type Pokémon. Designed with Gengar’s unmistakable silhouette grinning, spiky, and full of mischief, this tealight holder creates a haunting visual effect when lit. Place a tealight in the holder and the flame casts a bold, oversized Gengar shadow onto your wall, giving your room a mysterious, atmospheric glow. Perfect for nighttime ambience, gaming rooms, anime setups, and collector displays. Crafted from durable PLA and available in various colours, this piece is both stylish and fun. Whether you’re a casual fan or a dedicated Pokémon collector, this shadow lamp makes a standout décor piece or a perfect gift.',
+        price: 'R 100.00',
+        features: [
+            'Iconic Gengar silhouette for sharp, clear shadow casting',
+            'Creates a large ghostly wall projection when lit',
+            'Holds standard tealight candles',
+			'Lightweight, durable PLA construction',
+			'STL Available',
+			
+        ]
+    },
+	'product33': {
+        images: [
+            'Saiyan_Shadow_Flame_Tealight_Holder_Goku_Aura_Silhouette_Candle_Display.webp',
+			'Saiyan_Shadow_Flame_Tealight_Holder_Goku_Aura_Silhouette_Candle_Display_02.webp'
+        ],
+        title: 'Saiyan Shadow Tealight Holder',
+        description: 'Bring epic anime energy into your space with the Saiyan Shadow Flame Tealight Holder, a unique 3D-printed décor piece inspired by the legendary warrior Goku. Designed with a bold aura silhouette, this tealight holder transforms a simple candle into a stunning visual display. When lit, the flame casts a dramatic shadow of Goku powering up onto your wall, creating an eye-catching scene perfect for bedrooms, gaming setups, desks, man caves, or anime-themed collections. Crafted from durable, lightweight PLA and available in multiple colours, this piece is both functional and decorative. Just place a standard tealight in the holder, dim the lights, and watch your favourite Saiyan come to life in shadow form.',
+        price: 'R 100.00',
+        features: [
+            '3D-printed Goku silhouette with iconic power-up aura',
+            'Creates a large, crisp wall shadow when the candle is lit',
+            'Holds standard tealight candles',
+			'Lightweight, durable PLA construction',
+			'STL Available',
+			
+        ]
+    },
 	
 };
 
