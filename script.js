@@ -579,8 +579,7 @@ const products = {
             'Creates a large ghostly wall projection when lit',
             'Holds standard tealight candles',
 			'Lightweight, durable PLA construction',
-			'STL Available',
-			
+			'STL Available',	
         ]
     },
 	'product33': {
@@ -596,8 +595,7 @@ const products = {
             'Creates a large, crisp wall shadow when the candle is lit',
             'Holds standard tealight candles',
 			'Lightweight, durable PLA construction',
-			'STL Available',
-			
+			'STL Available',		
         ]
     },
 	
