@@ -1791,7 +1791,7 @@ section {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: var(--primary-color);
+    background: #25D366; /* WhatsApp green */
     color: var(--white);
     padding: 12px 20px;
     border-radius: 50px;
@@ -1800,16 +1800,17 @@ section {
     gap: 10px;
     cursor: pointer;
     z-index: 1000;
-    box-shadow: var(--shadow);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
     transition: var(--transition);
     text-decoration: none;
     font-weight: 500;
+    border: none;
 }
 
 .whatsapp-sticky:hover {
-    background: var(--secondary-color);
+    background: #128C7E; /* Darker WhatsApp green */
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(44, 90, 160, 0.3);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
 
 .whatsapp-icon {
@@ -1823,6 +1824,7 @@ section {
 .whatsapp-text {
     font-size: 0.9rem;
     white-space: nowrap;
+    font-weight: 600;
 }
 
 /* Mobile responsive */
