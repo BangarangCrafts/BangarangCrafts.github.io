@@ -579,7 +579,7 @@ const products = {
             'Creates a large ghostly wall projection when lit',
             'Holds standard tealight candles',
 			'Lightweight, durable PLA construction',
-			'STL Available',	
+				
         ]
     },
 	'product33': {
@@ -595,8 +595,29 @@ const products = {
             'Creates a large, crisp wall shadow when the candle is lit',
             'Holds standard tealight candles',
 			'Lightweight, durable PLA construction',
-			'STL Available',		
-        ]
+					
+        ],
+		//hasDownload: true,
+		//downloadFile: 'Word_Practice.exe'
+    },
+	'product34': {
+        images: [
+            '(STL File)eco-friendly-3d-printed-planter-kit-card-recyclable-indoor-garden-pot.webp',
+			'eco-friendly-3d-printed-planter-kit-card-recyclable-indoor-garden-card.webp',
+			'eco-friendly-3d-printed-planter-kit-card-recyclable-indoor-garden-pot.webp'
+        ],
+        title: 'Planter Kit Card (STL Files)',
+        description: 'free, fold-flat 3D printable STL kit! Designed to print in a single, compact sheet, this model folds together into a sturdy indoor mini planter pot. Perfect for succulents, seedlings, herbs, or desk décor, its a fun and practical project for makers, hobbyists, and plant lovers. This kit is fully recyclable, easy to assemble, and ideal for experimenting with sustainable, space-saving planter ideas.',
+        //price: 'Free',
+        features: [
+            'Free STL download – print as many as you want',
+            'Fold-flat design for minimal filament use and fast printing',
+            'Easy snap-together assembly',
+			'Perfect for small plants, herbs, or décor',
+			'Beginner-friendly 3D print',		
+        ],
+		hasDownload: true,
+		downloadFile: '(STL File)eco-friendly-3d-printed-planter-kit-card-recyclable-indoor-garden-pot.zip'
     },
 	
 };
@@ -970,6 +991,17 @@ function openProductModal(productId) {
         document.getElementById('modalDescription').textContent = product.description;
         document.getElementById('modalPrice').textContent = product.price;
         
+        // Handle download button visibility - ONLY show if hasDownload is true
+        const downloadContainer = document.getElementById('downloadButtonContainer');
+        if (product.hasDownload === true) {
+            downloadContainer.style.display = 'block';
+            // Store the current product ID and download file
+            downloadContainer.setAttribute('data-product-id', productId);
+            downloadContainer.setAttribute('data-download-file', product.downloadFile || '');
+        } else {
+            downloadContainer.style.display = 'none';
+        }
+        
         // Update features list
         const featuresList = document.getElementById('modalFeatures');
         featuresList.innerHTML = '';
@@ -998,6 +1030,47 @@ function openProductModal(productId) {
         
         // Update product structured data for SEO
         addProductStructuredData(product);
+    }
+}
+
+// Handle download button click
+function handleDownload() {
+    const downloadContainer = document.getElementById('downloadButtonContainer');
+    const productId = downloadContainer.getAttribute('data-product-id');
+    const downloadFile = downloadContainer.getAttribute('data-download-file');
+    const product = products[productId];
+    
+    if (product && product.hasDownload) {
+        // Show a confirmation message with the specific file name
+        showNotification(`Preparing download: ${downloadFile}`, 'info');
+        
+        // Simulate download process (replace with actual file download)
+        setTimeout(() => {
+            // Option 1: If you have actual files hosted
+            if (downloadFile) {
+                const link = document.createElement('a');
+                link.href = downloadFile;
+                link.download = downloadFile;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                showNotification(`Download started: ${downloadFile}`, 'success');
+            } else {
+                // Option 2: Contact method for file delivery
+                closeProductModal();
+                setTimeout(() => {
+                    const contactSection = document.getElementById('contact');
+                    if (contactSection) {
+                        contactSection.scrollIntoView({ behavior: 'smooth' });
+                        // Pre-fill the message field with specific product
+                        const messageField = document.querySelector('.contact-form textarea');
+                        if (messageField) {
+                            messageField.value = `I would like to purchase and download the digital files for: ${product.title}`;
+                        }
+                    }
+                }, 100);
+            }
+        }, 1000);
     }
 }
 
@@ -1187,6 +1260,15 @@ function openWhatsApp() {
     setTimeout(() => {
         window.open(whatsappUrl, '_blank');
     }, 100);
+}
+
+// Sticky WhatsApp button function - ADD THIS RIGHT AFTER THE EXISTING FUNCTION
+function openStickyWhatsApp() {
+    const message = "Hi, I'm interested in your products and would like to know more!";
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/27765202303?text=${encodedMessage}`;
+    
+    window.open(whatsappUrl, '_blank');
 }
 
 // Open Hearthforge website
