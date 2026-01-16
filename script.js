@@ -619,6 +619,36 @@ const products = {
 		hasDownload: true,
 		downloadFile: '(STL File)eco-friendly-3d-printed-planter-kit-card-recyclable-indoor-garden-pot.zip'
     },
+	'product35': {
+        images: [
+            'hand-printed-nosferatu-horror-t-shirt.webp',
+			'Nosferatu-vampire-horror-tshirt-block-print-linocut-style-bangarangcrafts-zoom.webp'
+        ],
+        title: 'Hand-Printed Nosferatu Horror T-Shirt',
+        description: 'Embrace classic horror aesthetics with this striking Nosferatu-inspired T-shirt, featuring a bold block-print / lino-cut style design. Printed on a premium tee, this artwork captures the eerie silhouette of the legendary vampire, giving it a vintage, handcrafted look that stands out in any wardrobe. The design is created using a custom 3D-printed block by BangarangCrafts, giving the print a textured, artisan feel reminiscent of traditional lino-cut horror posters.',
+        price: 'R 250.00',
+        features: [
+            'Hand-printed with an original carved design',
+            'Soft and breathable cotton fabric',
+            'Unisex fit – perfect for everyday wear or geeky conventions',
+			'custom color available'
+        ]
+    },
+	'product36': {
+        images: [
+            'hand-printed-nosferatu-horror-Bag.webp',
+			'Back_HearthForge.webp'
+        ],
+        title: 'Hand-Printed Nosferatu Tote Bag',
+        description: 'Bring timeless horror style into your everyday life with this hand-printed Nosferatu Tote Bag. Inspired by the iconic silent-film vampire, this design features sharp, stylized linework that captures Nosferatu’s eerie silhouette, long claws, pointed ears, and all. Each bag is printed in-house using a custom block design, giving it a bold, artisanal look perfect for horror lovers, gothic fashion fans, and anyone who appreciates unique handmade items. The tote is spacious, durable, and ideal for books, groceries, markets, festivals, or everyday carry. Whether you’re heading to a convention or just showing off your spooky side, this bag makes a striking statement.',
+        price: 'R 100.00',
+        features: [
+            'Hand-printed with an original carved design',
+            'Soft and breathable cotton fabric',
+            '-Width 37 cm',
+			'-Hight 40 cm'
+        ]
+    },
 	
 };
 
