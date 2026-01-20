@@ -649,6 +649,22 @@ const products = {
 			'-Hight 40 cm'
         ]
     },
+	'product37': {
+        images: [
+            'hand_Printed_Gobline_Dice_Bag.webp',
+			'hand_Printed_Gobline_Dice_Bag_2.webp',
+			'hand_Printed_Gobline_Dice_Bag_3.webp'
+        ],
+        title: 'Hand-Printed Goblin Dice Bag',
+        description: 'Upgrade your tabletop gear with this hand-printed Goblin Dice Bag, designed for Dungeons & Dragons and all your favorite TTRPGs. The bold illustration features a grinning goblin hoarding a big D20 while sitting on a pile of polyhedral dice, the perfect mascot for any dice-loving adventurer. Printed in-house using a custom block-style design, each bag has a unique handcrafted look that tabletop players love. The natural canvas material and secure drawstring make it ideal for storing dice, minis, tokens, and small gaming accessories. Whether youre gearing up for a campaign, shopping for a gift, or treating yourself to new dice storage, this bag brings personality and charm to your table.',
+        price: 'R 65.00',
+        features: [
+            'Hand-printed with an original carved design',
+            'Soft and breathable cotton fabric',
+            '-Width 13 cm',
+			'-Hight 18 cm'
+        ]
+    },
 	
 };
 
