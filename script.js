@@ -104,6 +104,8 @@ const products = {
     },
     'product5': {
         images: [
+			'Xenomorph_Tshirt.webp',
+			'Xenomorph_Tshirt_005.webp',
             'gray-xenomorph-alien-tshirt-handcarved-print-full.webp',
 			'gray-xenomorph-alien-tshirt-handcarved-print.webp'
         ],
@@ -119,6 +121,8 @@ const products = {
     },
 	'product6': {
         images: [
+			'Blanka-Street-Fighter-T-Shirt-Red-Block-Printed-Retro-Gamer-Tee-Large-edited_001.webp',
+			'blanka-street-fighter-tshirt-red-retro-gamer-tee-001.webp',
             'Blanka-Street-Fighter-T-Shirt-Red-Block-Printed-Retro-Gamer-Tee-Large-edited.webp',
 			'blanka-street-fighter-tshirt-red-retro-gamer-tee-1.webp'
         ],
@@ -134,11 +138,11 @@ const products = {
     },
 	'product7': {
         images: [
-            'blue-hand-printed-totoro-inspired-block-print-tshirt-002.webp',
-			'blue-hand-printed-totoro-inspired-block-print-tshirt-001.webp'
+            'Frankenstein-horror-tshirt-block-print-linocut-style-bangarangcrafts-01.webp',
+			'Frankenstein-horror-tshirt-block-print-linocut-style-bangarangcrafts-02.webp'
         ],
-        title: 'Hand-Printed Totoro-Inspired T-Shirt – Block Print Fan Art Tee',
-        description: 'This Totoro-inspired t-shirt is hand printed using block printing techniques, giving each piece a unique artisan touch. Featuring the beloved forest spirit with an umbrella alongside a young girl, this fan art shirt captures the charm of My Neighbor Totoro. Made from soft, breathable cotton fabric, this unisex tee blends comfort with handmade creativity. Perfect for Studio Ghibli fans, anime lovers, and anyone who enjoys whimsical graphic tees.',
+        title: 'Hand-Printed Frankenstein T-Shirt | Horror Block Print Tee',
+        description: 'Unleash the monster with the Frankenstein Horror T-Shirt from Bangarang Crafts. Inspired by vintage woodcuts and classic horror cinema, this design captures the iconic monster in a striking linocut style. The bold, block print aesthetic gives this tee a hand-crafted, artistic feel that stands out from typical screen-printed apparel.',
         price: 'R 250.00',
         features: [
             'Hand-printed with an original carved design',
@@ -149,6 +153,8 @@ const products = {
     },
 	'product8': {
         images: [
+			'Red-hand-printed-skull-block-print-tshirt-001.webp',
+			'Red-hand-printed-skull-block-print-tshirt-003.webp',
             'light-red-hand-printed-skull-block-print-tshirt-002.webp',
 			'light-red-hand-printed-skull-block-print-tshirt-001.webp'
         ],
@@ -539,6 +545,8 @@ const products = {
     },
 	'product30': {
         images: [
+			'hellcat_logo_03.webp',
+			'hellcat_logo_04.webp',
             'hellcat_logo_02.webp',
 			'hellcat_logo.webp'
         ],
@@ -621,6 +629,8 @@ const products = {
     },
 	'product35': {
         images: [
+			'Nosferatu-vampire-horror-tshirt-block-print-linocut-style-bangarangcrafts_003.webp',
+			'Nosferatu-vampire-horror-tshirt-block-print-linocut-style-bangarangcrafts_004.webp',
             'hand-printed-nosferatu-horror-t-shirt.webp',
 			'Nosferatu-vampire-horror-tshirt-block-print-linocut-style-bangarangcrafts-zoom.webp'
         ],
@@ -636,6 +646,7 @@ const products = {
     },
 	'product36': {
         images: [
+			'nosferatu-horror-tote-bag-linocut-print-handmade-gothic-accessory-01.webp',
             'hand-printed-nosferatu-horror-Bag.webp',
 			'Back_HearthForge.webp'
         ],
@@ -651,12 +662,30 @@ const products = {
     },
 	'product37': {
         images: [
+			'goblin-dice-bag-dnd-drawstring-handprinted-ttrpg-accessory_01.webp',
             'hand_Printed_Gobline_Dice_Bag.webp',
 			'hand_Printed_Gobline_Dice_Bag_2.webp',
 			'hand_Printed_Gobline_Dice_Bag_3.webp'
         ],
         title: 'Hand-Printed Goblin Dice Bag',
         description: 'Upgrade your tabletop gear with this hand-printed Goblin Dice Bag, designed for Dungeons & Dragons and all your favorite TTRPGs. The bold illustration features a grinning goblin hoarding a big D20 while sitting on a pile of polyhedral dice, the perfect mascot for any dice-loving adventurer. Printed in-house using a custom block-style design, each bag has a unique handcrafted look that tabletop players love. The natural canvas material and secure drawstring make it ideal for storing dice, minis, tokens, and small gaming accessories. Whether youre gearing up for a campaign, shopping for a gift, or treating yourself to new dice storage, this bag brings personality and charm to your table.',
+        price: 'R 65.00',
+        features: [
+            'Hand-printed with an original carved design',
+            'Soft and breathable cotton fabric',
+            '-Width 13 cm',
+			'-Hight 18 cm'
+        ]
+    },
+	'product38': {
+        images: [
+			'Witch-dice-bag-dnd-drawstring-handprinted-ttrpg-accessory_02.webp',
+			'young-witch-cat-dice-bag-drawstring-handprinted-ttrpg-accessory.webp',
+            'hand_Printed_Gobline_Dice_Bag_2.webp',
+			'hand_Printed_Gobline_Dice_Bag_3.webp'
+        ],
+        title: 'Hand-Printed Witch and Cat Dice Bag',
+        description: 'Add a touch of magic to your tabletop adventures with this hand-printed Young Witch & Cat Dice Bag. The design features an adorable witch apprentice and her loyal feline familiar, the perfect companions for any spellcaster, sorcerer, or dice-loving adventurer. Printed in-house using a custom block-style artwork, each bag has a unique handcrafted look and feel. Made from natural canvas with a secure drawstring closure, it’s ideal for storing dice sets, minis, tokens, charms, or any small gaming essentials. Whether you’re preparing for your next campaign or searching for the perfect gift for a fellow gamer, this bag brings personality, charm, and magic to your tabletop kit.',
         price: 'R 65.00',
         features: [
             'Hand-printed with an original carved design',
@@ -724,26 +753,23 @@ const projects = {
     },
     'project3': {
         images: [
-            'project3-image1.webp',
-            'project3-image2.webp',
-            'project3-image3.webp',
-            'project3-image4.webp'
+            'Heart&Forge_Studios.webp'
         ],
-        title: 'Event Display Setup',
-        description: 'Complete convention booth setup featuring custom displays, interactive elements, and branded merchandise. This project highlights our expertise in creating engaging event experiences that attract and retain visitor attention.',
+        title: 'Hearth & Forge Studios – A Home for Handcrafted Fandom',
+        description: 'This project is my dedicated online storefront, a place where all the creative threads of Bangarang Crafts come together. Think of it as the official shop for our growing collection of handcrafted, fan-inspired goods. I built Hearth & Forge to be a curated space where you can easily browse and buy the pieces Im most excited about, from our popular hand-printed tees and unique cement display tiles to character earrings, custom dice bags, and more. It’s designed to be a simple, welcoming hub for anyone looking to add a touch of their favourite games, movies, or stories to their everyday life. Every item listed is still made with the same hands-on care and attention to detail, celebrating the fandoms we love. With features like free shipping on orders over R499, easy returns, and a smooth checkout, Hearth & Forge is my way of making sure these creations find a good home as easily as possible. Its a living project that grows as new ideas spark, so youll always find something fresh. Whether youre after a bold Nosferatu tee, a unique Hex tile for your shelf, or a gift for a fellow fan, come explore the collection and take a piece of the craft home with you.',
         features: [
-            'Custom interactive displays',
-            'Branded merchandise and giveaways',
-            'Booth layout and design',
-            'Interactive NFC technology integration',
-            'Visitor engagement solutions'
+            'Official Online Storefront',
+            'Curated Fan-Made Collection',
+            'Handcrafted with Fandom Love',
+            'Customer-Friendly Experience',
+            'A Living, Growing Project',
         ],
         button: {
-            type: 'contact',
-            text: 'Get Quote for Your Event',
-            link: null,
-            download: null
-        }
+			type: 'url',
+			text: 'Visit Hearth & Forge',
+			link: 'https://hearthforge.co.za',
+			download: null
+		}
     }
 };
 
@@ -1368,54 +1394,66 @@ document.querySelectorAll('.product-card, .service-card').forEach(card => {
     observer.observe(card);
 });
 
-// Form submission handling
+// Formspree contact form handling
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        
+
         // Get form data
-        const name = contactForm.querySelector('input[type="text"]').value;
-        const email = contactForm.querySelector('input[type="email"]').value;
-        const message = contactForm.querySelector('textarea').value;
-        
+        const name = contactForm.querySelector('input[name="name"]').value.trim();
+        const email = contactForm.querySelector('input[name="email"]').value.trim();
+        const message = contactForm.querySelector('textarea[name="message"]').value.trim();
+
         // Basic validation
         if (!name || !email || !message) {
             showNotification('Please fill in all fields', 'error');
             return;
         }
-        
+
         // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
             showNotification('Please enter a valid email address', 'error');
             return;
         }
-        
-        // Create mailto link with proper formatting
-		const subject = `Message from ${name} - Bangarang Crafts Contact Form`;
-		const body = `Name: ${name}
-		Email: ${email}
 
-		Message:
-		${message}`;
-		const mailtoLink = `mailto:christo.bangarang@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        
-        // Simulate form submission
+        // Prepare FormData
+        const formData = new FormData(contactForm);
+
+        // Disable submit button and show sending state
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
-        
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
-        
-        // Open email client with pre-filled data
-        setTimeout(() => {
-            window.location.href = mailtoLink;
-            showNotification('Thank you for your message! Please send the email that opened in your email client.', 'success');
-            contactForm.reset();
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                showNotification('Thank you! Your message has been sent.', 'success');
+                contactForm.reset();  // Clear the form
+            } else {
+                const data = await response.json();
+                if (data.errors) {
+                    showNotification(data.errors.map(error => error.message).join(', '), 'error');
+                } else {
+                    showNotification('Oops! Something went wrong. Please try again.', 'error');
+                }
+            }
+        } catch (error) {
+            showNotification('Network error. Please check your connection and try again.', 'error');
+        } finally {
+            // Re-enable the submit button
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
-        }, 1000);
+        }
     });
 }
 
