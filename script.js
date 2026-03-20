@@ -694,6 +694,41 @@ const products = {
 			'-Hight 18 cm'
         ]
     },
+	'product39': {
+        images: [
+			'viking-skal-tshirt-block-print-linocut-style-bangarangcrafts-zoom.webp',
+			'viking-skal-tshirt-block-print-linocut-style-bangarangcrafts-zoom-002.webp',
+            'black-viking-skal-tshirt-block-print-linocut-style-bangarangcrafts.webp',
+			'black-viking-skal-tshirt-block-print-linocut-style-bangarangcrafts-zoom.webp'
+        ],
+        title: 'Hand-Printed Viking “SKÅL” T-Shirt',
+        description: 'Celebrate the spirit of the north with this bold Viking “SKÅL” T-shirt, featuring a handcrafted block-print style design. Printed on a premium black tee, this artwork showcases a roaring Viking warrior illustrated in a rugged lino-cut aesthetic, perfect for fans of Norse mythology, Viking culture, and unique handcrafted apparel. Each shirt is created using a custom 3D-printed block designed by BangarangCrafts, giving it an authentic artisan look and a textured, handcrafted finish..',
+        price: 'R 250.00',
+        features: [
+            'Hand-printed with an original carved design',
+            'Soft and breathable cotton fabric',
+            'Unisex fit – perfect for everyday wear or geeky conventions',
+			'custom color available'
+        ]
+    },
+	'product40': {
+        images: [
+            'The Ring Of Power Coaster Holder.webp'
+        ],
+        title: 'The Ring Of Power Coaster Holder(STL Files)',
+        description: 'Unleash the essence of Middle-earth with The Ring Of Power Coaster Holder — a premium, fantasy-inspired STL file designed using Tinkercad. Inspired by the legendary world of The Lord of the Rings, this coaster holder combines functionality with iconic design, making it a standout addition to any desk, coffee table, or gaming setup. Crafted for 3D printing enthusiasts, this design is easy to print and perfect for PLA or similar materials. Whether youre organizing your coasters or showcasing your love for epic fantasy, this piece delivers both style and practicality.',
+        //price: 'Free',
+        features: [
+            'Free STL download – print as many as you want',
+            'Unique “Ring Of Power” inspired design',
+            'Functional coaster storage solution',
+			'Beginner-friendly STL file',
+			'Ideal for home décor, gaming setups, or gifts',
+			'Compatible with most standard 3D printers'
+        ],
+		hasDownload: true,
+		downloadFile: '(STL File)The Ring Of Power Coaster Holder.zip'
+    },
 	
 };
 
