@@ -713,7 +713,9 @@ const products = {
     },
 	'product40': {
         images: [
-            'The Ring Of Power Coaster Holder.webp'
+            'The Ring Of Power Coaster Holder.webp',
+			'3D_printed_Ring_of_Power_inspired_coaster_holder_in_black_002.webp',
+			'3D_printed_Ring_of_Power_inspired_coaster_holder_in_black_003.webp'
         ],
         title: 'The Ring Of Power Coaster Holder(STL Files)',
         description: 'Unleash the essence of Middle-earth with The Ring Of Power Coaster Holder — a premium, fantasy-inspired STL file designed using Tinkercad. Inspired by the legendary world of The Lord of the Rings, this coaster holder combines functionality with iconic design, making it a standout addition to any desk, coffee table, or gaming setup. Crafted for 3D printing enthusiasts, this design is easy to print and perfect for PLA or similar materials. Whether youre organizing your coasters or showcasing your love for epic fantasy, this piece delivers both style and practicality.',
