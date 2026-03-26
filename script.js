@@ -42,8 +42,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ===================== LOAD MORE & FILTER LOGIC =====================
-let currentVisible = 15;          // Number of products currently visible
-const step = 15;                  // How many to load each time
+let currentVisible = 16;          // Number of products currently visible
+const step = 16;                  // How many to load each time
 let totalProducts = 0;            // Will be set after DOM ready
 let filterActive = false;         // Whether a filter other than 'all' is active
 let loadMoreBtn = null;
