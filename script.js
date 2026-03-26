@@ -41,6 +41,134 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// ===================== LOAD MORE & FILTER LOGIC =====================
+let currentVisible = 15;          // Number of products currently visible
+const step = 15;                  // How many to load each time
+let totalProducts = 0;            // Will be set after DOM ready
+let filterActive = false;         // Whether a filter other than 'all' is active
+let loadMoreBtn = null;
+let productsGrid = null;
+let productCards = [];
+
+// Update product visibility based on currentVisible (only when not filtering)
+function updateProductVisibility() {
+    if (filterActive) return; // Don't interfere with filter display
+    
+    productCards.forEach((card, index) => {
+        if (index < currentVisible) {
+            card.style.display = ''; // Restore default (grid/flex)
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+// Load more products
+function loadMoreProducts() {
+    if (filterActive) return;
+    if (currentVisible >= totalProducts) {
+        // No more products, hide button
+        if (loadMoreBtn) loadMoreBtn.style.display = 'none';
+        return;
+    }
+    // Increase visible count
+    currentVisible = Math.min(currentVisible + step, totalProducts);
+    updateProductVisibility();
+    
+    // Hide button if all are visible
+    if (currentVisible >= totalProducts && loadMoreBtn) {
+        loadMoreBtn.style.display = 'none';
+    }
+}
+
+// Reset to initial limited view (called when "All Products" is selected)
+function resetToLimitedView() {
+    filterActive = false;
+    currentVisible = Math.min(step, totalProducts);
+    updateProductVisibility();
+    if (loadMoreBtn) {
+        loadMoreBtn.style.display = currentVisible < totalProducts ? 'block' : 'none';
+    }
+}
+
+// Filter products by category
+function applyFilter(category) {
+    if (category === 'all') {
+        // Reset to limited view
+        resetToLimitedView();
+        return;
+    }
+    
+    // Activate filter mode
+    filterActive = true;
+    // Hide the load more button
+    if (loadMoreBtn) loadMoreBtn.style.display = 'none';
+    
+    // Show/hide cards based on category
+    productCards.forEach(card => {
+        const cardCategories = card.getAttribute('data-category').split(' ');
+        if (cardCategories.includes(category)) {
+            card.style.display = ''; // Show
+        } else {
+            card.style.display = 'none'; // Hide
+        }
+    });
+}
+
+// Initialize filters and load more
+function initFiltersAndLoadMore() {
+    productsGrid = document.querySelector('.products-grid');
+    loadMoreBtn = document.getElementById('loadMoreBtn');
+    if (!productsGrid) return;
+    
+    productCards = Array.from(document.querySelectorAll('.product-card'));
+    totalProducts = productCards.length;
+    
+    // If total <= step, hide load more button initially
+    if (loadMoreBtn) {
+        if (totalProducts <= step) {
+            loadMoreBtn.style.display = 'none';
+        } else {
+            loadMoreBtn.style.display = 'block';
+        }
+    }
+    
+    // Initially, show only first 'step' products
+    filterActive = false;
+    currentVisible = Math.min(step, totalProducts);
+    updateProductVisibility();
+    
+    // Attach filter button events
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            // Remove active class from all
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            const filter = btn.getAttribute('data-filter');
+            applyFilter(filter);
+            
+            // Optional: scroll to top of products section after filter
+            setTimeout(() => {
+                const productsSection = document.querySelector('#products');
+                if (productsSection) {
+                    productsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 100);
+        });
+    });
+    
+    // Attach load more button event
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', () => {
+            loadMoreProducts();
+            // Optional: scroll to the newly loaded products
+            
+        });
+    }
+}
+
 // Product data with multiple images for carousel
 const products = {
     'product1': {
@@ -733,6 +861,25 @@ const products = {
     },
 	
 };
+
+// Initialize everything when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+    // Update copyright year
+    const yearElement = document.querySelector('.footer-bottom p');
+    if (yearElement) {
+        const currentYear = new Date().getFullYear();
+        yearElement.innerHTML = yearElement.innerHTML.replace('2024', currentYear);
+    }
+    
+    // Initialize the load more and filters
+    initFiltersAndLoadMore();
+    
+    // Preload critical images if you have that function
+    if (typeof preloadCriticalImages === 'function') preloadCriticalImages();
+    if (typeof ImageLoader?.init === 'function') ImageLoader.init();
+    
+    console.log('Bangarang Crafts website loaded successfully!');
+});
 
 // Projects data with customizable buttons
 const projects = {
