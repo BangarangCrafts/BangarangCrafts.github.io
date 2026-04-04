@@ -859,6 +859,41 @@ const products = {
 		hasDownload: true,
 		downloadFile: '(STL File)The Ring Of Power Coaster Holder.zip'
     },
+	'product41': {
+        images: [
+            'saufen-und-raufen-viking-tshirt-block-print-linocut-style-bangarangcrafts_b6209579-279a-45f5-83fa-7d326705ef8c.webp',
+			'saufen-und-raufen-viking-tshirt-block-print-linocut-style-bangarangcrafts-zoom_f81a5b6e-1b7e-4660-9853-572eb386fcd5.webp',
+			'saufen-und-raufen-viking-tshirt-block-print-linocut-style-bangarangcrafts.webp',
+			'saufen-und-raufen-viking-tshirt-block-print-linocut-style-bangarangcrafts-zoom.jpg'
+        ],
+        title: 'Hand-Printed "Saufen und Raufen” Viking T-Shirt',
+        description: 'Celebrate Viking spirit with this bold “Saufen und Raufen” T-shirt, German for “drink and brawl.” Featuring two rugged Viking characters toasting (and ready to throw fists), this design is illustrated in a striking lino-cut / block-print style and printed on a premium black T-shirt. The artwork is created using a custom 3D-printed block designed by BangarangCrafts, giving the print an authentic handcrafted texture that stands out with character and attitude.',
+        price: 'R250',
+        features: [
+            'Hand-printed with an original carved design',
+            'Soft and breathable cotton fabric',
+            'Unisex fit – perfect for everyday wear or geeky conventions',
+			'custom color available'
+        ],
+    },
+	'product42': {
+        images: [
+            'Universal-Tap-Aerator-Adapter-3D-Printable-STL.webp',
+			'Universal-Tap-Aerator-Adapter-3D-Printable-STL-002.webp'
+        ],
+        title: 'Universal Tap Aerator Adapter (STL Files)',
+        description: 'This 3D printable tap aerator adapter is designed to fit standard basin mixer taps and acts as a housing/sleeve for an aerator or nozzle. Many taps have damaged, missing, or hard-to-replace aerators. This adapter allows you to print a custom replacement that screws onto the tap and securely holds an aerator insert or custom flow nozzle. Perfect for repairs, custom flow control, water saving, or DIY tap modifications. Designed to be easy to print and compatible with common tap thread sizes.',
+        //price: 'Free',
+        features: [
+            'Fits Standard Basin Tap Threads',
+            'Holds Any Standard Aerator Insert',
+            'Easy to 3D Print, No Supports Needed',
+			'Perfect for Repairs or Custom Water Flow',
+			'Beginner-friendly 3D print',		
+        ],
+		hasDownload: true,
+		downloadFile: 'Universal-Tap-Aerator-Adapter-3D-Printable-STL.zip'
+    },
 	
 };
 
