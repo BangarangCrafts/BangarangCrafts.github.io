@@ -114,9 +114,17 @@ body {
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    /* Add your background image as a second layer */
+    background-image: url('Background.png');
+    background-blend-mode: overlay; /* blends gradient with image – optional */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: var(--white);
     padding: 150px 0 100px;
     text-align: center;
+    position: relative;
+	filter: brightness(1.5) contrast(1) blur(0px);
 }
 
 .hero-content {
