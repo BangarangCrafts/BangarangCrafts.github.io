@@ -111,12 +111,12 @@ body {
     transition: var(--transition);
 }
 
-/* Hero Section */
+/* Hero Section 
 .hero {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    /* Add your background image as a second layer */
+     Add your background image as a second layer 
     background-image: url('Background.png');
-    background-blend-mode: overlay; /* blends gradient with image – optional */
+    background-blend-mode: overlay; blends gradient with image – optional 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -125,7 +125,7 @@ body {
     text-align: center;
     position: relative;
 	filter: brightness(1.5) contrast(1) blur(0px);
-}
+}*/
 
 .hero-content {
     max-width: 800px;
@@ -1877,4 +1877,36 @@ section {
     display: inline-block;    /* Ensures it respects text-align */
     min-width: 200px;
     margin: 0 auto;           /* Fallback for any block behavior */
+}
+
+/* === Bangarang Blueprint Background === */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url('Background.webp') center center / cover no-repeat;
+  filter: brightness(2.5) contrast(0.9) blur(0px);
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255,255,255,0.75);
+  z-index: -1;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  body::before {
+    background-size: contain;
+    background-position: top center;
+    background-repeat: repeat-y;
+  }
+
+  body::after {
+    background: rgba(255,255,255,0.85);
+  }
 }
