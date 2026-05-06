@@ -1901,7 +1901,7 @@ body::after {
 /* Mobile adjustments */
 @media (max-width: 768px) {
   body::before {
-    background-size: contain;
+    background-size: 140% auto;
     background-position: top center;
     background-repeat: repeat-y;
   }
