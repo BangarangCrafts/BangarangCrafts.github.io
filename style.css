@@ -1984,14 +1984,14 @@ body::after {
     }
     
     /* Add the white overlay to match body */
-    .hero-video-container::after {
+    .hero-video-container::before {
         content: '';
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.50);
         z-index: 0;
     }
     
@@ -2004,5 +2004,19 @@ body::after {
     /* Make sure the text remains readable */
     .hero-content {
         z-index: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-overlay {
+        display: none; /* Completely remove the dark overlay on mobile */
+    }
+    
+    .hero-video-container {
+        background: url('Background.webp') center center / cover no-repeat;
+    }
+    
+    .hero-video {
+        object-fit: contain;
     }
 }
