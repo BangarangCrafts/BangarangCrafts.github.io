@@ -942,6 +942,25 @@ const products = {
 		hasDownload: true,
 		downloadFile: 'Seeder Tray.zip'
     },
+	'product46': {
+        images: [
+            'card-size-money-clip-3d-printable-stl-minimalist-wallet-bangarangcrafts-01.webp',
+			'card-size-money-clip-3d-printable-stl-minimalist-wallet-bangarangcrafts-02.webp',
+			'card-size-money-clip-3d-printable-stl-minimalist-wallet-bangarangcrafts-003.webp'
+        ],
+        title: 'Card Size Money Clip – Minimalist Wallet(STL Files)',
+        description: 'Download this free card-size money clip STL and 3D print your own ultra-slim minimalist wallet. Designed to match the exact footprint of a standard bank card, this clever money clip fits perfectly into your pocket without the bulk of a traditional wallet.The curved internal spring design securely holds cash, receipts, or notes while keeping the profile thin and comfortable to carry. Personalised with the Bangarangcrafts styling, this printable money clip is ideal for makers who enjoy practical everyday carry (EDC) prints.This STL is easy to print, requires no supports, and works great in PLA, PETG, or ABS. Whether you’re looking for a minimalist wallet alternative, a practical print, or a unique handmade gift, this card-sized money clip is a perfect addition to your print queue.Free to download. Free to print. Built for everyday use.',
+        //price: 'Free',
+        features: [
+            'Same size as a bank card for perfect pocket fit.',
+			'Curved channel holds notes tightly without slipping.',	
+			'Replaces bulky traditional wallets.',
+			'Prints cleanly on most FDM printers.',
+			'Strong design suitable for PLA, PETG, or ABS.'
+        ],
+		hasDownload: true,
+		downloadFile: 'Money Clip Card.zip'
+    },
 	
 };
 
