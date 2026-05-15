@@ -41,6 +41,42 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Random hero background video selector
+function setRandomHeroVideo() {
+    const videoElement = document.getElementById('heroVideo');
+    if (!videoElement) return;
+    
+    // List of your 4 videos
+    const videos = [
+        '7035591-uhd_3840_2160_24fps.mp4',
+        '6957370-uhd_4096_2160_25fps.mp4',
+        '7237104-uhd_3840_2160_25fps.mp4'
+    ];
+    
+    // Pick a random video from the array
+    const randomIndex = Math.floor(Math.random() * videos.length);
+    const selectedVideo = videos[randomIndex];
+    
+    // Set the video source
+    videoElement.src = selectedVideo;
+    
+    // Load and play the video
+    videoElement.load();
+    videoElement.play().catch(error => {
+        // Auto-play might be blocked by some browsers; this is fine
+        console.log('Video autoplay prevented:', error);
+    });
+    
+    console.log(`Playing random hero video: ${selectedVideo}`);
+}
+
+// Run the random video picker when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+    setRandomHeroVideo();
+    
+    // Your existing code here...
+});
+
 // ===================== LOAD MORE & FILTER LOGIC =====================
 let currentVisible = 16;          // Number of products currently visible
 const step = 16;                  // How many to load each time
