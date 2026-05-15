@@ -1997,6 +1997,8 @@ body::after {
     
     .hero-video {
         object-fit: contain;
+		width: 100%;
+        height: 80vh;
         position: relative;
         z-index: 1;
     }
