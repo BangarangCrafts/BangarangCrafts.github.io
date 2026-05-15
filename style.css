@@ -111,21 +111,85 @@ body {
     transition: var(--transition);
 }
 
-/* Hero Section 
+/* Hero Section with Video Background */
 .hero {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-     Add your background image as a second layer 
-    background-image: url('Background.png');
-    background-blend-mode: overlay; blends gradient with image – optional 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: var(--white);
-    padding: 150px 0 100px;
-    text-align: center;
     position: relative;
-	filter: brightness(1.5) contrast(1) blur(0px);
-}*/
+    padding: 150px 0 100px;
+    color: var(--white);
+    text-align: center;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay to make text readable */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Make sure text stands out against video */
+.hero-title,
+.hero-subtitle,
+.hero-description {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Adjust button styles for video background */
+.hero .btn-primary {
+    background: var(--accent-color);
+    color: var(--text-dark);
+}
+
+.hero .btn-secondary {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 0 80px;
+        min-height: auto;
+    }
+    
+    .hero-overlay {
+        background: rgba(0, 0, 0, 0.6); /* Slightly darker on mobile for better contrast */
+    }
+}
 
 .hero-content {
     max-width: 800px;
