@@ -15,15 +15,46 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
     if (navMenu) navMenu.classList.remove('active');
 }));
 
-// Navbar scroll effect
+// Smooth crossfade transition: hero logo shrinks/moves up, small navbar logo fades in
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
-    if (navbar && window.scrollY > 100) {
+    const heroLogo = document.querySelector('.hero-logo');
+    const smallLogo = document.querySelector('.nav-small-logo');
+    const scrollThreshold = 100;       // pixels where transition completes
+    const scrollY = window.scrollY;
+    
+    // Progress from 0 to 1 (0 = top, 1 = at threshold)
+    let progress = Math.min(1, scrollY / scrollThreshold);
+
+    // ----- 1. Navbar background effect (unchanged) -----
+    if (navbar && scrollY > scrollThreshold) {
         navbar.style.background = 'rgba(255, 255, 255, 0.95)';
         navbar.style.backdropFilter = 'blur(10px)';
     } else if (navbar) {
         navbar.style.background = 'var(--white)';
         navbar.style.backdropFilter = 'none';
+    }
+
+    // ----- 2. Hero logo: shrink, move up, and fade out -----
+    if (heroLogo) {
+        if (progress > 0) {
+            const scale = 1 - (progress * 0.6);        // 1 → 0.4
+            const translateY = progress * -80;         // 0 → -80px
+            const heroOpacity = 1 - progress;          // 1 → 0 (fully transparent at threshold)
+            heroLogo.style.transform = `scale(${scale}) translateY(${translateY}px)`;
+            heroLogo.style.opacity = heroOpacity;
+        } else {
+            heroLogo.style.transform = '';
+            heroLogo.style.opacity = '';
+        }
+    }
+
+    // ----- 3. Small navbar logo: fade in as hero fades out -----
+    if (smallLogo) {
+        // Opacity matches hero's fade (1 - progress) but reversed: smallLogoOpacity = progress
+        // To make it look like a crossfade, we can also add a slight easing.
+        const smallOpacity = Math.min(1, progress * 1.2); // reaches 1 slightly before threshold
+        smallLogo.style.opacity = smallOpacity;
     }
 });
 
@@ -932,6 +963,7 @@ const products = {
     },
 	'product43': {
         images: [
+			'Web-Button.webp',
             'spider-web-button-stl-3d-printable-file-hearthforge.webp',
 			'spider-web-button-stl-3d-printable-file-hearthforge-02.webp',
 			'spider-web-button-stl-3d-printable-file-hearthforge-03.webp'
@@ -948,6 +980,7 @@ const products = {
     },
 	'product44': {
         images: [
+			'Skull-Button.webp',
             '3d-printable-skull-button-stl-goth-punk-accessory-blue-black-03.webp',
 			'3d-printable-skull-button-stl-goth-punk-accessory-blue-black-01.webp',
 			'3d-printable-skull-button-stl-goth-punk-accessory-blue-black.webp'
@@ -964,6 +997,7 @@ const products = {
     },
 	'product45': {
         images: [
+			'Grow_tary-002.webp',
             'Seeder_Tray_002.webp',
 			'Seeder_Tray_001.webp',
 			'Seeder_Tray_003.webp'
@@ -980,6 +1014,7 @@ const products = {
     },
 	'product46': {
         images: [
+			'card-size-money-clip-3d-printable-stl-minimalist-wallet-bangarangcrafts-004.webp',
             'card-size-money-clip-3d-printable-stl-minimalist-wallet-bangarangcrafts-01.webp',
 			'card-size-money-clip-3d-printable-stl-minimalist-wallet-bangarangcrafts-02.webp',
 			'card-size-money-clip-3d-printable-stl-minimalist-wallet-bangarangcrafts-003.webp'
