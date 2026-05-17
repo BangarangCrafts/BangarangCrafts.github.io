@@ -114,7 +114,7 @@ body {
 /* Hero Section with Video Background */
 .hero {
     position: relative;
-    padding: 150px 0 100px;
+    padding: 180px 0 100px;
     color: var(--white);
     text-align: center;
     overflow: hidden;
@@ -218,11 +218,81 @@ body {
     animation: fadeInUp 1s ease 0.4s both;
 }
 
+/* Hero logo – smaller and better spaced */
+/* Hero logo – smaller and non-overlapping */
+/* Hero logo – smooth transition for shrinking + moving up */
 .hero-logo {
-    max-width: 200px;
+    max-width: 200px;          /* original large size */
     height: auto;
-    margin: 0 auto 2rem;
+    margin: 0 auto 1.5rem;
     display: block;
+    transition: all 0.2s linear;  /* smooth transform */
+    transform-origin: center center;
+    will-change: transform;
+}
+
+/* Mobile adjustments – make hero logo smaller */
+@media (max-width: 768px) {
+    .hero-logo {
+        max-width: 50px;    /* adjust this value to your preferred size */
+        margin-bottom: 0.8rem;
+    }
+}
+
+/* When scrolled, hero logo shrinks and moves up */
+.hero-logo.scroll-shrink {
+    transform: scale(0.4) translateY(-80px);  /* shrinks and moves upward */
+    opacity: 0.8;
+}
+
+/* Hide hero logo when scrolling */
+.hero-logo.scroll-hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Small logo inside navbar – starts invisible, fades in on scroll */
+/* Small logo inside navbar – hidden initially, will be faded in by JS */
+.nav-small-logo {
+    height: 35px;
+    width: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+    opacity: 0;               /* start invisible */
+    transition: opacity 0.05s linear;  /* smooth but quick to follow scroll */
+}
+
+/* When scrolled, fade it in */
+.nav-logo.scrolled .nav-small-logo {
+    opacity: 1;
+}
+
+/* When scrolled, show the small logo */
+.nav-logo.scrolled .nav-small-logo {
+    display: inline-block;
+}
+
+/* Small logo inside navbar (hidden until scroll) */
+.nav-logo-img {
+    height: 40px;          /* small version */
+    width: auto;
+    display: none;         /* hidden initially */
+    vertical-align: middle;
+}
+
+/* On scroll, hide the text logo and show the image logo */
+.nav-logo.scrolled .nav-logo-text {
+    display: none;
+}
+.nav-logo.scrolled .nav-logo-img {
+    display: inline-block;
+}
+
+/* Fade out hero logo when scrolled */
+.hero-logo.scroll-hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .hero-buttons {
