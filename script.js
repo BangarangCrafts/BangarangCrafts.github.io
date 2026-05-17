@@ -1110,21 +1110,22 @@ const projects = {
     },
     'project3': {
         images: [
-            'Heart&Forge_Studios.webp'
+			'drabraxisfotune.webp',
+            'DrAbraxis.webp',
         ],
-        title: 'Hearth & Forge Studios – A Home for Handcrafted Fandom',
-        description: 'This project is my dedicated online storefront, a place where all the creative threads of Bangarang Crafts come together. Think of it as the official shop for our growing collection of handcrafted, fan-inspired goods. I built Hearth & Forge to be a curated space where you can easily browse and buy the pieces Im most excited about, from our popular hand-printed tees and unique cement display tiles to character earrings, custom dice bags, and more. It’s designed to be a simple, welcoming hub for anyone looking to add a touch of their favourite games, movies, or stories to their everyday life. Every item listed is still made with the same hands-on care and attention to detail, celebrating the fandoms we love. With features like free shipping on orders over R499, easy returns, and a smooth checkout, Hearth & Forge is my way of making sure these creations find a good home as easily as possible. Its a living project that grows as new ideas spark, so youll always find something fresh. Whether youre after a bold Nosferatu tee, a unique Hex tile for your shelf, or a gift for a fellow fan, come explore the collection and take a piece of the craft home with you.',
+        title: 'Dr. Abraxis Seer of Fates',
+        description: 'Step into the mystical world of Dr. Abraxis, the enigmatic Seer of Fates who brings a touch of the unknown to your everyday life. Whether youre seeking a moment of divination, a spark of inspiration, or simply a conversation starter, Dr. Abraxis delivers cryptic insights and lucky numbers that feel plucked from the cosmos itself. This handcrafted project blends esoteric charm with playful mystery, making it the perfect addition to any curious souls collection. Let the fates guide you—are you ready to see what they have in store?',
         features: [
-            'Official Online Storefront',
-            'Curated Fan-Made Collection',
-            'Handcrafted with Fandom Love',
-            'Customer-Friendly Experience',
-            'A Living, Growing Project',
+            'Mystic Fortune Generator',
+            'Lucky Number Dispenser',
+            'Hand‑Coded Divination Magic',
+            'Responsive & Ritual‑Ready',
+            'Endless Replayability',
         ],
         button: {
 			type: 'url',
-			text: 'Visit Hearth & Forge',
-			link: 'https://hearthforge.co.za',
+			text: 'Visit Dr.Abraxis',
+			link: 'https://bangarangcrafts.co.za/abraxis.github.io/',
 			download: null
 		}
     }
