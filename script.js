@@ -1128,6 +1128,28 @@ const projects = {
 			link: 'https://bangarangcrafts.co.za/abraxis.github.io/',
 			download: null
 		}
+    },
+	    'project4': {
+        images: [
+            'Hnefatafl001.webp',
+			'Hnefatafl.webp',
+            // optionally add more images here
+        ],
+        title: 'Hnefatafl – Viking Board Game',
+        description: 'Step into the world of Norse strategy with this digital adaptation of Hnefatafl, the classic Viking board game. Play against the computer or a friend, and experience the ancient clash between attackers and defenders. The game is fully functional, with a clean interface and engaging AI. Perfect for a quick brain-teaser or a deep strategic session.',
+        features: [
+            'Authentic Viking board game rules',
+            'Play against AI or local multiplayer',
+            'Clean, responsive design for all devices',
+            'Free to play – no installation needed',
+            'Directly accessible from your browser'
+        ],
+        button: {
+            type: 'url',
+            text: 'Play Hnefatafl online',
+            link: 'https://bangarangcrafts.co.za/hnefatafl/',
+            download: null
+        }
     }
 };
 
