@@ -72,41 +72,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Random hero background video selector
-function setRandomHeroVideo() {
-    const videoElement = document.getElementById('heroVideo');
-    if (!videoElement) return;
-    
-    // List of your 4 videos
-    const videos = [
-        '7035591-uhd_3840_2160_24fps.mp4',
-        '6957370-uhd_4096_2160_25fps.mp4',
-        '7237104-uhd_3840_2160_25fps.mp4'
-    ];
-    
-    // Pick a random video from the array
-    const randomIndex = Math.floor(Math.random() * videos.length);
-    const selectedVideo = videos[randomIndex];
-    
-    // Set the video source
-    videoElement.src = selectedVideo;
-    
-    // Load and play the video
-    videoElement.load();
-    videoElement.play().catch(error => {
-        // Auto-play might be blocked by some browsers; this is fine
-        console.log('Video autoplay prevented:', error);
-    });
-    
-    console.log(`Playing random hero video: ${selectedVideo}`);
-}
-
-// Run the random video picker when the page loads
-document.addEventListener('DOMContentLoaded', function() {
-    setRandomHeroVideo();
-    
-    // Your existing code here...
-});
 
 // ===================== LOAD MORE & FILTER LOGIC =====================
 let currentVisible = 16;          // Number of products currently visible
@@ -995,28 +960,26 @@ const products = {
 		hasDownload: true,
 		downloadFile: 'Skull Button.zip'
     },
-	'product45': {
-        images: [
-			'Grow_tary-002.webp',
-            'Seeder_Tray_002.webp',
-			'Seeder_Tray_001.webp',
-			'Seeder_Tray_003.webp'
-        ],
-        title: 'Seed Starter Tray (STL Files)',
-        description: 'This 3D printable seed starter tray is designed to hold four standard toilet paper rolls, turning everyday waste into biodegradable planter pots.Fill the rolls with soil, plant your seeds, and place them into the tray. When your seedlings are ready, plant the entire roll directly into the soil. The cardboard naturally decomposes, allowing roots to grow through with no transplant shock and no plastic waste.Perfect for herbs, vegetables, flowers, school projects, and eco-conscious gardeners.',
+	//'product45': {
+    //    images: [
+	//		'Grow_tary-002.webp',
+    //        'Seeder_Tray_002.webp',
+	//		'Seeder_Tray_001.webp',
+	//		'Seeder_Tray_003.webp'
+    //    ],
+    //    title: 'Seed Starter Tray (STL Files)',
+    //    description: 'This 3D printable seed starter tray is designed to hold four standard toilet paper rolls, turning everyday waste into biodegradable planter pots.Fill the rolls with soil, plant your seeds, and place them into the tray. When your seedlings are ready, plant the entire roll directly into the soil. The cardboard naturally decomposes, allowing roots to grow through with no transplant shock and no plastic waste.Perfect for herbs, vegetables, flowers, school projects, and eco-conscious gardeners.',
         //price: 'Free',
-        features: [
-            'Easy to 3D Print, No Supports Needed',
-			'Beginner-friendly 3D print',		
-        ],
-		hasDownload: true,
-		downloadFile: 'Seeder Tray.zip'
-    },
+    //    features: [
+    //        'Easy to 3D Print, No Supports Needed',
+	//		'Beginner-friendly 3D print',		
+    //    ],
+	//	hasDownload: true,
+	//	downloadFile: 'Seeder Tray.zip'
+    //},
 	'product46': {
         images: [
 			'card-size-money-clip-3d-printable-stl-minimalist-wallet-bangarangcrafts-004.webp',
-            'card-size-money-clip-3d-printable-stl-minimalist-wallet-bangarangcrafts-01.webp',
-			'card-size-money-clip-3d-printable-stl-minimalist-wallet-bangarangcrafts-02.webp',
 			'card-size-money-clip-3d-printable-stl-minimalist-wallet-bangarangcrafts-003.webp'
         ],
         title: 'Card Size Money Clip – Minimalist Wallet(STL Files)',
