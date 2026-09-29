@@ -2013,6 +2013,41 @@ body::after {
   body::after {
     background: rgba(255,255,255,0.65);
   }
+}	
+
+/* =========================================
+   MOBILE HERO SPACING FIX
+   Pushes hero content down so it clears
+   the fixed navbar and is fully visible.
+   ========================================= */
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 120px;      /* enough space below the 70px navbar */
+        padding-bottom: 60px;
+        min-height: auto;        /* don't force full viewport height */
+        display: block;          /* stop vertical centering */
+    }
+
+    .hero-content {
+        padding-top: 0;          /* remove any extra inner padding */
+    }
+
+    .hero-logo {
+        max-width: 70px;         /* slightly bigger so it's clearly visible */
+        margin-bottom: 1rem;
+    }
+}
+
+/* Extra small devices – extra breathing room */
+@media (max-width: 480px) {
+    .hero {
+        padding-top: 130px;      /* a touch more on very small phones */
+        padding-bottom: 50px;
+    }
+
+    .hero-logo {
+        max-width: 60px;
+    }
 }
 
 
