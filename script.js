@@ -995,6 +995,24 @@ const products = {
 		hasDownload: true,
 		downloadFile: 'Money Clip Card.zip'
     },
+		'product47': {
+        images: [
+			'Warrior.webp',
+			// Add more image filenames here if you have them, e.g. 'Knight_Warrior_02.webp'
+        ],
+        title: 'Medieval Knight Warrior (STL Files)',
+        description: 'A highly detailed 3D printable knight warrior miniature, perfect for tabletop RPGs, wargaming, or painting practice. Standing proudly with his greatsword, this model is pre-supported and ready to print.',
+        //price: 'Free', // Uncomment this line and delete the price line below if you want it free
+       // price: 'R 0.00',
+        features: [
+            'High-resolution STL file',
+            'Pre-supported for easy printing',
+            'Ideal for 28mm-32mm tabletop wargaming',
+            'Perfect for painting and display'
+        ],
+        hasDownload: true,
+        downloadFile: 'Medieval Knight Warrior.zip'
+    },
 	
 };
 
@@ -1288,6 +1306,9 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
+// Tracks currently-selected package in the service modal
+let selectedPackage = null;
+
 // Service data for modals
 const services = {
     'service1': {
@@ -1541,8 +1562,14 @@ function openServiceModal(serviceId) {
                 packagesContainer.innerHTML = `
                     <h4>Choose Your Package:</h4>
                     <div class="packages-grid">
-                        ${service.packages.map(pkg => `
-                            <div class="package-card">
+                        ${service.packages.map((pkg, index) => `
+                            <div class="package-card"
+                                 data-package-index="${index}"
+                                 data-package-name="${pkg.name}"
+                                 data-package-price="${pkg.price}"
+                                 data-package-subtitle="${pkg.subtitle}"
+                                 onclick="selectPackage(this)">
+                                <span class="package-badge">✓ Selected</span>
                                 <h3 class="package-name">${pkg.name}</h3>
                                 <p class="package-price">${pkg.price}</p>
                                 <p class="package-subtitle">${pkg.subtitle}</p>
@@ -1555,9 +1582,12 @@ function openServiceModal(serviceId) {
                     </div>
                 `;
                 packagesContainer.style.display = 'block';
+                // Clear any previous selection
+                selectedPackage = null;
             } else {
                 packagesContainer.innerHTML = '';
                 packagesContainer.style.display = 'none';
+                selectedPackage = null;
             }
         }
         // ---------- END PACKAGES RENDERING ----------
@@ -1579,10 +1609,23 @@ function closeServiceModal() {
     if (modal) {
         modal.classList.remove('show');
         document.body.style.overflow = 'auto';
+        
+        // Clear package selection so next open starts fresh
+        selectedPackage = null;
+        const packagesContainer = document.getElementById('serviceModalPackages');
+        if (packagesContainer) {
+            packagesContainer.querySelectorAll('.package-card').forEach(c => {
+                c.classList.remove('selected');
+            });
+        }
     }
 }
 
 function closeServiceModalAndScrollToContact() {
+    // Capture info BEFORE closing the modal (which resets selection)
+    const serviceTitle = document.getElementById('serviceModalTitle').textContent;
+    const pkg = selectedPackage; // snapshot current selection
+    
     closeServiceModal();
     
     // Small delay to ensure modal is closed before scrolling
@@ -1593,21 +1636,90 @@ function closeServiceModalAndScrollToContact() {
                 behavior: 'smooth',
                 block: 'start'
             });
+            
+            // Pre-fill the contact form's message field
+            const messageField = document.querySelector('.contact-form textarea[name="message"]');
+            if (messageField) {
+                if (pkg) {
+                    messageField.value =
+`Hi Bangarang Crafts,
+
+I'm interested in getting a quote for your "${serviceTitle}" service.
+
+Selected Package: ${pkg.name} - ${pkg.price}
+(${pkg.subtitle})
+
+Could you please provide me with more information?
+
+Thank you!`;
+                } else {
+                    messageField.value =
+`Hi Bangarang Crafts,
+
+I'm interested in getting a quote for your "${serviceTitle}" service.
+
+Could you please provide me with more information?
+
+Thank you!`;
+                }
+                
+                // Optional: briefly highlight the field so the user notices it was filled
+                messageField.style.transition = 'box-shadow 0.4s ease, border-color 0.4s ease';
+                messageField.style.borderColor = 'var(--primary-color)';
+                messageField.style.boxShadow = '0 0 0 3px rgba(44, 90, 160, 0.15)';
+                setTimeout(() => {
+                    messageField.style.borderColor = '';
+                    messageField.style.boxShadow = '';
+                }, 1800);
+            }
         }
     }, 100);
+}
+
+// Handle package card selection
+function selectPackage(card) {
+    // Remove 'selected' class from all package cards in this modal
+    document.querySelectorAll('#serviceModalPackages .package-card').forEach(c => {
+        c.classList.remove('selected');
+    });
+    
+    // Add 'selected' class to the clicked card
+    card.classList.add('selected');
+    
+    // Store selection details
+    selectedPackage = {
+        name: card.getAttribute('data-package-name'),
+        price: card.getAttribute('data-package-price'),
+        subtitle: card.getAttribute('data-package-subtitle')
+    };
 }
 
 // Open WhatsApp with a pre-written service quote message
 function openServiceWhatsApp() {
     const serviceTitle = document.getElementById('serviceModalTitle').textContent;
     
-    const message = `Hi Bangarang Crafts!
+    let message;
+    
+    if (selectedPackage) {
+        message = `Hi Bangarang Crafts!
+
+I'm interested in getting a quote for your "${serviceTitle}" service.
+
+  Selected Package: ${selectedPackage.name} - ${selectedPackage.price}
+${selectedPackage.subtitle}
+
+Could you please provide me with more information and pricing?
+
+Thank you!`;
+    } else {
+        message = `Hi Bangarang Crafts!
 
 I'm interested in getting a quote for your "${serviceTitle}" service.
 
 Could you please provide me with more information and pricing?
 
 Thank you!`;
+    }
     
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/27765202303?text=${encodedMessage}`;
