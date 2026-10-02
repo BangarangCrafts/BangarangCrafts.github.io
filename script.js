@@ -1291,7 +1291,7 @@ document.addEventListener('keydown', function(e) {
 // Service data for modals
 const services = {
     'service1': {
-        image: 'NFC.webp',
+        image: 'BangCard.png',
         title: 'Custom NFC Business Card',
         description: 'Transform your networking game with our cutting-edge Custom NFC Business Cards. These sleek, tech-savvy cards allow you to share your contact details, social media profiles, websites, and more instantly! Perfect for professionals, entrepreneurs, and creatives who want to make a memorable impression.',
         features: [
@@ -1300,6 +1300,30 @@ const services = {
             'Eco-Friendly – Go paperless and reduce waste',
             'Fully Customizable – Tailor your card to match your brand and style',
             'Quick Setup – Easy to program and start using immediately'
+        ],
+        packages: [
+            {
+                name: 'The Digital Tap',
+                price: 'R500',
+                subtitle: 'Card + digital page',
+                features: [
+                    '3D-printed NFC card',
+                    'Personalized digital business page',
+                    'Business name and up to five links'
+                ],
+                idealFor: 'Ideal for businesses that already have a logo.'
+            },
+            {
+                name: 'The Custom Tap',
+                price: 'R650',
+                subtitle: 'Card + custom logo + digital page',
+                features: [
+                    'Everything in The Digital Tap',
+                    'Custom logo incorporated into the physical card',
+                    'A personalized digital profile page'
+                ],
+                idealFor: 'Ideal for businesses wanting a branded, personalized card.'
+            }
         ]
     },
     'service2': {
@@ -1510,6 +1534,34 @@ function openServiceModal(serviceId) {
             featuresList.appendChild(li);
         });
         
+        // ---------- PACKAGES RENDERING ----------
+        const packagesContainer = document.getElementById('serviceModalPackages');
+        if (packagesContainer) {
+            if (service.packages && service.packages.length > 0) {
+                packagesContainer.innerHTML = `
+                    <h4>Choose Your Package:</h4>
+                    <div class="packages-grid">
+                        ${service.packages.map(pkg => `
+                            <div class="package-card">
+                                <h3 class="package-name">${pkg.name}</h3>
+                                <p class="package-price">${pkg.price}</p>
+                                <p class="package-subtitle">${pkg.subtitle}</p>
+                                <ul class="package-features">
+                                    ${pkg.features.map(f => `<li>${f}</li>`).join('')}
+                                </ul>
+                                <p class="package-ideal">${pkg.idealFor}</p>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+                packagesContainer.style.display = 'block';
+            } else {
+                packagesContainer.innerHTML = '';
+                packagesContainer.style.display = 'none';
+            }
+        }
+        // ---------- END PACKAGES RENDERING ----------
+        
         // Show modal
         modal.classList.add('show');
         document.body.style.overflow = 'hidden';
@@ -1542,6 +1594,30 @@ function closeServiceModalAndScrollToContact() {
                 block: 'start'
             });
         }
+    }, 100);
+}
+
+// Open WhatsApp with a pre-written service quote message
+function openServiceWhatsApp() {
+    const serviceTitle = document.getElementById('serviceModalTitle').textContent;
+    
+    const message = `Hi Bangarang Crafts!
+
+I'm interested in getting a quote for your "${serviceTitle}" service.
+
+Could you please provide me with more information and pricing?
+
+Thank you!`;
+    
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/27765202303?text=${encodedMessage}`;
+    
+    // Close the modal first
+    closeServiceModal();
+    
+    // Small delay to ensure modal closes before opening WhatsApp
+    setTimeout(() => {
+        window.open(whatsappUrl, '_blank');
     }, 100);
 }
 
