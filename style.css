@@ -2273,5 +2273,63 @@ body::after {
     }
 }
 
+/* =========================================
+   PACKAGE CARDS — SELECTABLE STATE
+   ========================================= */
+
+.package-card {
+    position: relative;          /* for the badge positioning */
+    cursor: pointer;              /* signals clickability */
+    user-select: none;
+}
+
+/* Selected state */
+.package-card.selected {
+    border-color: var(--primary-color);
+    background: rgba(44, 90, 160, 0.06);
+    box-shadow: 0 8px 20px rgba(44, 90, 160, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Selection badge — hidden by default */
+.package-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: var(--primary-color);
+    color: var(--white);
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    opacity: 0;
+    transform: scale(0.7);
+    transition: all 0.25s ease;
+    box-shadow: 0 3px 8px rgba(44, 90, 160, 0.35);
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+/* Show badge when selected */
+.package-card.selected .package-badge {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Slight lift on hover (already existing but keep consistent) */
+.package-card:hover:not(.selected) {
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(44, 90, 160, 0.15);
+}
+
+/* Mobile: hide the pop-out badge a bit further inside so it doesn't clip */
+@media (max-width: 768px) {
+    .package-badge {
+        top: 8px;
+        right: 8px;
+    }
+}
+
 
 
