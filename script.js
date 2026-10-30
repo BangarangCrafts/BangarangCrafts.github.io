@@ -1013,7 +1013,61 @@ const products = {
         hasDownload: true,
         downloadFile: 'Medieval Knight Warrior.zip'
     },
-	
+	'product48': {
+    images: [
+        'Protia002.webp',
+		'Protia003.webp',
+		'Protia001.webp'
+        // Add more image filenames here for the carousel, e.g. 'clay-tray-back.webp'
+    ],
+    title: 'Handmade Clay Trinket Tray – Protea Block Print',
+    description: 'A handcrafted clay trinket tray featuring a beautiful Protea block print design. Perfect for holding jewellery, keys, rings, or small treasures. Each tray is individually handmade, giving it a unique, one-of-a-kind character that you won\'t find in mass-produced items. The Protea block print adds a touch of South African charm to any bedside table, dresser, or desk.',
+    price: 'R 65,00',
+    features: [
+        'Handmade clay construction',
+        'Protea block print design',
+        'Perfect for jewellery, keys & small items',
+        'Unique handcrafted piece',
+        'Add dimensions here, e.g. Width: Xcm, Length: Xcm'
+    ]
+},
+	'product49': {
+    images: [
+        'Sunbird002.webp',
+		'Sunbird003.webp',
+		'sunbird001.webp'
+        // Add more image filenames here for the carousel, e.g. 'clay-sunbird-tray-back.webp'
+    ],
+    title: 'Handmade Clay Trinket Tray – Sunbird Block Print',
+    description: 'A handcrafted clay trinket tray featuring a beautiful Sunbird block print design. The Sunbird, one of South Africa\'s most beloved birds, brings a touch of nature and elegance to this functional piece. Perfect for holding jewellery, keys, rings, or small treasures. Each tray is individually handmade, giving it a unique, one-of-a-kind character that you won\'t find in mass-produced items — ideal for any bedside table, dresser, or desk.',
+    price: 'R 65,00',
+    features: [
+        'Handmade clay construction',
+        'Sunbird block print design',
+        'Perfect for jewellery, keys & small items',
+        'Unique handcrafted piece',
+        'Add dimensions here, e.g. Width: Xcm, Length: Xcm'
+    ]
+},
+
+	'product50': {
+    images: [
+        'Whale002.webp',
+		'Whale003.webp',
+		'Whale001.webp'
+        // Add more image filenames here for the carousel, e.g. 'clay-whale-tray-back.webp'
+    ],
+    title: 'Handmade Clay Trinket Tray – Whale Block Print',
+    description: 'A handcrafted clay trinket tray featuring a charming Whale block print design. The gentle whale motif brings a calm, coastal feel to this functional piece, perfect for ocean lovers and anyone who appreciates handmade artistry. Ideal for holding jewellery, keys, rings, or small treasures. Each tray is individually handmade, giving it a unique, one-of-a-kind character that you won\'t find in mass-produced items — perfect for any bedside table, dresser, or desk.',
+    price: 'R 65,00',
+    features: [
+        'Handmade clay construction',
+        'Whale block print design',
+        'Perfect for jewellery, keys & small items',
+        'Unique handcrafted piece',
+        'Add dimensions here, e.g. Width: Xcm, Length: Xcm'
+    ]
+},
 };
 
 // Initialize everything when DOM is ready
